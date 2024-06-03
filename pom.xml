@@ -921,6 +921,9 @@
                 <artifactId>maven-compiler-plugin</artifactId>
                 <version>3.13.0</version>
                 <configuration>
+                    <source>21</source>
+                    <target>21</target>
+                    <release>21</release>
                     <fork>true</fork>
                     <meminitial>1000m</meminitial>
                     <maxmem>2000m</maxmem>
@@ -1220,6 +1223,9 @@
     </reporting>
 
     <properties>
+        <maven.compiler.source>21</maven.compiler.source>
+        <maven.compiler.target>21</maven.compiler.target>
+        <maven.compiler.release>21</maven.compiler.release>
         <failOnMissingWebXml>false</failOnMissingWebXml>
         <java.target>8</java.target>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
