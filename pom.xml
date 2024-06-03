@@ -921,6 +921,9 @@
                 <artifactId>maven-compiler-plugin</artifactId>
                 <version>3.13.0</version>
                 <configuration>
+                    <source>21</source>
+                    <target>21</target>
+                    <release>21</release>
                     <fork>true</fork>
                     <meminitial>1000m</meminitial>
                     <maxmem>2000m</maxmem>
@@ -954,8 +957,8 @@
                         <configuration>
                             <rules>
                                 <enforceBytecodeVersion>
-                                    <maxJdkVersion>11</maxJdkVersion>
-                                    <message>Dependencies shouldn't require Java 12+.</message>
+                                    <maxJdkVersion>21</maxJdkVersion>
+                                    <message>Dependencies shouldn't require Java 22+.</message>
                                 </enforceBytecodeVersion>
                             </rules>
                             <fail>warn</fail>
@@ -970,7 +973,7 @@
                             <rules>
                                 <requireJavaVersion>
                                     <version>${java.target}</version>
-                                    <message>Benchmark is currently written to support Java 8.</message>
+                                    <message>Benchmark is currently written to support Java 21.</message>
                                 </requireJavaVersion>
                             </rules>
                         </configuration>
@@ -1164,7 +1167,7 @@
 
                         <!-- apply a specific flavor of google-java-format -->
                         <googleJavaFormat>
-                            <version>1.8</version>
+                            <version>1.17.0</version>
                             <style>AOSP</style>
                         </googleJavaFormat>
                     </java>
@@ -1220,8 +1223,11 @@
     </reporting>
 
     <properties>
+        <maven.compiler.source>21</maven.compiler.source>
+        <maven.compiler.target>21</maven.compiler.target>
+        <maven.compiler.release>21</maven.compiler.release>
         <failOnMissingWebXml>false</failOnMissingWebXml>
-        <java.target>8</java.target>
+        <java.target>21</java.target>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
         <maven.war.webxml>${basedir}/src/config/web.xml</maven.war.webxml>
