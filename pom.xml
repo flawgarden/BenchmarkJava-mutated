@@ -957,8 +957,8 @@
                         <configuration>
                             <rules>
                                 <enforceBytecodeVersion>
-                                    <maxJdkVersion>11</maxJdkVersion>
-                                    <message>Dependencies shouldn't require Java 12+.</message>
+                                    <maxJdkVersion>21</maxJdkVersion>
+                                    <message>Dependencies shouldn't require Java 22+.</message>
                                 </enforceBytecodeVersion>
                             </rules>
                             <fail>warn</fail>
@@ -973,7 +973,7 @@
                             <rules>
                                 <requireJavaVersion>
                                     <version>${java.target}</version>
-                                    <message>Benchmark is currently written to support Java 8.</message>
+                                    <message>Benchmark is currently written to support Java 21.</message>
                                 </requireJavaVersion>
                             </rules>
                         </configuration>
@@ -1227,7 +1227,7 @@
         <maven.compiler.target>21</maven.compiler.target>
         <maven.compiler.release>21</maven.compiler.release>
         <failOnMissingWebXml>false</failOnMissingWebXml>
-        <java.target>8</java.target>
+        <java.target>21</java.target>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
         <maven.war.webxml>${basedir}/src/config/web.xml</maven.war.webxml>
