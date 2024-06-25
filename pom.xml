@@ -921,9 +921,9 @@
                 <artifactId>maven-compiler-plugin</artifactId>
                 <version>3.13.0</version>
                 <configuration>
-                    <source>21</source>
-                    <target>21</target>
-                    <release>21</release>
+                    <source>17</source>
+                    <target>17</target>
+                    <release>17</release>
                     <fork>true</fork>
                     <meminitial>1000m</meminitial>
                     <maxmem>2000m</maxmem>
@@ -957,8 +957,8 @@
                         <configuration>
                             <rules>
                                 <enforceBytecodeVersion>
-                                    <maxJdkVersion>21</maxJdkVersion>
-                                    <message>Dependencies shouldn't require Java 22+.</message>
+                                    <maxJdkVersion>17</maxJdkVersion>
+                                    <message>Dependencies shouldn't require Java 18+.</message>
                                 </enforceBytecodeVersion>
                             </rules>
                             <fail>warn</fail>
@@ -973,7 +973,7 @@
                             <rules>
                                 <requireJavaVersion>
                                     <version>${java.target}</version>
-                                    <message>Benchmark is currently written to support Java 21.</message>
+                                    <message>Benchmark is currently written to support Java 17.</message>
                                 </requireJavaVersion>
                             </rules>
                         </configuration>
@@ -1223,11 +1223,11 @@
     </reporting>
 
     <properties>
-        <maven.compiler.source>21</maven.compiler.source>
-        <maven.compiler.target>21</maven.compiler.target>
-        <maven.compiler.release>21</maven.compiler.release>
+        <maven.compiler.source>17</maven.compiler.source>
+        <maven.compiler.target>17</maven.compiler.target>
+        <maven.compiler.release>17</maven.compiler.release>
         <failOnMissingWebXml>false</failOnMissingWebXml>
-        <java.target>21</java.target>
+        <java.target>17</java.target>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
         <maven.war.webxml>${basedir}/src/config/web.xml</maven.war.webxml>
