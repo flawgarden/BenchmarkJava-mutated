@@ -1,0 +1,14 @@
+<test-metadata>
+  <benchmark-version>1.2</benchmark-version>
+  <category>ldapi</category>
+  <test-number>01501564</test-number>
+  <vulnerability>false</vulnerability>
+  <cwe>90</cwe>
+</test-metadata>
+<test-metadata>
+    <benchmark-version>1.2</benchmark-version>
+    <category>ldapi</category>
+    <test-number>01501564</test-number>
+    <vulnerability>false</vulnerability>
+    <cwe>90</cwe>
+</test-metadata>

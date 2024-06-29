@@ -1,0 +1,7 @@
+<test-metadata>
+    <benchmark-version>1.2</benchmark-version>
+    <category>openredirect</category>
+    <test-number>018941402</test-number>
+    <vulnerability>true</vulnerability>
+    <cwe>601</cwe>
+</test-metadata>
