@@ -7,7 +7,7 @@ public class LazyInitialized {
         if (value == null) {
             synchronized (this) {
                 if (value == null) {
-                    value = "~[String]~";
+                    value = "~[EXPR_String]~";
                 }
             }
         }
