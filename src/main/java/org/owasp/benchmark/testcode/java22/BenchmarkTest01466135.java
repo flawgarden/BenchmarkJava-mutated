@@ -73,8 +73,8 @@ public class BenchmarkTest01466135 extends HttpServlet {
                     NestedRecord nested =
                             new NestedRecord(first, second);
                     if (nested instanceof NestedRecord(SimpleRecord at, SimpleRecord bt)) {
-                      param = at;
-                      param = bt;
+                        param = at;
+                        param = bt;
                     }
                 }
             }
