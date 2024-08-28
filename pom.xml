@@ -624,6 +624,30 @@
                             </excludes>
                         </configuration>
                     </plugin>
+
+                    <plugin>
+                        <groupId>com.diffplug.spotless</groupId>
+                        <artifactId>spotless-maven-plugin</artifactId>
+                        <version>2.43.0</version>
+                        <configuration>
+                            <!-- optional: limit format enforcement to just the files changed by this feature branch -->
+                            <ratchetFrom>origin/master</ratchetFrom>
+                            <!-- define a language-specific format -->
+                            <java>
+                                <importOrder /> <!-- standard import order -->
+                                <removeUnusedImports /> <!-- self-explanatory -->
+                                <excludes>
+                                    <exclude>**src/main/java/org/owasp/benchmark/testcode/java22/*.*</exclude>
+                                    <exclude>**src/main/java/org/owasp/benchmark/helpers/java22/*.*</exclude>
+                                </excludes>
+                                <!-- apply a specific flavor of google-java-format -->
+                                <googleJavaFormat>
+                                    <version>1.19.2</version>
+                                    <style>AOSP</style>
+                                </googleJavaFormat>
+                            </java>
+                        </configuration>
+                    </plugin>
                 </plugins>
             </build>
         </profile>
