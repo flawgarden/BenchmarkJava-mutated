@@ -1,14 +1,6 @@
-// CodeQL original results: [89]
-// Semgrep original results: [89]
-// Insider original results: []
-// SonarQube original results: []
-// CodeQL analysis results: [561, 564, 89]
-// Semgrep analysis results: []
-// Insider analysis results: []
 // Original file name: BenchmarkTest01466.java
 // Original file CWE's: [89]
 // Original file kind: fail
-// Mutation info: Insert template from templates/classes/record.tmt with index 2
 // Program:
 /**
  * OWASP Benchmark Project v1.2
