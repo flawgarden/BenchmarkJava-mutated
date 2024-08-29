@@ -619,8 +619,8 @@
                         <artifactId>maven-compiler-plugin</artifactId>
                         <configuration>
                             <excludes>
-                                <exclude>**src/main/java/org/owasp/benchmark/testcode/java22/*.*</exclude>
-                                <exclude>**src/main/java/org/owasp/benchmark/helpers/java22/*.*</exclude>
+                                <exclude>**/org/owasp/benchmark/testcode/java22/*.*</exclude>
+                                <exclude>**/org/owasp/benchmark/helpers/java22/*.*</exclude>
                             </excludes>
                         </configuration>
                     </plugin>
@@ -637,8 +637,8 @@
                                 <importOrder /> <!-- standard import order -->
                                 <removeUnusedImports /> <!-- self-explanatory -->
                                 <excludes>
-                                    <exclude>**src/main/java/org/owasp/benchmark/testcode/java22/*.*</exclude>
-                                    <exclude>**src/main/java/org/owasp/benchmark/helpers/java22/*.*</exclude>
+                                    <exclude>**/org/owasp/benchmark/testcode/java22/*.*</exclude>
+                                    <exclude>**/org/owasp/benchmark/helpers/java22/*.*</exclude>
                                 </excludes>
                                 <!-- apply a specific flavor of google-java-format -->
                                 <googleJavaFormat>
