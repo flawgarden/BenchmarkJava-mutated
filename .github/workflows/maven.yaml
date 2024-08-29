@@ -7,10 +7,8 @@ on:
     branches: [ "master" ]
 
 jobs:
-  build:
-
+  java-17-build:
     runs-on: ubuntu-latest
-
     steps:
     - uses: actions/checkout@v4
       with:
@@ -21,7 +19,22 @@ jobs:
         java-version: '17'
         distribution: 'oracle'
     - name: Run Spotless check
-      run: mvn spotless:check
+      run: mvn spotless:check -PJava17
     - name: Create WAR
-      run: mvn package
+      run: mvn package -PJava17
 
+  java-22-build:
+      runs-on: ubuntu-latest
+      steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - name: Set up JDK 22
+        uses: actions/setup-java@v4
+        with:
+          java-version: '22'
+          distribution: 'oracle'
+      - name: Run Spotless check
+        run: mvn spotless:check
+      - name: Create WAR
+        run: mvn package
