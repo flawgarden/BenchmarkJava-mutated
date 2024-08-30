@@ -1,18 +1,20 @@
-//ApplicationInspector original results: [614]
-//Snyk original results: [614]
-//Semgrep original results: [614]
-//Insider original results: []
-//-------------
-//ApplicationInspector analysis results: []
-//Snyk analysis results: [113, 614]
-//Semgrep analysis results: [614]
-//Insider analysis results: []
-//Original file name: src/main/java/org/owasp/benchmark/testcode/BenchmarkTest01282.java
-//Original file CWE's: [614]  
-//Original file kind: fail
-//Mutation info: Insert template from templates-db/languages/java/sensitivity/concurrency/concurrency.tmt with name atomic_integer_restore_positive 
-//Used extensions: MACRO_VarName -> sealed09823
-//Program:
+// ApplicationInspector original results: [614]
+// Snyk original results: [614]
+// Semgrep original results: [614]
+// Insider original results: []
+// -------------
+// ApplicationInspector analysis results: []
+// Snyk analysis results: [113, 614]
+// Semgrep analysis results: [614]
+// Insider analysis results: []
+// Original file name: src/main/java/org/owasp/benchmark/testcode/BenchmarkTest01282.java
+// Original file CWE's: [614]
+// Original file kind: fail
+// Mutation info: Insert template from
+// templates-db/languages/java/sensitivity/concurrency/concurrency.tmt with name
+// atomic_integer_restore_positive
+// Used extensions: MACRO_VarName -> sealed09823
+// Program:
 /**
  * OWASP Benchmark Project v1.2
  *
@@ -33,13 +35,13 @@
 package org.owasp.benchmark.testcode;
 
 import java.io.IOException;
+import java.util.*;
+import java.util.concurrent.atomic.*;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
-import java.util.*;
-import java.util.concurrent.atomic.*;
 
 @WebServlet(value = "/securecookie-00/BenchmarkTest01282")
 public class BenchmarkTest01282122 extends HttpServlet {
@@ -60,37 +62,35 @@ public class BenchmarkTest01282122 extends HttpServlet {
         String param = request.getParameter("BenchmarkTest01282");
         if (param == null) param = "";
 
+        AtomicInteger counter = new AtomicInteger(0);
+        String stringCopy = param;
 
-AtomicInteger counter = new AtomicInteger(0);
-String stringCopy = param;
+        if (counter.get() == 0) {
+            param = "";
+        }
 
-if (counter.get() == 0) {
-  param = "";
-}
+        Thread thread1 = new Thread(() -> counter.incrementAndGet());
 
-Thread thread1 = new Thread(() -> counter.incrementAndGet());
+        thread1.start();
 
-thread1.start();
+        Thread thread2 = new Thread(() -> counter.incrementAndGet());
 
-Thread thread2 = new Thread(() -> counter.incrementAndGet());
+        thread2.start();
 
-thread2.start();
+        try {
+            thread1.join();
+        } catch (InterruptedException e) {
+        }
+        try {
+            thread2.join();
+        } catch (InterruptedException e) {
+        }
 
-try {
-  thread1.join();
-} catch (InterruptedException e) {
-}
-try {
-  thread2.join();
-} catch (InterruptedException e) {
-}
+        if (counter.get() == 2) {
+            param = stringCopy;
+        }
 
-if (counter.get() == 2) {
-  param = stringCopy;
-}
-
-
-String bar = new Test122().doSomething(request, param);
+        String bar = new Test122().doSomething(request, param);
 
         byte[] input = new byte[1000];
         String str = "?";
@@ -135,7 +135,6 @@ String bar = new Test122().doSomething(request, param);
             return bar;
         }
 
-Object sealed09823 = new PermittedSub1();
-
-} // end innerclass Test
+        Object sealed09823 = new PermittedSub1();
+    } // end innerclass Test
 } // end DataflowThruInnerClass

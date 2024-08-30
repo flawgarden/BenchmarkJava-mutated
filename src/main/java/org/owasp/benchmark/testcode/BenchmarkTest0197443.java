@@ -1,20 +1,25 @@
-//CodeQL original results: [643]
-//Snyk original results: [643]
-//Semgrep original results: [643]
-//ApplicationInspector original results: []
-//Insider original results: []
-//-------------
-//CodeQL analysis results: [404, 772, 561]
-//ApplicationInspector analysis results: []
-//Snyk analysis results: []
-//Semgrep analysis results: [643, 79]
-//Insider analysis results: []
-//Original file name: src/main/java/org/owasp/benchmark/testcode/BenchmarkTest01974.java
-//Original file CWE's: [643]  
-//Original file kind: fail
-//Mutation info: Insert template from templates-db/languages/java/sensitivity/virtuality/default.tmt with name binary_op_interface_default1_negative 
-//Used extensions: MACRO_VarName -> obj09823 | MACRO_VarName -> obj21341 | MACRO_Create_Set -> Set<~[TYPE@1]~> ~[MACRO_SetName@1]~ = new TreeSet<>(); | MACRO_Add_Element_ToSet -> ~[MACRO_SetName@1]~.add(~[VAR_~[TYPE@1]~]~); | MACRO_Add_Fixed_Element_ToSet -> ~[MACRO_SetName@1]~.add(~[VAR_~[TYPE@1]~@1]~); | MACRO_SetName@1 -> set787233
-//Program:
+// CodeQL original results: [643]
+// Snyk original results: [643]
+// Semgrep original results: [643]
+// ApplicationInspector original results: []
+// Insider original results: []
+// -------------
+// CodeQL analysis results: [404, 772, 561]
+// ApplicationInspector analysis results: []
+// Snyk analysis results: []
+// Semgrep analysis results: [643, 79]
+// Insider analysis results: []
+// Original file name: src/main/java/org/owasp/benchmark/testcode/BenchmarkTest01974.java
+// Original file CWE's: [643]
+// Original file kind: fail
+// Mutation info: Insert template from
+// templates-db/languages/java/sensitivity/virtuality/default.tmt with name
+// binary_op_interface_default1_negative
+// Used extensions: MACRO_VarName -> obj09823 | MACRO_VarName -> obj21341 | MACRO_Create_Set ->
+// Set<~[TYPE@1]~> ~[MACRO_SetName@1]~ = new TreeSet<>(); | MACRO_Add_Element_ToSet ->
+// ~[MACRO_SetName@1]~.add(~[VAR_~[TYPE@1]~]~); | MACRO_Add_Fixed_Element_ToSet ->
+// ~[MACRO_SetName@1]~.add(~[VAR_~[TYPE@1]~@1]~); | MACRO_SetName@1 -> set787233
+// Program:
 /**
  * OWASP Benchmark Project v1.2
  *
@@ -35,15 +40,12 @@
 package org.owasp.benchmark.testcode;
 
 import java.io.IOException;
+import java.util.*;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
-import java.util.*;
-import java.util.*;
-import java.util.*;
-import java.util.*;
 
 @WebServlet(value = "/xpathi-00/BenchmarkTest01974")
 public class BenchmarkTest0197443 extends HttpServlet {
@@ -82,18 +84,18 @@ public class BenchmarkTest0197443 extends HttpServlet {
             builderFactory.setFeature("http://apache.org/xml/features/disallow-doctype-decl", true);
             javax.xml.parsers.DocumentBuilder builder = builderFactory.newDocumentBuilder();
 
-Set<String> set787233 = new TreeSet<>();
-set787233.add(bar);
-set787233.add(bar);
-String value7846 = "dnwpf";
+            Set<String> set787233 = new TreeSet<>();
+            set787233.add(bar);
+            set787233.add(bar);
+            String value7846 = "dnwpf";
 
-if (set787233.size() == 2) {
-    value7846 = set787233.iterator().next();
-}
+            if (set787233.size() == 2) {
+                value7846 = set787233.iterator().next();
+            }
 
-Object obj21341 = new ImplementingSuperClass();
+            Object obj21341 = new ImplementingSuperClass();
 
-org.w3c.dom.Document xmlDocument = builder.parse(file);
+            org.w3c.dom.Document xmlDocument = builder.parse(file);
             javax.xml.xpath.XPathFactory xpf = javax.xml.xpath.XPathFactory.newInstance();
             javax.xml.xpath.XPath xp = xpf.newXPath();
 
@@ -124,13 +126,12 @@ org.w3c.dom.Document xmlDocument = builder.parse(file);
     private static String doSomething(HttpServletRequest request, String param)
             throws ServletException, IOException {
 
-        
-BinaryOpInterfaceDefault1 a12341 = new BinaryOpInterfaceDefault1Implementation();
-String bar = "safe!";
+        BinaryOpInterfaceDefault1 a12341 = new BinaryOpInterfaceDefault1Implementation();
+        String bar = "safe!";
         java.util.HashMap<String, Object> map11821 = new java.util.HashMap<String, Object>();
         map11821.put("keyA-11821", "a-Value"); // put some stuff in the collection
-        
-param = a12341.InterfaceCall("", param);
+
+        param = a12341.InterfaceCall("", param);
 
         map11821.put("keyB-11821", param); // put it in a collection
         map11821.put("keyC", "another-Value"); // put some stuff in the collection
@@ -139,6 +140,5 @@ param = a12341.InterfaceCall("", param);
         return bar;
     }
 
-Object obj09823 = new ImplementingSubClass();
-
+    Object obj09823 = new ImplementingSubClass();
 }

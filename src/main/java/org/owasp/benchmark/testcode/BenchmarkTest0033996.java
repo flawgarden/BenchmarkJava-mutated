@@ -1,20 +1,22 @@
-//CodeQL original results: [89]
-//ApplicationInspector original results: [89]
-//Snyk original results: [89]
-//Semgrep original results: [89]
-//Insider original results: []
-//-------------
-//CodeQL analysis results: [570, 571, 477, 561, 79, 564, 89]
-//ApplicationInspector analysis results: []
-//Snyk analysis results: [89]
-//Semgrep analysis results: [89]
-//Insider analysis results: [532]
-//Original file name: src/main/java/org/owasp/benchmark/testcode/BenchmarkTest00339.java
-//Original file CWE's: [89]  
-//Original file kind: fail
-//Mutation info: Insert template from templates-db/languages/java/sensitivity/exceptions/causeThrows.tmt with name array_store_exception_positive 
-//Used extensions: 
-//Program:
+// CodeQL original results: [89]
+// ApplicationInspector original results: [89]
+// Snyk original results: [89]
+// Semgrep original results: [89]
+// Insider original results: []
+// -------------
+// CodeQL analysis results: [570, 571, 477, 561, 79, 564, 89]
+// ApplicationInspector analysis results: []
+// Snyk analysis results: [89]
+// Semgrep analysis results: [89]
+// Insider analysis results: [532]
+// Original file name: src/main/java/org/owasp/benchmark/testcode/BenchmarkTest00339.java
+// Original file CWE's: [89]
+// Original file kind: fail
+// Mutation info: Insert template from
+// templates-db/languages/java/sensitivity/exceptions/causeThrows.tmt with name
+// array_store_exception_positive
+// Used extensions:
+// Program:
 /**
  * OWASP Benchmark Project v1.2
  *
@@ -35,13 +37,12 @@
 package org.owasp.benchmark.testcode;
 
 import java.io.IOException;
+import java.util.*;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
-import java.util.*;
-import java.util.*;
 
 @WebServlet(value = "/sqli-00/BenchmarkTest00339")
 public class BenchmarkTest0033996 extends HttpServlet {
@@ -69,9 +70,9 @@ public class BenchmarkTest0033996 extends HttpServlet {
         // URL Decode the header value since req.getHeaders() doesn't. Unlike req.getParameters().
         param = java.net.URLDecoder.decode(param, "UTF-8");
 
-BinaryOpInterface val89458 = (t, u) -> "";
+        BinaryOpInterface val89458 = (t, u) -> "";
 
-String bar;
+        String bar;
 
         // Simple ? condition that assigns param to bar on false condition
         int num = 106;
@@ -84,29 +85,28 @@ String bar;
                     org.owasp.benchmark.helpers.DatabaseHelper.JDBCtemplate.queryForRowSet(sql);
             response.getWriter().println("Your results are: ");
 
-            
-String tmpUnique42 = bar;
-try {
-//		System.out.println("Your results are");
-            while (results.next()) {
-                response.getWriter()
-                        .println(
-                                org.owasp
-                                                .esapi
-                                                .ESAPI
-                                                .encoder()
-                                                .encodeForHTML(results.getString("USERNAME"))
-                                        + " ");
-                //			System.out.println(results.getString("USERNAME"));
-            }
-        
-    Object x[] = new String[3];
-    x[0] = new Integer(0);
-} catch (ArrayStoreException e) {
-    bar = tmpUnique42;
-}
+            String tmpUnique42 = bar;
+            try {
+                //		System.out.println("Your results are");
+                while (results.next()) {
+                    response.getWriter()
+                            .println(
+                                    org.owasp
+                                                    .esapi
+                                                    .ESAPI
+                                                    .encoder()
+                                                    .encodeForHTML(results.getString("USERNAME"))
+                                            + " ");
+                    //			System.out.println(results.getString("USERNAME"));
+                }
 
-} catch (org.springframework.dao.EmptyResultDataAccessException e) {
+                Object x[] = new String[3];
+                x[0] = new Integer(0);
+            } catch (ArrayStoreException e) {
+                bar = tmpUnique42;
+            }
+
+        } catch (org.springframework.dao.EmptyResultDataAccessException e) {
             response.getWriter()
                     .println(
                             "No results returned for query: "

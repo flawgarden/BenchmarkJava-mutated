@@ -1,20 +1,22 @@
-//CodeQL original results: [89]
-//ApplicationInspector original results: [89]
-//Snyk original results: [89]
-//Semgrep original results: []
-//Insider original results: []
-//-------------
-//CodeQL analysis results: [404, 772, 561, 89, 564]
-//ApplicationInspector analysis results: []
-//Snyk analysis results: [89]
-//Semgrep analysis results: []
-//Insider analysis results: []
-//Original file name: src/main/java/org/owasp/benchmark/testcode/BenchmarkTest00760.java
-//Original file CWE's: [89]  
-//Original file kind: fail
-//Mutation info: Insert template from templates-db/languages/java/sensitivity/virtuality/default.tmt with name binary_op_interface_default2_positive 
-//Used extensions: MACRO_VarName -> obj39745
-//Program:
+// CodeQL original results: [89]
+// ApplicationInspector original results: [89]
+// Snyk original results: [89]
+// Semgrep original results: []
+// Insider original results: []
+// -------------
+// CodeQL analysis results: [404, 772, 561, 89, 564]
+// ApplicationInspector analysis results: []
+// Snyk analysis results: [89]
+// Semgrep analysis results: []
+// Insider analysis results: []
+// Original file name: src/main/java/org/owasp/benchmark/testcode/BenchmarkTest00760.java
+// Original file CWE's: [89]
+// Original file kind: fail
+// Mutation info: Insert template from
+// templates-db/languages/java/sensitivity/virtuality/default.tmt with name
+// binary_op_interface_default2_positive
+// Used extensions: MACRO_VarName -> obj39745
+// Program:
 /**
  * OWASP Benchmark Project v1.2
  *
@@ -35,23 +37,21 @@
 package org.owasp.benchmark.testcode;
 
 import java.io.IOException;
+import java.util.*;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
-import java.util.*;
-import java.util.*;
-import java.util.*;
 
 @WebServlet(value = "/sqli-01/BenchmarkTest00760")
 public class BenchmarkTest0076090 extends HttpServlet {
 
     private static final long serialVersionUID = 1L;
 
-SuperClass obj39745 = new SiblingClass();
+    SuperClass obj39745 = new SiblingClass();
 
-@Override
+    @Override
     public void doGet(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
         doPost(request, response);
@@ -71,17 +71,15 @@ SuperClass obj39745 = new SiblingClass();
         java.util.HashMap<String, Object> map18915 = new java.util.HashMap<String, Object>();
         map18915.put("keyA-18915", "a-Value"); // put some stuff in the collection
 
-UnaryOpInterface val89458 = (t) -> "";
+        UnaryOpInterface val89458 = (t) -> "";
 
-map18915.put("keyB-18915", param); // put it in a collection
-        
-BinaryOpInterfaceDefault2 a12341 = new BinaryOpInterfaceDefault2Implementation();
-map18915.put("keyC", "another-Value"); // put some stuff in the collection
+        map18915.put("keyB-18915", param); // put it in a collection
+
+        BinaryOpInterfaceDefault2 a12341 = new BinaryOpInterfaceDefault2Implementation();
+        map18915.put("keyC", "another-Value"); // put some stuff in the collection
         bar = (String) map18915.get("keyB-18915"); // get it back out
 
-        
-bar = a12341.InterfaceCall("", bar);
-
+        bar = a12341.InterfaceCall("", bar);
 
         String sql = "{call " + bar + "}";
 

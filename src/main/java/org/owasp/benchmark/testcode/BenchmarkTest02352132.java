@@ -1,20 +1,21 @@
-//CodeQL original results: [501]
-//ApplicationInspector original results: [501]
-//Snyk original results: [501]
-//Semgrep original results: []
-//Insider original results: []
-//-------------
-//CodeQL analysis results: [561, 79, 501]
-//ApplicationInspector analysis results: []
-//Snyk analysis results: [501]
-//Semgrep analysis results: [79]
-//Insider analysis results: []
-//Original file name: src/main/java/org/owasp/benchmark/testcode/BenchmarkTest02352.java
-//Original file CWE's: [501]  
-//Original file kind: fail
-//Mutation info: Insert template from templates-db/languages/java/sensitivity/conditional/for.tmt with name for_operator_change_index_negative 
-//Used extensions: MACRO_VarName -> obj12321 | MACRO_VarName -> obj39745
-//Program:
+// CodeQL original results: [501]
+// ApplicationInspector original results: [501]
+// Snyk original results: [501]
+// Semgrep original results: []
+// Insider original results: []
+// -------------
+// CodeQL analysis results: [561, 79, 501]
+// ApplicationInspector analysis results: []
+// Snyk analysis results: [501]
+// Semgrep analysis results: [79]
+// Insider analysis results: []
+// Original file name: src/main/java/org/owasp/benchmark/testcode/BenchmarkTest02352.java
+// Original file CWE's: [501]
+// Original file kind: fail
+// Mutation info: Insert template from templates-db/languages/java/sensitivity/conditional/for.tmt
+// with name for_operator_change_index_negative
+// Used extensions: MACRO_VarName -> obj12321 | MACRO_VarName -> obj39745
+// Program:
 /**
  * OWASP Benchmark Project v1.2
  *
@@ -34,17 +35,14 @@
  */
 package org.owasp.benchmark.testcode;
 
+import java.io.*;
 import java.io.IOException;
+import java.util.*;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
-import java.util.*;
-import java.util.*;
-import java.util.*;
-import java.util.*;
-import java.io.*;
 
 @WebServlet(value = "/trustbound-01/BenchmarkTest02352")
 public class BenchmarkTest02352132 extends HttpServlet {
@@ -61,18 +59,18 @@ public class BenchmarkTest02352132 extends HttpServlet {
     public void doPost(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
 
-SuperClass obj12321 = new SiblingClass();
+        SuperClass obj12321 = new SiblingClass();
 
-response.setContentType("text/html;charset=UTF-8");
+        response.setContentType("text/html;charset=UTF-8");
 
         String param = "";
         boolean flag = true;
 
-for (int i = 0; i < response.getStatus(); i += response.getStatus()) {
-    param = "";
-}
+        for (int i = 0; i < response.getStatus(); i += response.getStatus()) {
+            param = "";
+        }
 
-java.util.Enumeration<String> names = request.getParameterNames();
+        java.util.Enumeration<String> names = request.getParameterNames();
         while (names.hasMoreElements() && flag) {
             String name = (String) names.nextElement();
             String[] values = request.getParameterValues(name);
@@ -81,14 +79,13 @@ java.util.Enumeration<String> names = request.getParameterNames();
                     String value = values[i];
                     if (value.equals("BenchmarkTest02352")) {
 
-Object obj39745 = new ImplementingSuperSideClass();
+                        Object obj39745 = new ImplementingSuperSideClass();
 
-param = name;
+                        param = name;
                         flag = false;
 
-BinaryOpInterface val89458 = (t, u) -> "";
-
-}
+                        BinaryOpInterface val89458 = (t, u) -> "";
+                    }
                 }
             }
         }

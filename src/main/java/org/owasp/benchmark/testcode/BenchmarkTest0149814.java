@@ -1,18 +1,22 @@
-//Snyk original results: [22]
-//Semgrep original results: [22]
-//ApplicationInspector original results: []
-//Insider original results: []
-//-------------
-//ApplicationInspector analysis results: [22]
-//Snyk analysis results: []
-//Semgrep analysis results: [22]
-//Insider analysis results: [532]
-//Original file name: src/main/java/org/owasp/benchmark/testcode/BenchmarkTest01498.java
-//Original file CWE's: [22]  
-//Original file kind: fail
-//Mutation info: Insert template from templates-db/languages/java/sensitivity/pm.tmt with name pattern_matching_simple_4_negative 
-//Used extensions: MACRO_VarName -> sealed09823 | MACRO_Create_Set -> Set<~[TYPE@1]~> ~[MACRO_SetName@1]~ = new TreeSet<>(); | MACRO_Add_Element_ToSet -> ~[MACRO_SetName@1]~.add(~[VAR_~[TYPE@1]~]~); | MACRO_Add_Fixed_Element_ToSet -> ~[MACRO_SetName@1]~.add(~[VAR_~[TYPE@1]~@1]~); | MACRO_SetName@1 -> set787231
-//Program:
+// Snyk original results: [22]
+// Semgrep original results: [22]
+// ApplicationInspector original results: []
+// Insider original results: []
+// -------------
+// ApplicationInspector analysis results: [22]
+// Snyk analysis results: []
+// Semgrep analysis results: [22]
+// Insider analysis results: [532]
+// Original file name: src/main/java/org/owasp/benchmark/testcode/BenchmarkTest01498.java
+// Original file CWE's: [22]
+// Original file kind: fail
+// Mutation info: Insert template from templates-db/languages/java/sensitivity/pm.tmt with name
+// pattern_matching_simple_4_negative
+// Used extensions: MACRO_VarName -> sealed09823 | MACRO_Create_Set -> Set<~[TYPE@1]~>
+// ~[MACRO_SetName@1]~ = new TreeSet<>(); | MACRO_Add_Element_ToSet ->
+// ~[MACRO_SetName@1]~.add(~[VAR_~[TYPE@1]~]~); | MACRO_Add_Fixed_Element_ToSet ->
+// ~[MACRO_SetName@1]~.add(~[VAR_~[TYPE@1]~@1]~); | MACRO_SetName@1 -> set787231
+// Program:
 /**
  * OWASP Benchmark Project v1.2
  *
@@ -32,17 +36,14 @@
  */
 package org.owasp.benchmark.testcode;
 
+import java.io.*;
 import java.io.IOException;
+import java.util.*;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
-import java.util.*;
-import java.util.*;
-import java.util.*;
-import java.io.*;
-import java.util.*;
 
 @WebServlet(value = "/pathtraver-01/BenchmarkTest01498")
 public class BenchmarkTest0149814 extends HttpServlet {
@@ -95,11 +96,11 @@ public class BenchmarkTest0149814 extends HttpServlet {
         public String doSomething(HttpServletRequest request, String param)
                 throws ServletException, IOException {
 
-param = simplePatternMatchingString2("reqhj");
+            param = simplePatternMatchingString2("reqhj");
 
-File f = new File(request.getAuthType());
+            File f = new File(request.getAuthType());
 
-String bar = "";
+            String bar = "";
             if (param != null) {
                 bar =
                         new String(
@@ -107,30 +108,30 @@ String bar = "";
                                         org.apache.commons.codec.binary.Base64.encodeBase64(
                                                 param.getBytes())));
 
-Set<String> set787231 = new TreeSet<>();
-set787231.add(param);
-set787231.add(param);
-set787231.remove(param);
-String value7843 = set787231.iterator().next();
+                Set<String> set787231 = new TreeSet<>();
+                set787231.add(param);
+                set787231.add(param);
+                set787231.remove(param);
+                String value7843 = set787231.iterator().next();
+            }
 
-}
+            Object sealed09823 = new PermittedSub1();
 
-Object sealed09823 = new PermittedSub1();
-
-return bar;
+            return bar;
         }
-public String simplePatternMatchingString1(Object obj) {
-    if (obj instanceof String str) {
-        return str.toUpperCase();
-    }
-    return "";
-}
-public String simplePatternMatchingString2(Object obj) {
-    if (obj instanceof String str && str.length() > 5) {
-        return str.toUpperCase();
-    }
-    return "";
-}
 
+        public String simplePatternMatchingString1(Object obj) {
+            if (obj instanceof String str) {
+                return str.toUpperCase();
+            }
+            return "";
+        }
+
+        public String simplePatternMatchingString2(Object obj) {
+            if (obj instanceof String str && str.length() > 5) {
+                return str.toUpperCase();
+            }
+            return "";
+        }
     } // end innerclass Test
 } // end DataflowThruInnerClass

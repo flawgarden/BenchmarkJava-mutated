@@ -1,20 +1,22 @@
-//CodeQL original results: [78]
-//ApplicationInspector original results: [78]
-//Snyk original results: [78]
-//Semgrep original results: [78]
-//Insider original results: []
-//-------------
-//CodeQL analysis results: [561, 78, 88]
-//ApplicationInspector analysis results: []
-//Snyk analysis results: [78]
-//Semgrep analysis results: [78]
-//Insider analysis results: [532]
-//Original file name: src/main/java/org/owasp/benchmark/testcode/BenchmarkTest00159.java
-//Original file CWE's: [78]  
-//Original file kind: fail
-//Mutation info: Insert template from templates-db/languages/java/sensitivity/concurrency/concurrency.tmt with name atomic_integer_restore_positive 
-//Used extensions: MACRO_Regex -> "\t" | MACRO_VarName -> obj12321 | MACRO_VarName -> obj39745
-//Program:
+// CodeQL original results: [78]
+// ApplicationInspector original results: [78]
+// Snyk original results: [78]
+// Semgrep original results: [78]
+// Insider original results: []
+// -------------
+// CodeQL analysis results: [561, 78, 88]
+// ApplicationInspector analysis results: []
+// Snyk analysis results: [78]
+// Semgrep analysis results: [78]
+// Insider analysis results: [532]
+// Original file name: src/main/java/org/owasp/benchmark/testcode/BenchmarkTest00159.java
+// Original file CWE's: [78]
+// Original file kind: fail
+// Mutation info: Insert template from
+// templates-db/languages/java/sensitivity/concurrency/concurrency.tmt with name
+// atomic_integer_restore_positive
+// Used extensions: MACRO_Regex -> "\t" | MACRO_VarName -> obj12321 | MACRO_VarName -> obj39745
+// Program:
 /**
  * OWASP Benchmark Project v1.2
  *
@@ -35,17 +37,15 @@
 package org.owasp.benchmark.testcode;
 
 import java.io.IOException;
+import java.util.*;
+import java.util.concurrent.atomic.*;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
-import java.util.regex.Pattern;
-import java.util.regex.Matcher;
-import java.util.*;
-import java.util.*;
-import java.util.*;
-import java.util.concurrent.atomic.*;
 
 @WebServlet(value = "/cmdi-00/BenchmarkTest00159")
 public class BenchmarkTest00159148 extends HttpServlet {
@@ -65,46 +65,44 @@ public class BenchmarkTest00159148 extends HttpServlet {
 
         String param = "";
 
-Pattern pattern = Pattern.compile("\t");
-Matcher matcher = pattern.matcher(request.getContextPath());
+        Pattern pattern = Pattern.compile("\t");
+        Matcher matcher = pattern.matcher(request.getContextPath());
 
-if (request.getHeader("BenchmarkTest00159") != null) {
+        if (request.getHeader("BenchmarkTest00159") != null) {
             param = request.getHeader("BenchmarkTest00159");
         }
 
         // URL Decode the header value since req.getHeader() doesn't. Unlike req.getParameter().
 
+        AtomicInteger counter = new AtomicInteger(0);
+        String stringCopy = param;
 
-AtomicInteger counter = new AtomicInteger(0);
-String stringCopy = param;
+        if (counter.get() == 0) {
+            param = "";
+        }
 
-if (counter.get() == 0) {
-  param = "";
-}
+        Thread thread1 = new Thread(() -> counter.incrementAndGet());
 
-Thread thread1 = new Thread(() -> counter.incrementAndGet());
+        thread1.start();
 
-thread1.start();
+        Thread thread2 = new Thread(() -> counter.incrementAndGet());
 
-Thread thread2 = new Thread(() -> counter.incrementAndGet());
+        thread2.start();
 
-thread2.start();
+        try {
+            thread1.join();
+        } catch (InterruptedException e) {
+        }
+        try {
+            thread2.join();
+        } catch (InterruptedException e) {
+        }
 
-try {
-  thread1.join();
-} catch (InterruptedException e) {
-}
-try {
-  thread2.join();
-} catch (InterruptedException e) {
-}
+        if (counter.get() == 2) {
+            param = stringCopy;
+        }
 
-if (counter.get() == 2) {
-  param = stringCopy;
-}
-
-
-param = java.net.URLDecoder.decode(param, "UTF-8");
+        param = java.net.URLDecoder.decode(param, "UTF-8");
 
         org.owasp.benchmark.helpers.ThingInterface thing =
                 org.owasp.benchmark.helpers.ThingFactory.createThing();
@@ -121,9 +119,9 @@ param = java.net.URLDecoder.decode(param, "UTF-8");
             a2 = "-c";
         }
 
-SuperClass obj12321 = new SubSubClass();
+        SuperClass obj12321 = new SubSubClass();
 
-String[] args = {a1, a2, "echo " + bar};
+        String[] args = {a1, a2, "echo " + bar};
 
         ProcessBuilder pb = new ProcessBuilder(args);
 
@@ -131,9 +129,9 @@ String[] args = {a1, a2, "echo " + bar};
             Process p = pb.start();
             org.owasp.benchmark.helpers.Utils.printOSCommandResults(p, response);
 
-SuperClass obj39745 = new SiblingClass();
+            SuperClass obj39745 = new SiblingClass();
 
-} catch (IOException e) {
+        } catch (IOException e) {
             System.out.println(
                     "Problem executing cmdi - java.lang.ProcessBuilder(java.lang.String[]) Test Case");
             throw new ServletException(e);

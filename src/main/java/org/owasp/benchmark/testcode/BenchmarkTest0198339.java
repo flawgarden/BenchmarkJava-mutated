@@ -1,18 +1,19 @@
-//ApplicationInspector original results: [22]
-//Snyk original results: [22]
-//Semgrep original results: [22]
-//Insider original results: []
-//-------------
-//ApplicationInspector analysis results: [79]
-//Snyk analysis results: [23]
-//Semgrep analysis results: [22]
-//Insider analysis results: []
-//Original file name: src/main/java/org/owasp/benchmark/testcode/BenchmarkTest01983.java
-//Original file CWE's: [22]  
-//Original file kind: fail
-//Mutation info: Insert template from templates-db/languages/java/sensitivity/conditional/for.tmt with name for_operator_change_index_negative 
-//Used extensions: MACRO_VarName -> obj09823
-//Program:
+// ApplicationInspector original results: [22]
+// Snyk original results: [22]
+// Semgrep original results: [22]
+// Insider original results: []
+// -------------
+// ApplicationInspector analysis results: [79]
+// Snyk analysis results: [23]
+// Semgrep analysis results: [22]
+// Insider analysis results: []
+// Original file name: src/main/java/org/owasp/benchmark/testcode/BenchmarkTest01983.java
+// Original file CWE's: [22]
+// Original file kind: fail
+// Mutation info: Insert template from templates-db/languages/java/sensitivity/conditional/for.tmt
+// with name for_operator_change_index_negative
+// Used extensions: MACRO_VarName -> obj09823
+// Program:
 /**
  * OWASP Benchmark Project v1.2
  *
@@ -32,22 +33,21 @@
  */
 package org.owasp.benchmark.testcode;
 
+import java.io.*;
 import java.io.IOException;
+import java.util.*;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
-import java.util.*;
-import java.util.*;
-import java.io.*;
 
 @WebServlet(value = "/pathtraver-02/BenchmarkTest01983")
 public class BenchmarkTest0198339 extends HttpServlet {
 
-SuperClass obj09823 = new SiblingClass();
+    SuperClass obj09823 = new SiblingClass();
 
-private static final long serialVersionUID = 1L;
+    private static final long serialVersionUID = 1L;
 
     @Override
     public void doGet(HttpServletRequest request, HttpServletResponse response)
@@ -71,11 +71,11 @@ private static final long serialVersionUID = 1L;
 
             java.util.Enumeration<String> values = request.getHeaders(name);
 
-for (int i = 0; i < name.length(); i += name.lastIndexOf(name)) {
-    name = "";
-}
+            for (int i = 0; i < name.length(); i += name.lastIndexOf(name)) {
+                name = "";
+            }
 
-if (values != null && values.hasMoreElements()) {
+            if (values != null && values.hasMoreElements()) {
                 param = name; // Grabs the name of the first non-standard header as the parameter
                 // value
                 break;

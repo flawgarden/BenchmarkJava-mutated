@@ -1,18 +1,21 @@
-//ApplicationInspector original results: [90]
-//Snyk original results: [90]
-//Semgrep original results: []
-//Insider original results: []
-//-------------
-//ApplicationInspector analysis results: []
-//Snyk analysis results: [90, 79]
-//Semgrep analysis results: []
-//Insider analysis results: [532]
-//Original file name: src/main/java/org/owasp/benchmark/testcode/BenchmarkTest00695.java
-//Original file CWE's: [90]  
-//Original file kind: fail
-//Mutation info: Insert template from templates-db/languages/java/sensitivity/concurrency/concurrency.tmt with name atomic_integer_negative 
-//Used extensions: MACRO_VarName -> obj12321 | MACRO_VarName -> obj09823 | MACRO_VarName -> obj39745
-//Program:
+// ApplicationInspector original results: [90]
+// Snyk original results: [90]
+// Semgrep original results: []
+// Insider original results: []
+// -------------
+// ApplicationInspector analysis results: []
+// Snyk analysis results: [90, 79]
+// Semgrep analysis results: []
+// Insider analysis results: [532]
+// Original file name: src/main/java/org/owasp/benchmark/testcode/BenchmarkTest00695.java
+// Original file CWE's: [90]
+// Original file kind: fail
+// Mutation info: Insert template from
+// templates-db/languages/java/sensitivity/concurrency/concurrency.tmt with name
+// atomic_integer_negative
+// Used extensions: MACRO_VarName -> obj12321 | MACRO_VarName -> obj09823 | MACRO_VarName ->
+// obj39745
+// Program:
 /**
  * OWASP Benchmark Project v1.2
  *
@@ -33,15 +36,13 @@
 package org.owasp.benchmark.testcode;
 
 import java.io.IOException;
+import java.util.*;
+import java.util.concurrent.atomic.*;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
-import java.util.*;
-import java.util.*;
-import java.util.*;
-import java.util.concurrent.atomic.*;
 
 @WebServlet(value = "/ldapi-00/BenchmarkTest00695")
 public class BenchmarkTest00695107 extends HttpServlet {
@@ -68,37 +69,35 @@ public class BenchmarkTest00695107 extends HttpServlet {
         java.util.HashMap<String, Object> map9400 = new java.util.HashMap<String, Object>();
         map9400.put("keyA-9400", "a-Value"); // put some stuff in the collection
 
-SuperClass obj39745 = new SiblingClass();
+        SuperClass obj39745 = new SiblingClass();
 
-map9400.put("keyB-9400", param); // put it in a collection
+        map9400.put("keyB-9400", param); // put it in a collection
 
+        AtomicInteger counter = new AtomicInteger(0);
 
-AtomicInteger counter = new AtomicInteger(0);
+        Thread thread1 = new Thread(() -> counter.incrementAndGet());
 
-Thread thread1 = new Thread(() -> counter.incrementAndGet());
+        thread1.start();
 
-thread1.start();
+        Thread thread2 = new Thread(() -> counter.incrementAndGet());
 
-Thread thread2 = new Thread(() -> counter.incrementAndGet());
+        thread2.start();
 
-thread2.start();
+        try {
+            thread1.join();
+        } catch (InterruptedException e) {
+        }
 
-try {
-  thread1.join();
-} catch (InterruptedException e) {
-}
+        try {
+            thread2.join();
+        } catch (InterruptedException e) {
+        }
 
-try {
-  thread2.join();
-} catch (InterruptedException e) {
-}
+        if (counter.get() == 2) {
+            param = "";
+        }
 
-if (counter.get() == 2) {
-  param = "";
-}
-
-
-map9400.put("keyC", "another-Value"); // put some stuff in the collection
+        map9400.put("keyC", "another-Value"); // put some stuff in the collection
         bar = (String) map9400.get("keyB-9400"); // get it back out
 
         org.owasp.benchmark.helpers.LDAPManager ads = new org.owasp.benchmark.helpers.LDAPManager();
@@ -142,17 +141,17 @@ map9400.put("keyC", "another-Value"); // put some stuff in the collection
             }
         } catch (javax.naming.NamingException e) {
 
-SuperClass obj09823 = new SuperClass();
+            SuperClass obj09823 = new SuperClass();
 
-throw new ServletException(e);
+            throw new ServletException(e);
         } finally {
             try {
                 ads.closeDirContext();
             } catch (Exception e) {
 
-Object obj12321 = new ImplementingSuperSideClass();
+                Object obj12321 = new ImplementingSuperSideClass();
 
-throw new ServletException(e);
+                throw new ServletException(e);
             }
         }
     }

@@ -1,20 +1,21 @@
-//CodeQL original results: [79]
-//ApplicationInspector original results: [79]
-//Snyk original results: [79]
-//Semgrep original results: [79]
-//Insider original results: []
-//-------------
-//CodeQL analysis results: [561, 79]
-//ApplicationInspector analysis results: []
-//Snyk analysis results: [79]
-//Semgrep analysis results: [79]
-//Insider analysis results: []
-//Original file name: src/main/java/org/owasp/benchmark/testcode/BenchmarkTest02582.java
-//Original file CWE's: [79]  
-//Original file kind: fail
-//Mutation info: Insert template from templates-db/languages/java/sensitivity/conditional/for.tmt with name for_operator_change_index_negative 
-//Used extensions: MACRO_Regex -> "\0nn" | MACRO_VarName -> sealed09823
-//Program:
+// CodeQL original results: [79]
+// ApplicationInspector original results: [79]
+// Snyk original results: [79]
+// Semgrep original results: [79]
+// Insider original results: []
+// -------------
+// CodeQL analysis results: [561, 79]
+// ApplicationInspector analysis results: []
+// Snyk analysis results: [79]
+// Semgrep analysis results: [79]
+// Insider analysis results: []
+// Original file name: src/main/java/org/owasp/benchmark/testcode/BenchmarkTest02582.java
+// Original file CWE's: [79]
+// Original file kind: fail
+// Mutation info: Insert template from templates-db/languages/java/sensitivity/conditional/for.tmt
+// with name for_operator_change_index_negative
+// Used extensions: MACRO_Regex -> "\0nn" | MACRO_VarName -> sealed09823
+// Program:
 /**
  * OWASP Benchmark Project v1.2
  *
@@ -34,19 +35,16 @@
  */
 package org.owasp.benchmark.testcode;
 
+import java.io.*;
 import java.io.IOException;
+import java.util.*;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
-import java.util.regex.Pattern;
-import java.util.regex.Matcher;
-import java.util.*;
-import java.util.*;
-import java.util.*;
-import java.util.*;
-import java.io.*;
 
 @WebServlet(value = "/xss-05/BenchmarkTest02582")
 public class BenchmarkTest0258237 extends HttpServlet {
@@ -57,10 +55,10 @@ public class BenchmarkTest0258237 extends HttpServlet {
     public void doGet(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
 
-Pattern pattern = Pattern.compile("\0nn");
-Matcher matcher = pattern.matcher(request.getQueryString());
+        Pattern pattern = Pattern.compile("\0nn");
+        Matcher matcher = pattern.matcher(request.getQueryString());
 
-doPost(request, response);
+        doPost(request, response);
     }
 
     @Override
@@ -72,11 +70,11 @@ doPost(request, response);
         String paramval = "BenchmarkTest02582" + "=";
         int paramLoc = -1;
 
-for (int i = 0; i < paramLoc; i += paramLoc) {
-    paramval = "";
-}
+        for (int i = 0; i < paramLoc; i += paramLoc) {
+            paramval = "";
+        }
 
-if (queryString != null) paramLoc = queryString.indexOf(paramval);
+        if (queryString != null) paramLoc = queryString.indexOf(paramval);
         if (paramLoc == -1) {
             response.getWriter()
                     .println(
@@ -96,16 +94,16 @@ if (queryString != null) paramLoc = queryString.indexOf(paramval);
         // comes after.
         int ampersandLoc = queryString.indexOf("&", paramLoc);
 
-BinaryOpInterface val89458 = (t, u) -> "";
+        BinaryOpInterface val89458 = (t, u) -> "";
 
-if (ampersandLoc != -1) {
+        if (ampersandLoc != -1) {
             param = queryString.substring(paramLoc + paramval.length(), ampersandLoc);
         }
         param = java.net.URLDecoder.decode(param, "UTF-8");
 
-Object sealed09823 = new PermittedSub2();
+        Object sealed09823 = new PermittedSub2();
 
-String bar = doSomething(request, param);
+        String bar = doSomething(request, param);
 
         response.setHeader("X-XSS-Protection", "0");
         response.getWriter().print(bar.toCharArray());

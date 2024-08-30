@@ -1,18 +1,20 @@
-//ApplicationInspector original results: [327]
-//Snyk original results: [327]
-//Insider original results: [327]
-//Semgrep original results: []
-//-------------
-//ApplicationInspector analysis results: []
-//Snyk analysis results: [327, 209]
-//Semgrep analysis results: [326, 22]
-//Insider analysis results: [327, 330]
-//Original file name: src/main/java/org/owasp/benchmark/testcode/BenchmarkTest00256.java
-//Original file CWE's: [327]  
-//Original file kind: fail
-//Mutation info: Insert template from templates-db/languages/java/sensitivity/concurrency/concurrency.tmt with name atomic_integer_negative 
-//Used extensions: MACRO_VarName -> obj21341 | MACRO_VarName -> obj12321
-//Program:
+// ApplicationInspector original results: [327]
+// Snyk original results: [327]
+// Insider original results: [327]
+// Semgrep original results: []
+// -------------
+// ApplicationInspector analysis results: []
+// Snyk analysis results: [327, 209]
+// Semgrep analysis results: [326, 22]
+// Insider analysis results: [327, 330]
+// Original file name: src/main/java/org/owasp/benchmark/testcode/BenchmarkTest00256.java
+// Original file CWE's: [327]
+// Original file kind: fail
+// Mutation info: Insert template from
+// templates-db/languages/java/sensitivity/concurrency/concurrency.tmt with name
+// atomic_integer_negative
+// Used extensions: MACRO_VarName -> obj21341 | MACRO_VarName -> obj12321
+// Program:
 /**
  * OWASP Benchmark Project v1.2
  *
@@ -32,17 +34,15 @@
  */
 package org.owasp.benchmark.testcode;
 
+import java.io.*;
 import java.io.IOException;
+import java.util.*;
+import java.util.concurrent.atomic.*;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
-import java.util.*;
-import java.io.*;
-import java.util.*;
-import java.util.*;
-import java.util.concurrent.atomic.*;
 
 @WebServlet(value = "/crypto-00/BenchmarkTest00256")
 public class BenchmarkTest00256158 extends HttpServlet {
@@ -85,33 +85,31 @@ public class BenchmarkTest00256158 extends HttpServlet {
         // Code based on example from:
         // http://examples.javacodegeeks.com/core-java/crypto/encrypt-decrypt-file-stream-with-des/
 
+        AtomicInteger counter = new AtomicInteger(0);
 
-AtomicInteger counter = new AtomicInteger(0);
+        Thread thread1 = new Thread(() -> counter.incrementAndGet());
 
-Thread thread1 = new Thread(() -> counter.incrementAndGet());
+        thread1.start();
 
-thread1.start();
+        Thread thread2 = new Thread(() -> counter.incrementAndGet());
 
-Thread thread2 = new Thread(() -> counter.incrementAndGet());
+        thread2.start();
 
-thread2.start();
+        try {
+            thread1.join();
+        } catch (InterruptedException e) {
+        }
 
-try {
-  thread1.join();
-} catch (InterruptedException e) {
-}
+        try {
+            thread2.join();
+        } catch (InterruptedException e) {
+        }
 
-try {
-  thread2.join();
-} catch (InterruptedException e) {
-}
+        if (counter.get() == 2) {
+            param = "";
+        }
 
-if (counter.get() == 2) {
-  param = "";
-}
-
-
-// 8-byte initialization vector
+        // 8-byte initialization vector
         //	    byte[] iv = {
         //	    	(byte)0xB2, (byte)0x12, (byte)0xD5, (byte)0xB2,
         //	    	(byte)0x44, (byte)0x21, (byte)0xC3, (byte)0xC3033
@@ -136,18 +134,18 @@ if (counter.get() == 2) {
                 byte[] strInput = new byte[1000];
                 int i = ((java.io.InputStream) inputParam).read(strInput);
 
-SuperClass obj21341 = new SubClass();
+                SuperClass obj21341 = new SubClass();
 
-if (i == -1) {
+                if (i == -1) {
                     response.getWriter()
                             .println(
                                     "This input source requires a POST, not a GET. Incompatible UI for the InputStream source.");
                     return;
                 }
 
-Object obj12321 = new ImplementingSubClass();
+                Object obj12321 = new ImplementingSubClass();
 
-input = java.util.Arrays.copyOf(strInput, i);
+                input = java.util.Arrays.copyOf(strInput, i);
             }
             byte[] result = c.doFinal(input);
 
@@ -216,9 +214,9 @@ input = java.util.Arrays.copyOf(strInput, i);
             throw new ServletException(e);
         }
 
-File f = new File(request.getAuthType());
+        File f = new File(request.getAuthType());
 
-response.getWriter()
+        response.getWriter()
                 .println(
                         "Crypto Test javax.crypto.Cipher.getInstance(java.lang.String,java.lang.String) executed");
     }

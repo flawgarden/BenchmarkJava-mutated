@@ -1,18 +1,19 @@
-//ApplicationInspector original results: [328]
-//Snyk original results: [328]
-//Semgrep original results: [328]
-//Insider original results: []
-//-------------
-//ApplicationInspector analysis results: []
-//Snyk analysis results: [916]
-//Semgrep analysis results: [328]
-//Insider analysis results: [532]
-//Original file name: src/main/java/org/owasp/benchmark/testcode/BenchmarkTest01165.java
-//Original file CWE's: [328]  
-//Original file kind: fail
-//Mutation info: Insert template from templates-db/languages/java/sensitivity/virtuality/class.tmt with name derived_binary_op2_positive 
-//Used extensions: 
-//Program:
+// ApplicationInspector original results: [328]
+// Snyk original results: [328]
+// Semgrep original results: [328]
+// Insider original results: []
+// -------------
+// ApplicationInspector analysis results: []
+// Snyk analysis results: [916]
+// Semgrep analysis results: [328]
+// Insider analysis results: [532]
+// Original file name: src/main/java/org/owasp/benchmark/testcode/BenchmarkTest01165.java
+// Original file CWE's: [328]
+// Original file kind: fail
+// Mutation info: Insert template from templates-db/languages/java/sensitivity/virtuality/class.tmt
+// with name derived_binary_op2_positive
+// Used extensions:
+// Program:
 /**
  * OWASP Benchmark Project v1.2
  *
@@ -33,14 +34,12 @@
 package org.owasp.benchmark.testcode;
 
 import java.io.IOException;
+import java.util.*;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
-import java.util.*;
-import java.util.*;
-import java.util.*;
 
 @WebServlet(value = "/hash-01/BenchmarkTest01165")
 public class BenchmarkTest0116597 extends HttpServlet {
@@ -72,9 +71,9 @@ public class BenchmarkTest0116597 extends HttpServlet {
 
         try {
 
-BinaryOpInterface val89458 = (t, u) -> "";
+            BinaryOpInterface val89458 = (t, u) -> "";
 
-java.security.MessageDigest md = java.security.MessageDigest.getInstance("SHA1", "SUN");
+            java.security.MessageDigest md = java.security.MessageDigest.getInstance("SHA1", "SUN");
             byte[] input = {(byte) '?'};
             Object inputParam = bar;
             if (inputParam instanceof String) input = ((String) inputParam).getBytes();
@@ -137,9 +136,9 @@ java.security.MessageDigest md = java.security.MessageDigest.getInstance("SHA1",
             String a91034 = param; // assign
             StringBuilder b91034 = new StringBuilder(a91034); // stick in stringbuilder
             b91034.append(" SafeStuff"); // append some safe content
-            
-BaseBinaryOpClass a12341 = new DerivedBinaryOpClass2();
-b91034.replace(
+
+            BaseBinaryOpClass a12341 = new DerivedBinaryOpClass2();
+            b91034.replace(
                     b91034.length() - "Chars".length(),
                     b91034.length(),
                     "Chars"); // replace some of the end content
@@ -152,17 +151,17 @@ b91034.replace(
                             org.apache.commons.codec.binary.Base64.decodeBase64(
                                     org.apache.commons.codec.binary.Base64.encodeBase64(
                                             d91034.getBytes()))); // B64 encode and decode it
-            
-param = a12341.VirtualCall("", param);
 
-String f91034 = e91034.split(" ")[0]; // split it on a space
+            param = a12341.VirtualCall("", param);
+
+            String f91034 = e91034.split(" ")[0]; // split it on a space
             org.owasp.benchmark.helpers.ThingInterface thing =
                     org.owasp.benchmark.helpers.ThingFactory.createThing();
             String g91034 = "barbarians_at_the_gate"; // This is static so this whole flow is 'safe'
 
-UnaryOpInterface val89458 = (t) -> "";
+            UnaryOpInterface val89458 = (t) -> "";
 
-String bar = thing.doSomething(g91034); // reflection
+            String bar = thing.doSomething(g91034); // reflection
 
             return bar;
         }

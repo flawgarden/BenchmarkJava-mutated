@@ -1,20 +1,25 @@
-//CodeQL original results: [328]
-//ApplicationInspector original results: [328]
-//Snyk original results: [328]
-//Semgrep original results: [328]
-//Insider original results: []
-//-------------
-//CodeQL analysis results: [391, 561, 79, 327, 328]
-//ApplicationInspector analysis results: [565, 113, 22]
-//Snyk analysis results: [1004, 916]
-//Semgrep analysis results: [22, 1004, 328]
-//Insider analysis results: [532]
-//Original file name: src/main/java/org/owasp/benchmark/testcode/BenchmarkTest00961.java
-//Original file CWE's: [328]  
-//Original file kind: fail
-//Mutation info: Insert template from templates-db/languages/java/sensitivity/conditional/for.tmt with name for_operator_change_index_negative 
-//Used extensions: MACRO_Create_Queue -> Queue<~[TYPE@1]~> ~[MACRO_QueueName@1]~ = new PriorityQueue<>(); | MACRO_Add_Element_ToQueue -> ~[MACRO_QueueName@1]~.offer(~[VAR_~[TYPE@1]~]~); | MACRO_QueueName@1 -> queue787231 | EXPR_int -> ~[EXPR_String]~.compareToIgnoreCase(~[EXPR_String]~) | EXPR_String -> ~[EXPR_String]~.replace('/', '.')
-//Program:
+// CodeQL original results: [328]
+// ApplicationInspector original results: [328]
+// Snyk original results: [328]
+// Semgrep original results: [328]
+// Insider original results: []
+// -------------
+// CodeQL analysis results: [391, 561, 79, 327, 328]
+// ApplicationInspector analysis results: [565, 113, 22]
+// Snyk analysis results: [1004, 916]
+// Semgrep analysis results: [22, 1004, 328]
+// Insider analysis results: [532]
+// Original file name: src/main/java/org/owasp/benchmark/testcode/BenchmarkTest00961.java
+// Original file CWE's: [328]
+// Original file kind: fail
+// Mutation info: Insert template from templates-db/languages/java/sensitivity/conditional/for.tmt
+// with name for_operator_change_index_negative
+// Used extensions: MACRO_Create_Queue -> Queue<~[TYPE@1]~> ~[MACRO_QueueName@1]~ = new
+// PriorityQueue<>(); | MACRO_Add_Element_ToQueue ->
+// ~[MACRO_QueueName@1]~.offer(~[VAR_~[TYPE@1]~]~); | MACRO_QueueName@1 -> queue787231 | EXPR_int ->
+// ~[EXPR_String]~.compareToIgnoreCase(~[EXPR_String]~) | EXPR_String ->
+// ~[EXPR_String]~.replace('/', '.')
+// Program:
 /**
  * OWASP Benchmark Project v1.2
  *
@@ -34,19 +39,15 @@
  */
 package org.owasp.benchmark.testcode;
 
+import java.io.*;
 import java.io.IOException;
+import java.util.*;
+import java.util.concurrent.*;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
-import java.util.*;
-import java.io.*;
-import java.util.*;
-import java.util.concurrent.*;
-import java.util.*;
-import java.util.*;
-import java.io.*;
 
 @WebServlet(value = "/hash-01/BenchmarkTest00961")
 public class BenchmarkTest00961193 extends HttpServlet {
@@ -63,9 +64,9 @@ public class BenchmarkTest00961193 extends HttpServlet {
         userCookie.setSecure(true);
         userCookie.setPath(request.getRequestURI());
 
-File f = new File(request.getRequestURI());
+        File f = new File(request.getRequestURI());
 
-userCookie.setDomain(new java.net.URL(request.getRequestURL().toString()).getHost());
+        userCookie.setDomain(new java.net.URL(request.getRequestURL().toString()).getHost());
         response.addCookie(userCookie);
         javax.servlet.RequestDispatcher rd =
                 request.getRequestDispatcher("/hash-01/BenchmarkTest00961.html");
@@ -79,9 +80,9 @@ userCookie.setDomain(new java.net.URL(request.getRequestURL().toString()).getHos
 
         javax.servlet.http.Cookie[] theCookies = request.getCookies();
 
-BinaryOpInterface val89458 = (t, u) -> "";
+        BinaryOpInterface val89458 = (t, u) -> "";
 
-String param = "noCookieValueSupplied";
+        String param = "noCookieValueSupplied";
         if (theCookies != null) {
             for (javax.servlet.http.Cookie theCookie : theCookies) {
                 if (theCookie.getName().equals("BenchmarkTest00961")) {
@@ -96,11 +97,13 @@ String param = "noCookieValueSupplied";
         try {
             java.security.MessageDigest md = java.security.MessageDigest.getInstance("SHA1", "SUN");
 
-for (int i = 0; i < param.replace('/', '.').compareToIgnoreCase(md.getAlgorithm()); i += request.getIntHeader(param)) {
-    param = "";
-}
+            for (int i = 0;
+                    i < param.replace('/', '.').compareToIgnoreCase(md.getAlgorithm());
+                    i += request.getIntHeader(param)) {
+                param = "";
+            }
 
-byte[] input = {(byte) '?'};
+            byte[] input = {(byte) '?'};
             Object inputParam = bar;
             if (inputParam instanceof String) input = ((String) inputParam).getBytes();
             if (inputParam instanceof java.io.InputStream) {
@@ -148,12 +151,12 @@ byte[] input = {(byte) '?'};
             throw new ServletException(e);
         }
 
-Queue<String> queue787231 = new PriorityQueue<>();
-queue787231.offer(bar);
-queue787231.poll();
-String value7842 = queue787231.peek();
+        Queue<String> queue787231 = new PriorityQueue<>();
+        queue787231.offer(bar);
+        queue787231.poll();
+        String value7842 = queue787231.peek();
 
-response.getWriter()
+        response.getWriter()
                 .println(
                         "Hash Test java.security.MessageDigest.getInstance(java.lang.String,java.lang.String) executed");
     } // end doPost

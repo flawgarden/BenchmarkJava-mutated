@@ -1,18 +1,22 @@
-//ApplicationInspector original results: [330]
-//Snyk original results: [330]
-//Semgrep original results: [330]
-//Insider original results: [330]
-//-------------
-//ApplicationInspector analysis results: [565, 113, 79, 330]
-//Snyk analysis results: [798]
-//Semgrep analysis results: [330]
-//Insider analysis results: [330]
-//Original file name: src/main/java/org/owasp/benchmark/testcode/BenchmarkTest00484.java
-//Original file CWE's: [330]  
-//Original file kind: fail
-//Mutation info: Insert template from templates-db/languages/java/sensitivity/virtuality/default.tmt with name binary_op_interface_default1_negative 
-//Used extensions: MACRO_Create_Set -> Set<~[TYPE@1]~> ~[MACRO_SetName@1]~ = new HashSet<>(); | EXPR_Boolean -> ~[EXPR_String@1]~ != null && ~[EXPR_String@1]~.charAt(~[CONST_int]~) == ~[CONST_char]~ | MACRO_SetName@1 -> set787234
-//Program:
+// ApplicationInspector original results: [330]
+// Snyk original results: [330]
+// Semgrep original results: [330]
+// Insider original results: [330]
+// -------------
+// ApplicationInspector analysis results: [565, 113, 79, 330]
+// Snyk analysis results: [798]
+// Semgrep analysis results: [330]
+// Insider analysis results: [330]
+// Original file name: src/main/java/org/owasp/benchmark/testcode/BenchmarkTest00484.java
+// Original file CWE's: [330]
+// Original file kind: fail
+// Mutation info: Insert template from
+// templates-db/languages/java/sensitivity/virtuality/default.tmt with name
+// binary_op_interface_default1_negative
+// Used extensions: MACRO_Create_Set -> Set<~[TYPE@1]~> ~[MACRO_SetName@1]~ = new HashSet<>(); |
+// EXPR_Boolean -> ~[EXPR_String@1]~ != null && ~[EXPR_String@1]~.charAt(~[CONST_int]~) ==
+// ~[CONST_char]~ | MACRO_SetName@1 -> set787234
+// Program:
 /**
  * OWASP Benchmark Project v1.2
  *
@@ -33,13 +37,12 @@
 package org.owasp.benchmark.testcode;
 
 import java.io.IOException;
+import java.util.*;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
-import java.util.*;
-import java.util.*;
 
 @WebServlet(value = "/weakrand-01/BenchmarkTest00484")
 public class BenchmarkTest0048433 extends HttpServlet {
@@ -60,13 +63,14 @@ public class BenchmarkTest0048433 extends HttpServlet {
         java.util.Map<String, String[]> map = request.getParameterMap();
         String param = "";
 
-Set<String> set787234 = new HashSet<>();
-if (response.encodeRedirectUrl(param) != null && response.encodeRedirectUrl(param).charAt(19581) == 'u') {
-    set787234.add(param);
-}
-String value7842 = set787234.iterator().next();
+        Set<String> set787234 = new HashSet<>();
+        if (response.encodeRedirectUrl(param) != null
+                && response.encodeRedirectUrl(param).charAt(19581) == 'u') {
+            set787234.add(param);
+        }
+        String value7842 = set787234.iterator().next();
 
-if (!map.isEmpty()) {
+        if (!map.isEmpty()) {
             String[] values = map.get("BenchmarkTest00484");
             if (values != null) param = values[0];
         }
@@ -82,9 +86,9 @@ if (!map.isEmpty()) {
         String rememberMeKey = Double.toString(value).substring(2); // Trim off the 0. at the front.
 
         String user = "Donna";
-        
-BinaryOpInterfaceDefault1 a12341 = new BinaryOpInterfaceDefault1Implementation();
-String fullClassName = this.getClass().getName();
+
+        BinaryOpInterfaceDefault1 a12341 = new BinaryOpInterfaceDefault1Implementation();
+        String fullClassName = this.getClass().getName();
         String testCaseNumber =
                 fullClassName.substring(
                         fullClassName.lastIndexOf('.') + 1 + "BenchmarkTest".length());
@@ -94,9 +98,8 @@ String fullClassName = this.getClass().getName();
 
         boolean foundUser = false;
         javax.servlet.http.Cookie[] cookies = request.getCookies();
-        
-rememberMeKey = a12341.InterfaceCall("", rememberMeKey);
 
+        rememberMeKey = a12341.InterfaceCall("", rememberMeKey);
 
         if (cookies != null) {
             for (int i = 0; !foundUser && i < cookies.length; i++) {

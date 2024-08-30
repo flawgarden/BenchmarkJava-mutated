@@ -1,20 +1,23 @@
-//CodeQL original results: [327]
-//ApplicationInspector original results: [327]
-//Snyk original results: [327]
-//Insider original results: [327]
-//Semgrep original results: []
-//-------------
-//CodeQL analysis results: [570, 571, 561, 209, 497, 79, 328, 327, 597]
-//ApplicationInspector analysis results: []
-//Snyk analysis results: [327, 209]
-//Semgrep analysis results: [326]
-//Insider analysis results: [327, 330]
-//Original file name: src/main/java/org/owasp/benchmark/testcode/BenchmarkTest02294.java
-//Original file CWE's: [327]  
-//Original file kind: fail
-//Mutation info: Insert template from templates-db/languages/java/sensitivity/conditional/if.tmt with name if_operator_positive 
-//Used extensions: MACRO_VarName -> obj39745 | MACRO_Create_Set -> Set<~[TYPE@1]~> ~[MACRO_SetName@1]~ = new TreeSet<>(); | MACRO_Add_Element_ToSet -> ~[MACRO_SetName@1]~.add(~[VAR_~[TYPE@1]~]~); | MACRO_SetName@1 -> set787232
-//Program:
+// CodeQL original results: [327]
+// ApplicationInspector original results: [327]
+// Snyk original results: [327]
+// Insider original results: [327]
+// Semgrep original results: []
+// -------------
+// CodeQL analysis results: [570, 571, 561, 209, 497, 79, 328, 327, 597]
+// ApplicationInspector analysis results: []
+// Snyk analysis results: [327, 209]
+// Semgrep analysis results: [326]
+// Insider analysis results: [327, 330]
+// Original file name: src/main/java/org/owasp/benchmark/testcode/BenchmarkTest02294.java
+// Original file CWE's: [327]
+// Original file kind: fail
+// Mutation info: Insert template from templates-db/languages/java/sensitivity/conditional/if.tmt
+// with name if_operator_positive
+// Used extensions: MACRO_VarName -> obj39745 | MACRO_Create_Set -> Set<~[TYPE@1]~>
+// ~[MACRO_SetName@1]~ = new TreeSet<>(); | MACRO_Add_Element_ToSet ->
+// ~[MACRO_SetName@1]~.add(~[VAR_~[TYPE@1]~]~); | MACRO_SetName@1 -> set787232
+// Program:
 /**
  * OWASP Benchmark Project v1.2
  *
@@ -35,15 +38,12 @@
 package org.owasp.benchmark.testcode;
 
 import java.io.IOException;
+import java.util.*;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
-import java.util.*;
-import java.util.*;
-import java.util.*;
-import java.util.*;
 
 @WebServlet(value = "/crypto-02/BenchmarkTest02294")
 public class BenchmarkTest0229477 extends HttpServlet {
@@ -73,9 +73,9 @@ public class BenchmarkTest0229477 extends HttpServlet {
                     if (value.equals("BenchmarkTest02294")) {
                         param = name;
 
-UnaryOpInterface val89458 = (t) -> "";
+                        UnaryOpInterface val89458 = (t) -> "";
 
-flag = false;
+                        flag = false;
                     }
                 }
             }
@@ -104,19 +104,19 @@ flag = false;
 
             // encrypt and store the results
 
-Object obj39745 = new ImplementingSuperSideClass();
+            Object obj39745 = new ImplementingSuperSideClass();
 
-byte[] input = {(byte) '?'};
+            byte[] input = {(byte) '?'};
 
-Set<String> set787232 = new TreeSet<>();
-set787232.add(param);
-String value7841 = set787232.iterator().next();
+            Set<String> set787232 = new TreeSet<>();
+            set787232.add(param);
+            String value7841 = set787232.iterator().next();
 
-Object inputParam = bar;
+            Object inputParam = bar;
             if (inputParam instanceof String) input = ((String) inputParam).getBytes();
-            
-String tmpUnique42 = value7841;
-if (inputParam instanceof java.io.InputStream) {
+
+            String tmpUnique42 = value7841;
+            if (inputParam instanceof java.io.InputStream) {
                 byte[] strInput = new byte[1000];
                 int i = ((java.io.InputStream) inputParam).read(strInput);
                 if (i == -1) {
@@ -140,11 +140,10 @@ if (inputParam instanceof java.io.InputStream) {
                             + org.owasp.esapi.ESAPI.encoder().encodeForBase64(result, true)
                             + "\n");
             fw.close();
-            
-if (param != random.toString()) {
-    value7841 = tmpUnique42;
-}
 
+            if (param != random.toString()) {
+                value7841 = tmpUnique42;
+            }
 
             response.getWriter()
                     .println(

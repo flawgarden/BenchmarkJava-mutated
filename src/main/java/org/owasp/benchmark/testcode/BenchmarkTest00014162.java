@@ -1,20 +1,22 @@
-//CodeQL original results: [79]
-//ApplicationInspector original results: [79]
-//Snyk original results: [79]
-//Semgrep original results: [79]
-//Insider original results: []
-//-------------
-//CodeQL analysis results: [685, 561]
-//ApplicationInspector analysis results: [79]
-//Snyk analysis results: [79]
-//Semgrep analysis results: []
-//Insider analysis results: []
-//Original file name: src/main/java/org/owasp/benchmark/testcode/BenchmarkTest00014.java
-//Original file CWE's: [79]  
-//Original file kind: fail
-//Mutation info: Insert template from templates-db/languages/java/sensitivity/exceptions/tryCatchFinally.tmt with name try_multi_cath_negative 
-//Used extensions: MACRO_VarName -> obj39745
-//Program:
+// CodeQL original results: [79]
+// ApplicationInspector original results: [79]
+// Snyk original results: [79]
+// Semgrep original results: [79]
+// Insider original results: []
+// -------------
+// CodeQL analysis results: [685, 561]
+// ApplicationInspector analysis results: [79]
+// Snyk analysis results: [79]
+// Semgrep analysis results: []
+// Insider analysis results: []
+// Original file name: src/main/java/org/owasp/benchmark/testcode/BenchmarkTest00014.java
+// Original file CWE's: [79]
+// Original file kind: fail
+// Mutation info: Insert template from
+// templates-db/languages/java/sensitivity/exceptions/tryCatchFinally.tmt with name
+// try_multi_cath_negative
+// Used extensions: MACRO_VarName -> obj39745
+// Program:
 /**
  * OWASP Benchmark v1.2
  *
@@ -35,20 +37,19 @@
 package org.owasp.benchmark.testcode;
 
 import java.io.IOException;
+import java.util.*;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
-import java.util.*;
-import java.util.*;
 
 @WebServlet(value = "/xss-00/BenchmarkTest00014")
 public class BenchmarkTest00014162 extends HttpServlet {
 
-Object obj39745 = new ImplementingSuperSideClass();
+    Object obj39745 = new ImplementingSuperSideClass();
 
-private static final long serialVersionUID = 1L;
+    private static final long serialVersionUID = 1L;
 
     @Override
     public void doGet(HttpServletRequest request, HttpServletResponse response)
@@ -69,23 +70,21 @@ private static final long serialVersionUID = 1L;
             param = headers.nextElement(); // just grab first element
         }
 
-        
-String tmpUnique42 = param;
-// URL Decode the header value since req.getHeaders() doesn't. Unlike req.getParameters().
+        String tmpUnique42 = param;
+        // URL Decode the header value since req.getHeaders() doesn't. Unlike req.getParameters().
         param = java.net.URLDecoder.decode(param, "UTF-8");
 
         response.setHeader("X-XSS-Protection", "0");
-        
-try {
-  if (!param.equals(obj39745.toString())) {
-     throw new Exception1(obj39745.toString());
-  } else {
-     throw new Exception2(obj39745.toString());
-  }
-} catch (Exception1 | Exception2 e) {
-    param = "";
-}
 
+        try {
+            if (!param.equals(obj39745.toString())) {
+                throw new Exception1(obj39745.toString());
+            } else {
+                throw new Exception2(obj39745.toString());
+            }
+        } catch (Exception1 | Exception2 e) {
+            param = "";
+        }
 
         Object[] obj = {"a", "b"};
         response.getWriter().format(param, obj);

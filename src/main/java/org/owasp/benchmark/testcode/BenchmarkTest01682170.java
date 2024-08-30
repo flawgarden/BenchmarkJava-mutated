@@ -1,20 +1,24 @@
-//CodeQL original results: [614]
-//ApplicationInspector original results: [614]
-//Snyk original results: [614]
-//Semgrep original results: [614]
-//Insider original results: []
-//-------------
-//CodeQL analysis results: [561, 79, 113, 614]
-//ApplicationInspector analysis results: []
-//Snyk analysis results: [614, 113]
-//Semgrep analysis results: [614]
-//Insider analysis results: []
-//Original file name: src/main/java/org/owasp/benchmark/testcode/BenchmarkTest01682.java
-//Original file CWE's: [614]  
-//Original file kind: fail
-//Mutation info: Insert template from templates-db/languages/java/sensitivity/varargs/varargs.tmt with name varargs_get_string_with_index_negative 
-//Used extensions: MACRO_Create_List -> List<~[TYPE@1]~> ~[MACRO_ListName@1]~ = new ArrayList<>(); | MACRO_Add_Element_ToList -> ~[MACRO_ListName@1]~.add(~[EXPR_~[TYPE@1]~]~); | MACRO_ListName@1 -> list787232 | MACRO_VarName -> sealed21341 | EXPR_String -> ~[EXPR_String]~.toUpperCase() | EXPR_String -> ""
-//Program:
+// CodeQL original results: [614]
+// ApplicationInspector original results: [614]
+// Snyk original results: [614]
+// Semgrep original results: [614]
+// Insider original results: []
+// -------------
+// CodeQL analysis results: [561, 79, 113, 614]
+// ApplicationInspector analysis results: []
+// Snyk analysis results: [614, 113]
+// Semgrep analysis results: [614]
+// Insider analysis results: []
+// Original file name: src/main/java/org/owasp/benchmark/testcode/BenchmarkTest01682.java
+// Original file CWE's: [614]
+// Original file kind: fail
+// Mutation info: Insert template from templates-db/languages/java/sensitivity/varargs/varargs.tmt
+// with name varargs_get_string_with_index_negative
+// Used extensions: MACRO_Create_List -> List<~[TYPE@1]~> ~[MACRO_ListName@1]~ = new ArrayList<>();
+// | MACRO_Add_Element_ToList -> ~[MACRO_ListName@1]~.add(~[EXPR_~[TYPE@1]~]~); | MACRO_ListName@1
+// -> list787232 | MACRO_VarName -> sealed21341 | EXPR_String -> ~[EXPR_String]~.toUpperCase() |
+// EXPR_String -> ""
+// Program:
 /**
  * OWASP Benchmark Project v1.2
  *
@@ -35,24 +39,21 @@
 package org.owasp.benchmark.testcode;
 
 import java.io.IOException;
+import java.util.*;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
-import java.util.*;
-import java.util.*;
-import java.util.*;
-import java.util.*;
 
 @WebServlet(value = "/securecookie-00/BenchmarkTest01682")
 public class BenchmarkTest01682170 extends HttpServlet {
 
     private static final long serialVersionUID = 1L;
 
-Object sealed21341 = new PermittedSub2();
+    Object sealed21341 = new PermittedSub2();
 
-@Override
+    @Override
     public void doGet(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
         doPost(request, response);
@@ -89,9 +90,9 @@ Object sealed21341 = new PermittedSub2();
             param = queryString.substring(paramLoc + paramval.length(), ampersandLoc);
         }
 
-queryString = getStringWithIndex(1, queryString, "".toUpperCase());
+        queryString = getStringWithIndex(1, queryString, "".toUpperCase());
 
-param = java.net.URLDecoder.decode(param, "UTF-8");
+        param = java.net.URLDecoder.decode(param, "UTF-8");
 
         String bar = new Test170().doSomething(request, param);
 
@@ -103,12 +104,12 @@ param = java.net.URLDecoder.decode(param, "UTF-8");
             int i = ((java.io.InputStream) inputParam).read(input);
             if (i == -1) {
 
-List<String> list787232 = new ArrayList<>();
-list787232.add(queryString.toUpperCase());
-list787232.clear();
-String value7846 = list787232.get(0);
+                List<String> list787232 = new ArrayList<>();
+                list787232.add(queryString.toUpperCase());
+                list787232.clear();
+                String value7846 = list787232.get(0);
 
-response.getWriter()
+                response.getWriter()
                         .println(
                                 "This input source requires a POST, not a GET. Incompatible UI for the InputStream source.");
                 return;
@@ -117,9 +118,9 @@ response.getWriter()
         }
         if ("".equals(str)) str = "No cookie value supplied";
 
-BinaryOpInterface val89458 = (t, u) -> "";
+        BinaryOpInterface val89458 = (t, u) -> "";
 
-javax.servlet.http.Cookie cookie = new javax.servlet.http.Cookie("SomeCookie", str);
+        javax.servlet.http.Cookie cookie = new javax.servlet.http.Cookie("SomeCookie", str);
 
         cookie.setSecure(false);
         cookie.setHttpOnly(true);
@@ -133,22 +134,26 @@ javax.servlet.http.Cookie cookie = new javax.servlet.http.Cookie("SomeCookie", s
                                 + org.owasp.esapi.ESAPI.encoder().encodeForHTML(str)
                                 + "' and secure flag set to: false");
     } // end doPost
-public String getFirstString(String... lines) {
-    return getStringWithIndex(0, lines);
-}
-public String getStringWithIndex(int ind, String... lines) {
-    return lines[ind];
-}
-public String getFirstStringFromArray(String... lines) {
-    return Arrays.asList(lines).get(0);
-}
-public <T170> T170 varargsWithGenerics(T170... elements) {
-    return elements[0];
-}
-public String combineStrings(String... strings) {
-    return String.join(", ", strings);
-}
 
+    public String getFirstString(String... lines) {
+        return getStringWithIndex(0, lines);
+    }
+
+    public String getStringWithIndex(int ind, String... lines) {
+        return lines[ind];
+    }
+
+    public String getFirstStringFromArray(String... lines) {
+        return Arrays.asList(lines).get(0);
+    }
+
+    public <T170> T170 varargsWithGenerics(T170... elements) {
+        return elements[0];
+    }
+
+    public String combineStrings(String... strings) {
+        return String.join(", ", strings);
+    }
 
     private class Test170 {
 

@@ -1,20 +1,21 @@
-//CodeQL original results: [89]
-//ApplicationInspector original results: [89]
-//Snyk original results: [89]
-//Semgrep original results: [89]
-//Insider original results: []
-//-------------
-//CodeQL analysis results: [772, 404, 561, 89, 564]
-//ApplicationInspector analysis results: []
-//Snyk analysis results: []
-//Semgrep analysis results: [89]
-//Insider analysis results: []
-//Original file name: src/main/java/org/owasp/benchmark/testcode/BenchmarkTest01302.java
-//Original file CWE's: [89]  
-//Original file kind: fail
-//Mutation info: Insert template from templates-db/languages/java/sensitivity/field/staticField.tmt with name class_with_static_string_field_negative 
-//Used extensions: MACRO_VarName -> sealed12321 | MACRO_VarName -> obj12321
-//Program:
+// CodeQL original results: [89]
+// ApplicationInspector original results: [89]
+// Snyk original results: [89]
+// Semgrep original results: [89]
+// Insider original results: []
+// -------------
+// CodeQL analysis results: [772, 404, 561, 89, 564]
+// ApplicationInspector analysis results: []
+// Snyk analysis results: []
+// Semgrep analysis results: [89]
+// Insider analysis results: []
+// Original file name: src/main/java/org/owasp/benchmark/testcode/BenchmarkTest01302.java
+// Original file CWE's: [89]
+// Original file kind: fail
+// Mutation info: Insert template from templates-db/languages/java/sensitivity/field/staticField.tmt
+// with name class_with_static_string_field_negative
+// Used extensions: MACRO_VarName -> sealed12321 | MACRO_VarName -> obj12321
+// Program:
 /**
  * OWASP Benchmark Project v1.2
  *
@@ -35,14 +36,12 @@
 package org.owasp.benchmark.testcode;
 
 import java.io.IOException;
+import java.util.*;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
-import java.util.*;
-import java.util.*;
-import java.util.*;
 
 @WebServlet(value = "/sqli-02/BenchmarkTest01302")
 public class BenchmarkTest0130294 extends HttpServlet {
@@ -93,26 +92,22 @@ public class BenchmarkTest0130294 extends HttpServlet {
 
             String bar = "";
             if (param != null) {
-                
-StaticFieldHolder sfh = new StaticFieldHolder();
-bar =
+
+                StaticFieldHolder sfh = new StaticFieldHolder();
+                bar =
                         new String(
                                 org.apache.commons.codec.binary.Base64.decodeBase64(
                                         org.apache.commons.codec.binary.Base64.encodeBase64(
                                                 param.getBytes())));
 
-Object sealed12321 = new PermittedSub2();
+                Object sealed12321 = new PermittedSub2();
 
-
-bar = sfh.value;
-
-
-}
+                bar = sfh.value;
+            }
 
             return bar;
         }
 
-SuperClass obj12321 = new SubClass();
-
-} // end innerclass Test
+        SuperClass obj12321 = new SubClass();
+    } // end innerclass Test
 } // end DataflowThruInnerClass

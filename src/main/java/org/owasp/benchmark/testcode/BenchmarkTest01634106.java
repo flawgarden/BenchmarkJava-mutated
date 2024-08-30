@@ -1,16 +1,19 @@
-//ApplicationInspector original results: [327]
-//Insider original results: [327]
-//Semgrep original results: []
-//-------------
-//ApplicationInspector analysis results: []
-//Semgrep analysis results: [326]
-//Insider analysis results: [327, 330]
-//Original file name: src/main/java/org/owasp/benchmark/testcode/BenchmarkTest01634.java
-//Original file CWE's: [327]  
-//Original file kind: fail
-//Mutation info: Insert template from templates-db/languages/java/sensitivity/concurrency/concurrency.tmt with name atomic_integer_restore_positive 
-//Used extensions: MACRO_VarName -> sealed39745 | MACRO_VarName -> genericClass21341 | EXPR_String -> ~[EXPR_String]~.replace('/', '.')
-//Program:
+// ApplicationInspector original results: [327]
+// Insider original results: [327]
+// Semgrep original results: []
+// -------------
+// ApplicationInspector analysis results: []
+// Semgrep analysis results: [326]
+// Insider analysis results: [327, 330]
+// Original file name: src/main/java/org/owasp/benchmark/testcode/BenchmarkTest01634.java
+// Original file CWE's: [327]
+// Original file kind: fail
+// Mutation info: Insert template from
+// templates-db/languages/java/sensitivity/concurrency/concurrency.tmt with name
+// atomic_integer_restore_positive
+// Used extensions: MACRO_VarName -> sealed39745 | MACRO_VarName -> genericClass21341 | EXPR_String
+// -> ~[EXPR_String]~.replace('/', '.')
+// Program:
 /**
  * OWASP Benchmark Project v1.2
  *
@@ -31,14 +34,13 @@
 package org.owasp.benchmark.testcode;
 
 import java.io.IOException;
+import java.util.*;
+import java.util.concurrent.atomic.*;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
-import java.util.*;
-import java.util.*;
-import java.util.concurrent.atomic.*;
 
 @WebServlet(value = "/crypto-02/BenchmarkTest01634")
 public class BenchmarkTest01634106 extends HttpServlet {
@@ -60,37 +62,35 @@ public class BenchmarkTest01634106 extends HttpServlet {
         String paramval = "BenchmarkTest01634" + "=";
         int paramLoc = -1;
 
+        AtomicInteger counter = new AtomicInteger(0);
+        String stringCopy = paramval;
 
-AtomicInteger counter = new AtomicInteger(0);
-String stringCopy = paramval;
+        if (counter.get() == 0) {
+            paramval = "";
+        }
 
-if (counter.get() == 0) {
-  paramval = "";
-}
+        Thread thread1 = new Thread(() -> counter.incrementAndGet());
 
-Thread thread1 = new Thread(() -> counter.incrementAndGet());
+        thread1.start();
 
-thread1.start();
+        Thread thread2 = new Thread(() -> counter.incrementAndGet());
 
-Thread thread2 = new Thread(() -> counter.incrementAndGet());
+        thread2.start();
 
-thread2.start();
+        try {
+            thread1.join();
+        } catch (InterruptedException e) {
+        }
+        try {
+            thread2.join();
+        } catch (InterruptedException e) {
+        }
 
-try {
-  thread1.join();
-} catch (InterruptedException e) {
-}
-try {
-  thread2.join();
-} catch (InterruptedException e) {
-}
+        if (counter.get() == 2) {
+            paramval = stringCopy;
+        }
 
-if (counter.get() == 2) {
-  paramval = stringCopy;
-}
-
-
-if (queryString != null) paramLoc = queryString.indexOf(paramval);
+        if (queryString != null) paramLoc = queryString.indexOf(paramval);
         if (paramLoc == -1) {
             response.getWriter()
                     .println(
@@ -149,9 +149,10 @@ if (queryString != null) paramLoc = queryString.indexOf(paramval);
                             .println(
                                     "This input source requires a POST, not a GET. Incompatible UI for the InputStream source.");
 
-GenericClass<String> genericClass21341 = new GenericClass<String>(inputParam.toString().replace('/', '.'));
+                    GenericClass<String> genericClass21341 =
+                            new GenericClass<String>(inputParam.toString().replace('/', '.'));
 
-return;
+                    return;
                 }
                 input = java.util.Arrays.copyOf(strInput, i);
             }
@@ -198,9 +199,9 @@ return;
             throw new ServletException(e);
         } catch (javax.crypto.BadPaddingException e) {
 
-Object sealed39745 = new SealedSuper();
+            Object sealed39745 = new SealedSuper();
 
-response.getWriter()
+            response.getWriter()
                     .println(
                             "Problem executing crypto - javax.crypto.Cipher.getInstance(java.lang.String,java.security.Provider) Test Case");
             e.printStackTrace(response.getWriter());

@@ -1,20 +1,23 @@
-//CodeQL original results: [90]
-//ApplicationInspector original results: [90]
-//Snyk original results: [90]
-//Semgrep original results: [90]
-//Insider original results: []
-//-------------
-//CodeQL analysis results: [570, 571, 561, 90, 79]
-//ApplicationInspector analysis results: []
-//Snyk analysis results: [79, 90]
-//Semgrep analysis results: [90, 79]
-//Insider analysis results: [532]
-//Original file name: src/main/java/org/owasp/benchmark/testcode/BenchmarkTest00021.java
-//Original file CWE's: [90]  
-//Original file kind: fail
-//Mutation info: Insert template from templates-db/languages/java/sensitivity/conditional/for.tmt with name for_operator_change_index_negative 
-//Used extensions: MACRO_Create_Set -> Set<~[TYPE@1]~> ~[MACRO_SetName@1]~ = new HashSet<>(); | MACRO_Add_Fixed_Element_ToSet -> ~[MACRO_SetName@1]~.add(~[EXPR_~[TYPE@1]~@1]~); | MACRO_SetName@1 -> set787232 | EXPR_int -> 42
-//Program:
+// CodeQL original results: [90]
+// ApplicationInspector original results: [90]
+// Snyk original results: [90]
+// Semgrep original results: [90]
+// Insider original results: []
+// -------------
+// CodeQL analysis results: [570, 571, 561, 90, 79]
+// ApplicationInspector analysis results: []
+// Snyk analysis results: [79, 90]
+// Semgrep analysis results: [90, 79]
+// Insider analysis results: [532]
+// Original file name: src/main/java/org/owasp/benchmark/testcode/BenchmarkTest00021.java
+// Original file CWE's: [90]
+// Original file kind: fail
+// Mutation info: Insert template from templates-db/languages/java/sensitivity/conditional/for.tmt
+// with name for_operator_change_index_negative
+// Used extensions: MACRO_Create_Set -> Set<~[TYPE@1]~> ~[MACRO_SetName@1]~ = new HashSet<>(); |
+// MACRO_Add_Fixed_Element_ToSet -> ~[MACRO_SetName@1]~.add(~[EXPR_~[TYPE@1]~@1]~); |
+// MACRO_SetName@1 -> set787232 | EXPR_int -> 42
+// Program:
 /**
  * OWASP Benchmark v1.2
  *
@@ -34,16 +37,14 @@
  */
 package org.owasp.benchmark.testcode;
 
+import java.io.*;
 import java.io.IOException;
+import java.util.*;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
-import java.util.*;
-import java.util.*;
-import java.util.*;
-import java.io.*;
 
 @WebServlet(value = "/ldapi-00/BenchmarkTest00021")
 public class BenchmarkTest0002188 extends HttpServlet {
@@ -72,29 +73,29 @@ public class BenchmarkTest0002188 extends HttpServlet {
             String base = "ou=users,ou=system";
             javax.naming.directory.SearchControls sc = new javax.naming.directory.SearchControls();
 
-for (int i = 0; i < 42; i += -17645) {
-    base = "";
-}
+            for (int i = 0; i < 42; i += -17645) {
+                base = "";
+            }
 
-sc.setSearchScope(javax.naming.directory.SearchControls.SUBTREE_SCOPE);
+            sc.setSearchScope(javax.naming.directory.SearchControls.SUBTREE_SCOPE);
             String filter = "(&(objectclass=person))(|(uid=" + param + ")(street={0}))";
             Object[] filters = new Object[] {"The streetz 4 Ms bar"};
             // System.out.println("Filter " + filter);
 
-BinaryOpInterface val89458 = (t, u) -> "";
+            BinaryOpInterface val89458 = (t, u) -> "";
 
-boolean found = false;
+            boolean found = false;
             javax.naming.NamingEnumeration<javax.naming.directory.SearchResult> results =
                     ctx.search(base, filter, filters, sc);
 
-Set<String> set787232 = new HashSet<>();
-set787232.add(base);
-String value78410 = "lefzu";
-if (set787232.add(base)) {
-    value78410 = base;
-}
+            Set<String> set787232 = new HashSet<>();
+            set787232.add(base);
+            String value78410 = "lefzu";
+            if (set787232.add(base)) {
+                value78410 = base;
+            }
 
-while (results.hasMore()) {
+            while (results.hasMore()) {
                 javax.naming.directory.SearchResult sr =
                         (javax.naming.directory.SearchResult) results.next();
                 javax.naming.directory.Attributes attrs = sr.getAttributes();

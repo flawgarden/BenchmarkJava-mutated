@@ -1,20 +1,24 @@
-//CodeQL original results: [328]
-//ApplicationInspector original results: [328]
-//Snyk original results: [328]
-//Semgrep original results: [328]
-//Insider original results: []
-//-------------
-//CodeQL analysis results: [561, 79, 328, 327]
-//ApplicationInspector analysis results: []
-//Snyk analysis results: [916]
-//Semgrep analysis results: [328]
-//Insider analysis results: [327, 532]
-//Original file name: src/main/java/org/owasp/benchmark/testcode/BenchmarkTest02388.java
-//Original file CWE's: [328]  
-//Original file kind: fail
-//Mutation info: Insert template from templates-db/languages/java/sensitivity/conditional/for.tmt with name for_operator_nested_negative 
-//Used extensions: MACRO_VarName -> obj39745 | MACRO_Create_Set -> Set<~[TYPE@1]~> ~[MACRO_SetName@1]~ = new LinkedHashSet<>(); | MACRO_Add_Element_ToSet -> ~[MACRO_SetName@1]~.add(~[EXPR_~[TYPE@1]~]~); | MACRO_Add_Fixed_Element_ToSet -> ~[MACRO_SetName@1]~.add(~[VAR_~[TYPE@1]~@1]~); | MACRO_SetName@1 -> set787233
-//Program:
+// CodeQL original results: [328]
+// ApplicationInspector original results: [328]
+// Snyk original results: [328]
+// Semgrep original results: [328]
+// Insider original results: []
+// -------------
+// CodeQL analysis results: [561, 79, 328, 327]
+// ApplicationInspector analysis results: []
+// Snyk analysis results: [916]
+// Semgrep analysis results: [328]
+// Insider analysis results: [327, 532]
+// Original file name: src/main/java/org/owasp/benchmark/testcode/BenchmarkTest02388.java
+// Original file CWE's: [328]
+// Original file kind: fail
+// Mutation info: Insert template from templates-db/languages/java/sensitivity/conditional/for.tmt
+// with name for_operator_nested_negative
+// Used extensions: MACRO_VarName -> obj39745 | MACRO_Create_Set -> Set<~[TYPE@1]~>
+// ~[MACRO_SetName@1]~ = new LinkedHashSet<>(); | MACRO_Add_Element_ToSet ->
+// ~[MACRO_SetName@1]~.add(~[EXPR_~[TYPE@1]~]~); | MACRO_Add_Fixed_Element_ToSet ->
+// ~[MACRO_SetName@1]~.add(~[VAR_~[TYPE@1]~@1]~); | MACRO_SetName@1 -> set787233
+// Program:
 /**
  * OWASP Benchmark Project v1.2
  *
@@ -34,17 +38,14 @@
  */
 package org.owasp.benchmark.testcode;
 
+import java.io.*;
 import java.io.IOException;
+import java.util.*;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
-import java.util.*;
-import java.util.*;
-import java.util.*;
-import java.util.*;
-import java.io.*;
 
 @WebServlet(value = "/hash-02/BenchmarkTest02388")
 public class BenchmarkTest02388142 extends HttpServlet {
@@ -69,9 +70,9 @@ public class BenchmarkTest02388142 extends HttpServlet {
 
         String bar = doSomething(request, param);
 
-UnaryOpInterface val89458 = (t) -> "";
+        UnaryOpInterface val89458 = (t) -> "";
 
-try {
+        try {
             java.security.MessageDigest md = java.security.MessageDigest.getInstance("MD5");
             byte[] input = {(byte) '?'};
             Object inputParam = bar;
@@ -124,24 +125,24 @@ try {
     private static String doSomething(HttpServletRequest request, String param)
             throws ServletException, IOException {
 
-Object obj39745 = new ImplementingSuperSideClass();
+        Object obj39745 = new ImplementingSuperSideClass();
 
-Set<String> set787233 = new LinkedHashSet<>();
-set787233.add(obj39745.toString());
-set787233.add(param);
-String value7845 = "sjssi";
+        Set<String> set787233 = new LinkedHashSet<>();
+        set787233.add(obj39745.toString());
+        set787233.add(param);
+        String value7845 = "sjssi";
 
-if (set787233.contains(param)) {
-    value7845 = param;
-}
+        if (set787233.contains(param)) {
+            value7845 = param;
+        }
 
-for (int i = 0; i < obj39745.hashCode(); i++) {
-    for (int j = 0; j < param.length(); j++) {
-        value7845 = "";
-    }
-}
+        for (int i = 0; i < obj39745.hashCode(); i++) {
+            for (int j = 0; j < param.length(); j++) {
+                value7845 = "";
+            }
+        }
 
-String bar = "safe!";
+        String bar = "safe!";
         java.util.HashMap<String, Object> map94322 = new java.util.HashMap<String, Object>();
         map94322.put("keyA-94322", "a_Value"); // put some stuff in the collection
         map94322.put("keyB-94322", param); // put it in a collection

@@ -1,20 +1,21 @@
-//CodeQL original results: [22]
-//Snyk original results: [22]
-//Semgrep original results: [22]
-//ApplicationInspector original results: []
-//Insider original results: []
-//-------------
-//CodeQL analysis results: [561, 22, 73, 23, 36, 79]
-//ApplicationInspector analysis results: []
-//Snyk analysis results: []
-//Semgrep analysis results: [22]
-//Insider analysis results: [532]
-//Original file name: src/main/java/org/owasp/benchmark/testcode/BenchmarkTest02561.java
-//Original file CWE's: [22]  
-//Original file kind: fail
-//Mutation info: Insert template from templates-db/languages/java/sensitivity/field/staticField.tmt with name class_with_static_string_field_negative 
-//Used extensions: MACRO_VarName -> sealed09823
-//Program:
+// CodeQL original results: [22]
+// Snyk original results: [22]
+// Semgrep original results: [22]
+// ApplicationInspector original results: []
+// Insider original results: []
+// -------------
+// CodeQL analysis results: [561, 22, 73, 23, 36, 79]
+// ApplicationInspector analysis results: []
+// Snyk analysis results: []
+// Semgrep analysis results: [22]
+// Insider analysis results: [532]
+// Original file name: src/main/java/org/owasp/benchmark/testcode/BenchmarkTest02561.java
+// Original file CWE's: [22]
+// Original file kind: fail
+// Mutation info: Insert template from templates-db/languages/java/sensitivity/field/staticField.tmt
+// with name class_with_static_string_field_negative
+// Used extensions: MACRO_VarName -> sealed09823
+// Program:
 /**
  * OWASP Benchmark Project v1.2
  *
@@ -35,13 +36,12 @@
 package org.owasp.benchmark.testcode;
 
 import java.io.IOException;
+import java.util.*;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
-import java.util.*;
-import java.util.*;
 
 @WebServlet(value = "/pathtraver-03/BenchmarkTest02561")
 public class BenchmarkTest02561167 extends HttpServlet {
@@ -125,23 +125,20 @@ public class BenchmarkTest02561167 extends HttpServlet {
         if (param != null) {
             java.util.List<String> valuesList = new java.util.ArrayList<String>();
             valuesList.add("safe");
-            
-StaticFieldHolder sfh = new StaticFieldHolder();
-valuesList.add(param);
+
+            StaticFieldHolder sfh = new StaticFieldHolder();
+            valuesList.add(param);
             valuesList.add("moresafe");
 
             valuesList.remove(0); // remove the 1st safe value
 
             bar = valuesList.get(0); // get the param value
-        
-bar = sfh.value;
 
-
-            }
+            bar = sfh.value;
+        }
 
         return bar;
     }
 
-Object sealed09823 = new PermittedSub2();
-
+    Object sealed09823 = new PermittedSub2();
 }

@@ -1,16 +1,18 @@
-//ApplicationInspector original results: [89]
-//Semgrep original results: [89]
-//Insider original results: []
-//-------------
-//ApplicationInspector analysis results: []
-//Semgrep analysis results: [89]
-//Insider analysis results: []
-//Original file name: src/main/java/org/owasp/benchmark/testcode/BenchmarkTest01718.java
-//Original file CWE's: [89]  
-//Original file kind: fail
-//Mutation info: Insert template from templates-db/languages/java/sensitivity/concurrency/concurrency.tmt with name atomic_integer_negative 
-//Used extensions: MACRO_VarName -> sealed21341 | MACRO_VarName -> obj39745
-//Program:
+// ApplicationInspector original results: [89]
+// Semgrep original results: [89]
+// Insider original results: []
+// -------------
+// ApplicationInspector analysis results: []
+// Semgrep analysis results: [89]
+// Insider analysis results: []
+// Original file name: src/main/java/org/owasp/benchmark/testcode/BenchmarkTest01718.java
+// Original file CWE's: [89]
+// Original file kind: fail
+// Mutation info: Insert template from
+// templates-db/languages/java/sensitivity/concurrency/concurrency.tmt with name
+// atomic_integer_negative
+// Used extensions: MACRO_VarName -> sealed21341 | MACRO_VarName -> obj39745
+// Program:
 /**
  * OWASP Benchmark Project v1.2
  *
@@ -30,17 +32,15 @@
  */
 package org.owasp.benchmark.testcode;
 
+import java.io.*;
 import java.io.IOException;
+import java.util.*;
+import java.util.concurrent.atomic.*;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
-import java.util.*;
-import java.io.*;
-import java.util.*;
-import java.util.*;
-import java.util.concurrent.atomic.*;
 
 @WebServlet(value = "/sqli-03/BenchmarkTest01718")
 public class BenchmarkTest0171893 extends HttpServlet {
@@ -51,9 +51,9 @@ public class BenchmarkTest0171893 extends HttpServlet {
     public void doGet(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
 
-File f = new File("ahelp");
+        File f = new File("ahelp");
 
-doPost(request, response);
+        doPost(request, response);
     }
 
     @Override
@@ -74,33 +74,31 @@ doPost(request, response);
             return;
         }
 
+        AtomicInteger counter = new AtomicInteger(0);
 
-AtomicInteger counter = new AtomicInteger(0);
+        Thread thread1 = new Thread(() -> counter.incrementAndGet());
 
-Thread thread1 = new Thread(() -> counter.incrementAndGet());
+        thread1.start();
 
-thread1.start();
+        Thread thread2 = new Thread(() -> counter.incrementAndGet());
 
-Thread thread2 = new Thread(() -> counter.incrementAndGet());
+        thread2.start();
 
-thread2.start();
+        try {
+            thread1.join();
+        } catch (InterruptedException e) {
+        }
 
-try {
-  thread1.join();
-} catch (InterruptedException e) {
-}
+        try {
+            thread2.join();
+        } catch (InterruptedException e) {
+        }
 
-try {
-  thread2.join();
-} catch (InterruptedException e) {
-}
+        if (counter.get() == 2) {
+            paramval = "";
+        }
 
-if (counter.get() == 2) {
-  paramval = "";
-}
-
-
-String param =
+        String param =
                 queryString.substring(
                         paramLoc
                                 + paramval
@@ -122,9 +120,9 @@ String param =
             java.sql.Connection connection =
                     org.owasp.benchmark.helpers.DatabaseHelper.getSqlConnection();
 
-Object sealed21341 = new SealedSuper();
+            Object sealed21341 = new SealedSuper();
 
-java.sql.PreparedStatement statement =
+            java.sql.PreparedStatement statement =
                     connection.prepareStatement(
                             sql,
                             java.sql.ResultSet.TYPE_FORWARD_ONLY,
@@ -148,9 +146,9 @@ java.sql.PreparedStatement statement =
 
             String bar;
 
-SuperClass obj39745 = new SuperClass();
+            SuperClass obj39745 = new SuperClass();
 
-// Simple if statement that assigns param to bar on true condition
+            // Simple if statement that assigns param to bar on true condition
             int num = 196;
             if ((500 / 42) + num > 200) bar = param;
             else bar = "This should never happen";

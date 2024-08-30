@@ -1,20 +1,22 @@
-//CodeQL original results: [89]
-//ApplicationInspector original results: [89]
-//Snyk original results: [89]
-//Semgrep original results: [89]
-//Insider original results: []
-//-------------
-//CodeQL analysis results: [772, 404, 561, 564, 89]
-//ApplicationInspector analysis results: []
-//Snyk analysis results: [89]
-//Semgrep analysis results: [200, 89]
-//Insider analysis results: []
-//Original file name: src/main/java/org/owasp/benchmark/testcode/BenchmarkTest02635.java
-//Original file CWE's: [89]  
-//Original file kind: fail
-//Mutation info: Insert template from templates-db/languages/java/sensitivity/conditional/for.tmt with name for_operator_change_index_negative 
-//Used extensions: MACRO_VarName -> genericClass21341 | MACRO_VarName -> obj39745 | EXPR_int -> ~[EXPR_String]~.length()
-//Program:
+// CodeQL original results: [89]
+// ApplicationInspector original results: [89]
+// Snyk original results: [89]
+// Semgrep original results: [89]
+// Insider original results: []
+// -------------
+// CodeQL analysis results: [772, 404, 561, 564, 89]
+// ApplicationInspector analysis results: []
+// Snyk analysis results: [89]
+// Semgrep analysis results: [200, 89]
+// Insider analysis results: []
+// Original file name: src/main/java/org/owasp/benchmark/testcode/BenchmarkTest02635.java
+// Original file CWE's: [89]
+// Original file kind: fail
+// Mutation info: Insert template from templates-db/languages/java/sensitivity/conditional/for.tmt
+// with name for_operator_change_index_negative
+// Used extensions: MACRO_VarName -> genericClass21341 | MACRO_VarName -> obj39745 | EXPR_int ->
+// ~[EXPR_String]~.length()
+// Program:
 /**
  * OWASP Benchmark Project v1.2
  *
@@ -34,17 +36,14 @@
  */
 package org.owasp.benchmark.testcode;
 
+import java.io.*;
 import java.io.IOException;
+import java.util.*;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
-import java.util.*;
-import java.util.*;
-import java.util.*;
-import java.util.*;
-import java.io.*;
 
 @WebServlet(value = "/sqli-05/BenchmarkTest02635")
 public class BenchmarkTest0263551 extends HttpServlet {
@@ -62,9 +61,9 @@ public class BenchmarkTest0263551 extends HttpServlet {
             throws ServletException, IOException {
         response.setContentType("text/html;charset=UTF-8");
 
-SuperClass obj39745 = new SiblingClass();
+        SuperClass obj39745 = new SiblingClass();
 
-String queryString = request.getQueryString();
+        String queryString = request.getQueryString();
         String paramval = "BenchmarkTest02635" + "=";
         int paramLoc = -1;
         if (queryString != null) paramLoc = queryString.indexOf(paramval);
@@ -75,9 +74,9 @@ String queryString = request.getQueryString();
                                     + "BenchmarkTest02635"
                                     + "' in query string.");
 
-BinaryOpInterface val89458 = (t, u) -> "";
+            BinaryOpInterface val89458 = (t, u) -> "";
 
-return;
+            return;
         }
 
         String param =
@@ -92,20 +91,22 @@ return;
         if (ampersandLoc != -1) {
             param = queryString.substring(paramLoc + paramval.length(), ampersandLoc);
 
-for (int i = 0; i < response.encodeURL(queryString).length(); i += queryString.offsetByCodePoints(ampersandLoc,paramLoc)) {
-    queryString = "";
-}
-
-}
+            for (int i = 0;
+                    i < response.encodeURL(queryString).length();
+                    i += queryString.offsetByCodePoints(ampersandLoc, paramLoc)) {
+                queryString = "";
+            }
+        }
         param = java.net.URLDecoder.decode(param, "UTF-8");
 
         String bar = doSomething(request, param);
 
         String sql = "SELECT * from USERS where USERNAME=? and PASSWORD='" + bar + "'";
 
-GenericClass<String> genericClass21341 = new GenericClass<String>(response.encodeUrl(paramval));
+        GenericClass<String> genericClass21341 =
+                new GenericClass<String>(response.encodeUrl(paramval));
 
-try {
+        try {
             java.sql.Connection connection =
                     org.owasp.benchmark.helpers.DatabaseHelper.getSqlConnection();
             java.sql.PreparedStatement statement =
