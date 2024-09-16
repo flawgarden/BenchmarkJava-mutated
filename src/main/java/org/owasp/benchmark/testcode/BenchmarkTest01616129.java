@@ -119,8 +119,7 @@ public class BenchmarkTest01616129 extends HttpServlet {
                     new String(
                             org.apache.commons.codec.binary.Base64.decodeBase64(
                                     org.apache.commons.codec.binary.Base64.encodeBase64(
-                                            d53857.getBytes()))); // B64 encode and decode
-            // it
+                                            d53857.getBytes()))); // B64 encode and decode it
             String f53857 = e53857.split(" ")[0]; // split it on a space
             org.owasp.benchmark.helpers.ThingInterface thing =
                     org.owasp.benchmark.helpers.ThingFactory.createThing();

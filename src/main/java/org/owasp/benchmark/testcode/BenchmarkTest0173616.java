@@ -85,8 +85,7 @@ public class BenchmarkTest0173616 extends HttpServlet {
                                 + paramval
                                         .length()); // 1st assume "BenchmarkTest01736" param is last
         // parameter in query string.
-        // And then check to see if its in the middle of the query string and if so,
-        // trim off what
+        // And then check to see if its in the middle of the query string and if so, trim off what
         // comes after.
         int ampersandLoc = queryString.indexOf("&", paramLoc);
         if (ampersandLoc != -1) {
