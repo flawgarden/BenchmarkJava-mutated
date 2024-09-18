@@ -1,3 +1,7 @@
+// Original file name: src/main/java/org/owasp/benchmark/testcode/BenchmarkTest00008.java
+// Original file CWE's: [89]
+// Original file kind: fail
+// Mutation info: Insert template from templates-db/languages/java/sensitivity/virtuality/interface.tmt with name for_operator_string_array_negative
 /**
  * OWASP Benchmark v1.2
  *
@@ -49,6 +53,7 @@ public class BenchmarkTest0000820 extends HttpServlet {
         // URL Decode the header value since req.getHeader() doesn't. Unlike req.getParameter().
         param = java.net.URLDecoder.decode(param, "UTF-8");
         String tmpUnique42 = param;
+        param = "";
         String[] stringArray = new String[]{param, param + "suffix"};
         for (int i = 0; i < stringArray.length - 1; i++) {
             if (stringArray[i].equals(stringArray[i + 1])) {
