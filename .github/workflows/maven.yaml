@@ -19,9 +19,9 @@ jobs:
         java-version: '17'
         distribution: 'oracle'
     - name: Run Spotless check
-      run: mvn spotless:check -PJava17
+      run: mvn spotless:check
     - name: Create WAR
-      run: mvn package -PJava17
+      run: mvn package
 
   java-22-build:
       runs-on: ubuntu-latest

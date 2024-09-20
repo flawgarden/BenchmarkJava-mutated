@@ -605,6 +605,9 @@
         </profile>
 
         <profile>
+            <activation>
+                <jdk>17</jdk>
+            </activation>
             <id>Java17</id>
             <properties>
                 <maven.compiler.source>17</maven.compiler.source>
