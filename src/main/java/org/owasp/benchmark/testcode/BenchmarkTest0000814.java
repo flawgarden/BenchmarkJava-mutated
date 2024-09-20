@@ -1,7 +1,7 @@
 // Original file name: src/main/java/org/owasp/benchmark/testcode/BenchmarkTest00008.java
 // Original file CWE's: [89]
 // Original file kind: fail
-// Mutation info: Insert template from templates-db/languages/java/sensitivity/virtuality/interface.tmt with name array_store_exception_negative
+// Mutation info: Insert template from templates-db/languages/java/sensitivity/exceptions/causeThrows.tmt with name array_store_exception_negative
 /**
  * OWASP Benchmark v1.2
  *

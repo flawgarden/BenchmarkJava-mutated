@@ -1,7 +1,7 @@
 // Original file name: src/main/java/org/owasp/benchmark/testcode/BenchmarkTest00008.java
 // Original file CWE's: [89]
 // Original file kind: fail
-// Mutation info: Insert template from templates-db/languages/java/sensitivity/virtuality/interface.tmt with name class_not_found_exception_negative
+// Mutation info: Insert template from templates-db/languages/java/sensitivity/exceptions/classNotFoundThrows.tmt with name class_not_found_exception_negative
 /**
  * OWASP Benchmark v1.2
  *
