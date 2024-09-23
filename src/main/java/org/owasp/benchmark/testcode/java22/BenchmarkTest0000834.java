@@ -1,7 +1,8 @@
 // Original file name: src/main/java/org/owasp/benchmark/testcode/BenchmarkTest00008.java
 // Original file CWE's: [89]
 // Original file kind: fail
-// Mutation info: Insert template from templates-db/languages/java/sensitivity/vthreads/vthreads.tmt with name virtual_thread_simple_positive
+// Mutation info: Insert template from templates-db/languages/java/sensitivity/vthreads/vthreads.tmt
+// with name virtual_thread_simple_positive
 
 /**
  * OWASP Benchmark v1.2
@@ -22,15 +23,15 @@
  */
 package org.owasp.benchmark.testcode.java22;
 
+import java.io.IOException;
+import java.util.List;
+import java.util.concurrent.Callable;
+import java.util.concurrent.Executors;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
-import java.io.IOException;
-import java.util.List;
-import java.util.concurrent.Callable;
-import java.util.concurrent.Executors;
 
 @WebServlet(value = "/sqli-00/BenchmarkTest00008")
 public class BenchmarkTest0000834 extends HttpServlet {
@@ -59,11 +60,7 @@ public class BenchmarkTest0000834 extends HttpServlet {
 
         final String tmpUnique42 = param;
         try (var executor = Executors.newVirtualThreadPerTaskExecutor()) {
-            List<Callable<String>> tasks = List.of(
-                    () -> tmpUnique42,
-                    () -> "abc",
-                    () -> "abd"
-            );
+            List<Callable<String>> tasks = List.of(() -> tmpUnique42, () -> "abc", () -> "abd");
             param = executor.invokeAll(tasks).get(0).get();
         } catch (Exception e) {
             e.printStackTrace();

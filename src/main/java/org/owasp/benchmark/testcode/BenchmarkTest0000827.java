@@ -1,7 +1,8 @@
 // Original file name: src/main/java/org/owasp/benchmark/testcode/BenchmarkTest00008.java
 // Original file CWE's: [89]
 // Original file kind: fail
-// Mutation info: Insert template from templates-db/languages/java/sensitivity/conditional/for.tmt with name for_operator_non_zero_init_positive
+// Mutation info: Insert template from templates-db/languages/java/sensitivity/conditional/for.tmt
+// with name for_operator_non_zero_init_positive
 /**
  * OWASP Benchmark v1.2
  *
@@ -21,12 +22,12 @@
  */
 package org.owasp.benchmark.testcode;
 
+import java.io.IOException;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
-import java.io.IOException;
 
 @WebServlet(value = "/sqli-00/BenchmarkTest00008")
 public class BenchmarkTest0000827 extends HttpServlet {
@@ -53,7 +54,7 @@ public class BenchmarkTest0000827 extends HttpServlet {
         // URL Decode the header value since req.getHeader() doesn't. Unlike req.getParameter().
         param = java.net.URLDecoder.decode(param, "UTF-8");
         String tmpUnique42 = param;
-        for (int i = 1085943678; i < param.length() * 241; i*=2) {
+        for (int i = 1085943678; i < param.length() * 241; i *= 2) {
             param = tmpUnique42;
         }
         String sql = "{call " + param + "}";

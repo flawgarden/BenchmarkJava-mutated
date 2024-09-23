@@ -1,7 +1,8 @@
 // Original file name: src/main/java/org/owasp/benchmark/testcode/BenchmarkTest00008.java
 // Original file CWE's: [89]
 // Original file kind: fail
-// Mutation info: Insert template from templates-db/languages/java/sensitivity/vthreads/vthreads.tmt with name null_and_restore_condvar_vthreads_positive
+// Mutation info: Insert template from templates-db/languages/java/sensitivity/vthreads/vthreads.tmt
+// with name null_and_restore_condvar_vthreads_positive
 /**
  * OWASP Benchmark v1.2
  *
@@ -21,17 +22,16 @@
  */
 package org.owasp.benchmark.testcode.java22;
 
-import org.owasp.benchmark.testcode.NullAndRestore;
-
+import java.io.IOException;
+import java.util.Arrays;
+import java.util.concurrent.Callable;
+import java.util.concurrent.Executors;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
-import java.io.IOException;
-import java.util.Arrays;
-import java.util.concurrent.Callable;
-import java.util.concurrent.Executors;
+import org.owasp.benchmark.testcode.NullAndRestore;
 
 @WebServlet(value = "/sqli-00/BenchmarkTest00008")
 public class BenchmarkTest0000841 extends HttpServlet {
@@ -60,23 +60,26 @@ public class BenchmarkTest0000841 extends HttpServlet {
 
         final String tmpUnique42 = param;
         NullAndRestore a = new NullAndRestore(tmpUnique42);
-        Callable<Object> task1 = () -> {
-            a.nullMethod();
-            return null;
-        };
-        Callable<Object> task2 = () -> {
-            a.restore();
-            return null;
-        };
+        Callable<Object> task1 =
+                () -> {
+                    a.nullMethod();
+                    return null;
+                };
+        Callable<Object> task2 =
+                () -> {
+                    a.restore();
+                    return null;
+                };
 
         try (var executor = Executors.newVirtualThreadPerTaskExecutor()) {
             var futures = executor.invokeAll(Arrays.asList(task1, task2));
-            futures.forEach((f) -> {
-                try {
-                    f.get();
-                } catch (Exception e) {
-                }
-            });
+            futures.forEach(
+                    (f) -> {
+                        try {
+                            f.get();
+                        } catch (Exception e) {
+                        }
+                    });
         } catch (Exception e) {
             e.printStackTrace();
         }
