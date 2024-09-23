@@ -1,7 +1,7 @@
 # BenchmarkJava-mutated
 
 ## Description
-`BenchmarkJava-mutated` project is under active development. The benchmark covers the features of Java language from the list below using the selective fuzzing approach to differentiate SAST tools' functional quality.
+The `BenchmarkJava-mutated` project covers the features of Java language from the list below using the selective fuzzing approach to differentiate SAST tools' functional quality.
 
 * Conditionals:
   - if, else, switch
