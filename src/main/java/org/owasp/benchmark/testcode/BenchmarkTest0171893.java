@@ -1,10 +1,3 @@
-// ApplicationInspector original results: [89]
-// Semgrep original results: [89]
-// Insider original results: []
-// -------------
-// ApplicationInspector analysis results: []
-// Semgrep analysis results: [89]
-// Insider analysis results: []
 // Original file name: src/main/java/org/owasp/benchmark/testcode/BenchmarkTest01718.java
 // Original file CWE's: [89]
 // Original file kind: fail

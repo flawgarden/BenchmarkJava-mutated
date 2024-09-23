@@ -1,10 +1,3 @@
-// CodeQL original results: [501]
-// Semgrep original results: [501]
-// Insider original results: []
-// -------------
-// CodeQL analysis results: [561, 501]
-// Semgrep analysis results: [200]
-// Insider analysis results: []
 // Original file name: src/main/java/org/owasp/benchmark/testcode/BenchmarkTest02262.java
 // Original file CWE's: [501]
 // Original file kind: fail

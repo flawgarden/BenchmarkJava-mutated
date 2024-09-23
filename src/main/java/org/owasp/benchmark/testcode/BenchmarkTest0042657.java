@@ -1,14 +1,3 @@
-// CodeQL original results: [501]
-// ApplicationInspector original results: [501]
-// Snyk original results: [501]
-// Semgrep original results: []
-// Insider original results: []
-// -------------
-// CodeQL analysis results: [571, 570, 391, 561, 79, 730, 400, 501]
-// ApplicationInspector analysis results: []
-// Snyk analysis results: [400, 730]
-// Semgrep analysis results: []
-// Insider analysis results: []
 // Original file name: src/main/java/org/owasp/benchmark/testcode/BenchmarkTest00426.java
 // Original file CWE's: [501]
 // Original file kind: fail

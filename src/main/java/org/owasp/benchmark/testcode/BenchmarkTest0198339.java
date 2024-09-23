@@ -1,12 +1,3 @@
-// ApplicationInspector original results: [22]
-// Snyk original results: [22]
-// Semgrep original results: [22]
-// Insider original results: []
-// -------------
-// ApplicationInspector analysis results: [79]
-// Snyk analysis results: [23]
-// Semgrep analysis results: [22]
-// Insider analysis results: []
 // Original file name: src/main/java/org/owasp/benchmark/testcode/BenchmarkTest01983.java
 // Original file CWE's: [22]
 // Original file kind: fail

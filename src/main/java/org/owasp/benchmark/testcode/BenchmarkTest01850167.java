@@ -1,10 +1,3 @@
-// CodeQL original results: [78]
-// Semgrep original results: [78]
-// Insider original results: []
-// -------------
-// CodeQL analysis results: [570, 571, 193, 561]
-// Semgrep analysis results: [1004, 78]
-// Insider analysis results: [532]
 // Original file name: src/main/java/org/owasp/benchmark/testcode/BenchmarkTest01850.java
 // Original file CWE's: [78]
 // Original file kind: fail
