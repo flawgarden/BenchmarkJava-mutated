@@ -1,8 +1,7 @@
 // Original file name: src/main/java/org/owasp/benchmark/testcode/BenchmarkTest00008.java
 // Original file CWE's: [89]
 // Original file kind: fail
-// Mutation info: Insert template from templates-db/languages/java/sensitivity/pm_switch.tmt with
-// name pattern_matching_switch_simple_1_positive
+// Mutation info: Insert template from templates-db/languages/java/sensitivity/pm_switch.tmt with name pattern_matching_switch_simple_1_positive
 /**
  * OWASP Benchmark v1.2
  *
@@ -22,12 +21,12 @@
  */
 package org.owasp.benchmark.testcode.java22;
 
-import java.io.IOException;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import java.io.IOException;
 
 @WebServlet(value = "/sqli-00/BenchmarkTest00008")
 public class BenchmarkTest0000845 extends HttpServlet {
@@ -56,12 +55,11 @@ public class BenchmarkTest0000845 extends HttpServlet {
 
         Object obj = param;
 
-        param =
-                switch (obj) {
-                    case Integer i -> "fixed_string";
-                    case String s -> (String) obj;
-                    default -> "fixed_string_2";
-                };
+        param = switch (obj) {
+            case Integer i -> "fixed_string";
+            case String s -> (String) obj;
+            default -> "fixed_string_2";
+        };
         String sql = "{call " + param + "}";
 
         try {
