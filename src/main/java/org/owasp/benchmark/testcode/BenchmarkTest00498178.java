@@ -1,7 +1,8 @@
 // Original file name: src/main/java/org/owasp/benchmark/testcode/BenchmarkTest00498.java
 // Original file CWE's: [78]
 // Original file kind: fail
-// Mutation info: Insert template from templates-db/languages/java/sensitivity/conditional/while.tmt
+// Mutation info: Insert template from
+// templates-db/languages/java/sensitivity/conditional/dowhile.tmt
 // with name do_while_operator_positive
 // Used extensions: MACRO_VarName -> genericClass39745 | EXPR_Boolean ->
 // ~[EXPR_String]~.endsWith(~[EXPR_String]~)
