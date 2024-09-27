@@ -38,7 +38,7 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
 @WebServlet(value = "/cmdi-01/BenchmarkTest01287")
-public class BenchmarkTest01287156 extends HttpServlet {
+public class BenchmarkTest012871563 extends HttpServlet {
 
     Object sealed21341 = new SealedSuper();
 
