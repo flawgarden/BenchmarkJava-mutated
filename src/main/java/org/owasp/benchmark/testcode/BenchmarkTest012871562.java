@@ -2,7 +2,7 @@
 // Original file CWE's: [78]
 // Original file kind: fail
 // Mutation info: Insert template from templates-db/languages/java/sensitivity/field/nested.tmt with
-// name nested_field_simple_positive
+// name nested_field_simple_negative
 // Used extensions: MACRO_Regex -> (~[MACRO_Regex]~ + "*") | EXPR_String ->
 // ~[EXPR_String]~.substring(~[EXPR_int]~) | MACRO_Regex -> "\r" | EXPR_int -> 42 | MACRO_VarName ->
 // sealed21341
