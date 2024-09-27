@@ -57,7 +57,7 @@ public class BenchmarkTest00008171 extends HttpServlet {
         for (int i = param.length(); i >= 0; i--) {
             param = tmpUnique42;
         }
-        
+
         String sql = "{call " + param + "}";
 
         try {

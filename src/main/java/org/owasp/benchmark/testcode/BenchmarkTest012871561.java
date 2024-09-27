@@ -92,7 +92,7 @@ public class BenchmarkTest012871561 extends HttpServlet {
                 throws ServletException, IOException {
 
             NestedFields1 nested7231 = new NestedFields1(param);
-            param = nested7231.nested1;
+            param = nested7231.nested1.value;
 
             String bar = "";
             if (param != null) {

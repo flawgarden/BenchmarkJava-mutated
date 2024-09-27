@@ -63,6 +63,7 @@ public class BenchmarkTest0017261 extends HttpServlet {
             Queue<String> queue787231 = new PriorityQueue<>();
             queue787231.add("mzmhu");
             queue787231.offer(param);
+            String value7845 = "juglv";
 
             if (queue787231.contains(param)) {
                 value7845 = param;
