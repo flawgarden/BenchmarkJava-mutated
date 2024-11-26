@@ -11,7 +11,7 @@
         "used_templates": [
             {
                 "template_file": "templates-db/languages/java/sensitivity/injection/injection.tmt",
-                "template_name": "const_dependency_injection_positive"
+                "template_name": "const_dependency_injection_negative"
             }
         ],
         "used_extensions": [
