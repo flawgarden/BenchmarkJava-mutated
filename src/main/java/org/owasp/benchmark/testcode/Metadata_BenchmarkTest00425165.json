@@ -1,0 +1,29 @@
+{
+    "original_file_metadata": {
+        "file_name": "src/main/java/org/owasp/benchmark/testcode/BenchmarkTest00425.java",
+        "CWEs": [
+            501
+        ],
+        "kind": "fail",
+        "region": null
+    },
+    "mutated_file_metadata": {
+        "used_templates": [
+            {
+                "template_file": "templates-db/languages/java/sensitivity/collections/list.tmt",
+                "template_name": "list_union_positive"
+            }
+        ],
+        "used_extensions": [
+            " MACRO_VarName -> obj09823",
+            "MACRO_VarName -> obj21341",
+            "MACRO_Create_List -> List<~[TYPE@1]~> ~[MACRO_ListName]~ = new ArrayList<>();",
+            "MACRO_Add_VAR_ToList -> ~[MACRO_ListName]~.add(~[VAR_~[TYPE@1]~@1]~);",
+            "MACRO_ListName -> list787231",
+            "MACRO_ListName -> list787231",
+            "MACRO_ListName -> list787231"
+        ],
+        "region": null
+    },
+    "tool_results": []
+}

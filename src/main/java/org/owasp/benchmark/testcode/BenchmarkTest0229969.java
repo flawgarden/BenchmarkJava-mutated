@@ -1,9 +1,3 @@
-// Original file name: src/main/java/org/owasp/benchmark/testcode/BenchmarkTest02299.java
-// Original file CWE's: [90]
-// Original file kind: fail
-// Mutation info: Insert template from templates-db/languages/java/sensitivity/injection/injection.tmt with name anno_dependency_injection_positive
-// Used extensions: MACRO_Create_Map -> Map<~[TYPE@1]~, ~[TYPE@2]~> ~[MACRO_MapName@1]~ = new HashMap<>(); | MACRO_Add_Element_ToMap -> ~[MACRO_MapName@1]~.put(~[VAR_~[TYPE@1]~]~, ~[VAR_~[TYPE@2]~]~); | MACRO_MapName@1 -> map787231
-// Program:
 /**
  * OWASP Benchmark Project v1.2
  *

@@ -1,0 +1,21 @@
+{
+    "original_file_metadata": {
+        "file_name": "src/main/java/org/owasp/benchmark/testcode/BenchmarkTest02146.java",
+        "CWEs": [
+            78
+        ],
+        "kind": "fail",
+        "region": null
+    },
+    "mutated_file_metadata": {
+        "used_templates": [
+            {
+                "template_file": "templates-db/languages/java/sensitivity/conditional/if.tmt",
+                "template_name": "if_else_operator_neutral"
+            }
+        ],
+        "used_extensions": [],
+        "region": null
+    },
+    "tool_results": []
+}

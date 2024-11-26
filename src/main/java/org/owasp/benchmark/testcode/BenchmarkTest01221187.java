@@ -1,9 +1,3 @@
-// Original file name: src/main/java/org/owasp/benchmark/testcode/BenchmarkTest01221.java
-// Original file CWE's: [89]
-// Original file kind: fail
-// Mutation info: Insert template from templates-db/languages/java/sensitivity/record.tmt with name simple_record_negative
-// Used extensions: EXPR_String -> ~[EXPR_String]~.replaceAll(~[MACRO_Regex]~, ~[EXPR_String]~) | MACRO_Regex -> "[a-zA-Z]" | MACRO_VarName -> genericClass21341 | EXPR_String -> ""
-// Program:
 /**
  * OWASP Benchmark Project v1.2
  *

@@ -1,9 +1,3 @@
-// Original file name: src/main/java/org/owasp/benchmark/testcode/BenchmarkTest02524.java
-// Original file CWE's: [501]
-// Original file kind: fail
-// Mutation info: Insert template from templates-db/languages/java/sensitivity/injection/injection.tmt with name anno_dependency_injection_negative
-// Used extensions:
-// Program:
 /**
  * OWASP Benchmark Project v1.2
  *

@@ -1,9 +1,3 @@
-// Original file name: src/main/java/org/owasp/benchmark/testcode/BenchmarkTest00033.java
-// Original file CWE's: [89]
-// Original file kind: fail
-// Mutation info: Insert template from templates-db/languages/java/sensitivity/collections/streams.tmt with name stream_map_negative
-// Used extensions: MACRO_Regex -> "[a-z&&[def]]" | MACRO_Create_List -> List<~[TYPE@1]~> ~[MACRO_ListName]~ = new ArrayList<>(); | MACRO_Add_Fixed_VAR_ToList -> ~[MACRO_ListName]~.add(~[VAR_~[TYPE@1]~@1]~); | MACRO_Add_CONST_ToList -> ~[MACRO_ListName]~.add(~[CONST_~[TYPE@1]~]~); | MACRO_Add_CONST_ToList -> ~[MACRO_ListName]~.add(~[CONST_~[TYPE@1]~]~); | MACRO_Create_Stream -> Stream<~[TYPE@1]~> ~[MACRO_StreamName]~ = ~[MACRO_ListName]~.stream(); | MACRO_StreamName -> stream787231 | MACRO_StreamName -> stream787231 | MACRO_ListName -> list787231 | MACRO_ListName -> list787231 | MACRO_ListName -> list787231 | MACRO_ListName -> list787231 | MACRO_StreamName -> stream787231 | MACRO_ListName -> list787231
-// Program:
 /**
  * OWASP Benchmark v1.2
  *

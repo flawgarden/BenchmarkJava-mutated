@@ -1,7 +1,3 @@
-// Original file name: src/main/java/org/owasp/benchmark/testcode/BenchmarkTest00008.java
-// Original file CWE's: [89]
-// Original file kind: fail
-// Mutation info: Insert template from templates-db/languages/java/sensitivity/collections/list.tmt with name list_add_get_at_zero_index_empty_negative
 /**
  * OWASP Benchmark v1.2
  *

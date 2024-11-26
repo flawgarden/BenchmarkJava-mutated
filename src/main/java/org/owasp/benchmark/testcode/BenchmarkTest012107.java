@@ -1,9 +1,3 @@
-// Original file name: src/main/java/org/owasp/benchmark/testcode/BenchmarkTest01210.java
-// Original file CWE's: [89]
-// Original file kind: fail
-// Mutation info: Insert template from templates-db/languages/java/sensitivity/pm.tmt with name pattern_matching_simple_4_negative
-// Used extensions: MACRO_VarName -> obj12321 | MACRO_VarName -> obj21341
-// Program:
 /**
  * OWASP Benchmark Project v1.2
  *

@@ -1,0 +1,32 @@
+{
+    "original_file_metadata": {
+        "file_name": "src/main/java/org/owasp/benchmark/testcode/BenchmarkTest01455.java",
+        "CWEs": [
+            501
+        ],
+        "kind": "fail",
+        "region": null
+    },
+    "mutated_file_metadata": {
+        "used_templates": [
+            {
+                "template_file": "templates-db/languages/java/sensitivity/collections/map.tmt",
+                "template_name": "map_clear_negative"
+            }
+        ],
+        "used_extensions": [
+            " MACRO_VarName -> obj21341",
+            "MACRO_VarName -> obj39745",
+            "MACRO_VarName -> sealed21341",
+            "MACRO_Create_Map -> Map<~[TYPE@1]~, ~[TYPE@2]~> ~[MACRO_MapName]~ = new TreeMap<>();",
+            "MACRO_Add_EXPR_ToMap -> ~[MACRO_MapName]~.put(~[EXPR_~[TYPE@1]~@1]~, ~[EXPR_~[TYPE@2]~@2]~);",
+            "MACRO_MapName -> map787234",
+            "MACRO_MapName -> map787234",
+            "MACRO_MapName -> map787234",
+            "MACRO_MapName -> map787234",
+            "MACRO_MapName -> map787234"
+        ],
+        "region": null
+    },
+    "tool_results": []
+}

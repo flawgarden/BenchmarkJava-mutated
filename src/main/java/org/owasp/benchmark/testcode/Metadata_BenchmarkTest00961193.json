@@ -1,0 +1,27 @@
+{
+    "original_file_metadata": {
+        "file_name": "src/main/java/org/owasp/benchmark/testcode/BenchmarkTest00961.java",
+        "CWEs": [
+            328
+        ],
+        "kind": "fail",
+        "region": null
+    },
+    "mutated_file_metadata": {
+        "used_templates": [
+            {
+                "template_file": "templates-db/languages/java/sensitivity/conditional/for.tmt",
+                "template_name": "for_operator_change_index_negative"
+            }
+        ],
+        "used_extensions": [
+            " MACRO_Create_Queue -> Queue<~[TYPE@1]~> ~[MACRO_QueueName@1]~ = new PriorityQueue<>();",
+            "MACRO_Add_Element_ToQueue -> ~[MACRO_QueueName@1]~.offer(~[VAR_~[TYPE@1]~]~);",
+            "MACRO_QueueName@1 -> queue787231",
+            "EXPR_int -> ~[EXPR_String]~.compareToIgnoreCase(~[EXPR_String]~)",
+            "EXPR_String -> ~[EXPR_String]~.replace('/', '.')"
+        ],
+        "region": null
+    },
+    "tool_results": []
+}

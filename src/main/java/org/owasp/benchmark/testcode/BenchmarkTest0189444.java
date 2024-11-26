@@ -1,9 +1,3 @@
-// Original file name: src/main/java/org/owasp/benchmark/testcode/BenchmarkTest01894.java
-// Original file CWE's: [643]
-// Original file kind: fail
-// Mutation info: Insert template from templates-db/languages/java/sensitivity/field/staticField.tmt with name class_with_static_string_field_positive
-// Used extensions: MACRO_Regex -> (~[MACRO_Regex]~ + "?") | MACRO_Regex -> (~[MACRO_Regex]~ + ~[MACRO_Regex]~) | MACRO_Regex -> "\0n" | MACRO_Regex -> (~[MACRO_Regex]~ + "|" + ~[MACRO_Regex]~) | MACRO_Regex -> "[a-zA-Z]" | MACRO_Regex -> "\0nn"
-// Program:
 /**
  * OWASP Benchmark Project v1.2
  *

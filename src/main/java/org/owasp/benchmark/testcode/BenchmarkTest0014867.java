@@ -1,9 +1,3 @@
-// Original file name: src/main/java/org/owasp/benchmark/testcode/BenchmarkTest00148.java
-// Original file CWE's: [79]
-// Original file kind: fail
-// Mutation info: Insert template from templates-db/languages/java/sensitivity/conditional/if.tmt with name if_else_if_operator_neutral
-// Used extensions: MACRO_VarName -> sealed09823 | MACRO_VarName -> genericClass39745 | EXPR_String -> ~[EXPR_String]~.replace(~[EXPR_char]~, ~[EXPR_char]~) | EXPR_String -> ~[EXPR_String]~.replace('/', '.') | EXPR_char -> ~[EXPR_String]~.charAt(~[EXPR_int]~) | EXPR_String -> ~[EXPR_String]~.trim()
-// Program:
 /**
  * OWASP Benchmark Project v1.2
  *

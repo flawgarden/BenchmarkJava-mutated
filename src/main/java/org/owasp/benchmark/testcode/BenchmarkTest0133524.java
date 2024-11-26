@@ -1,9 +1,3 @@
-// Original file name: src/main/java/org/owasp/benchmark/testcode/BenchmarkTest01335.java
-// Original file CWE's: [79]
-// Original file kind: fail
-// Mutation info: Insert template from templates-db/languages/java/sensitivity/collections/set.tmt with name set_union_negative
-// Used extensions: MACRO_VarName -> sealed39745 | MACRO_VarName -> obj39745 | EXPR_String -> ""
-// Program:
 /**
  * OWASP Benchmark Project v1.2
  *

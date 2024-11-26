@@ -1,0 +1,28 @@
+{
+    "original_file_metadata": {
+        "file_name": "src/main/java/org/owasp/benchmark/testcode/BenchmarkTest00702.java",
+        "CWEs": [
+            330
+        ],
+        "kind": "fail",
+        "region": null
+    },
+    "mutated_file_metadata": {
+        "used_templates": [
+            {
+                "template_file": "templates-db/languages/java/sensitivity/collections/queue.tmt",
+                "template_name": "simple_poll_negative"
+            }
+        ],
+        "used_extensions": [
+            " MACRO_VarName -> sealed12321",
+            "MACRO_Create_Queue -> Queue<~[TYPE@1]~> ~[MACRO_QueueName]~ = new LinkedList<>();",
+            "MACRO_Add_EXPR_ToQueue -> ~[MACRO_QueueName]~.offer(~[EXPR_~[TYPE@1]~]~);",
+            "MACRO_QueueName -> queue787231",
+            "MACRO_QueueName -> queue787231",
+            "MACRO_QueueName -> queue787231"
+        ],
+        "region": null
+    },
+    "tool_results": []
+}

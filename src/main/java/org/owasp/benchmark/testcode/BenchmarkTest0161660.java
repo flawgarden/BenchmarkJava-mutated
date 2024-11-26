@@ -1,9 +1,3 @@
-// Original file name: src/main/java/org/owasp/benchmark/testcode/BenchmarkTest01616.java
-// Original file CWE's: [501]
-// Original file kind: fail
-// Mutation info: Insert template from templates-db/languages/java/sensitivity/conditional/recursion.tmt with name recursion_mutual_positive
-// Used extensions:
-// Program:
 /**
  * OWASP Benchmark Project v1.2
  *

@@ -1,9 +1,3 @@
-// Original file name: src/main/java/org/owasp/benchmark/testcode/BenchmarkTest00644.java
-// Original file CWE's: [79]
-// Original file kind: fail
-// Mutation info: Insert template from templates-db/languages/java/sensitivity/field/nested.tmt with name nested_field_depth_4_array_negative
-// Used extensions: MACRO_VarName -> obj21341
-// Program:
 /**
  * OWASP Benchmark Project v1.2
  *

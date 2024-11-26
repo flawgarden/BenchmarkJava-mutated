@@ -1,0 +1,23 @@
+{
+    "original_file_metadata": {
+        "file_name": "src/main/java/org/owasp/benchmark/testcode/BenchmarkTest02262.java",
+        "CWEs": [
+            501
+        ],
+        "kind": "fail",
+        "region": null
+    },
+    "mutated_file_metadata": {
+        "used_templates": [
+            {
+                "template_file": "templates-db/languages/java/sensitivity/conditional/dowhile.tmt",
+                "template_name": "do_while_operator_negative"
+            }
+        ],
+        "used_extensions": [
+            " MACRO_VarName -> sealed39745"
+        ],
+        "region": null
+    },
+    "tool_results": []
+}

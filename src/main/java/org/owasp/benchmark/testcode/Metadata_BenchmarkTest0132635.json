@@ -1,0 +1,35 @@
+{
+    "original_file_metadata": {
+        "file_name": "src/main/java/org/owasp/benchmark/testcode/BenchmarkTest01326.java",
+        "CWEs": [
+            90
+        ],
+        "kind": "fail",
+        "region": null
+    },
+    "mutated_file_metadata": {
+        "used_templates": [
+            {
+                "template_file": "templates-db/languages/java/sensitivity/collections/streams.tmt",
+                "template_name": "stream_map_positive"
+            }
+        ],
+        "used_extensions": [
+            " MACRO_Create_List -> List<~[TYPE@1]~> ~[MACRO_ListName]~ = new ArrayList<>();",
+            "MACRO_Add_Fixed_EXPR_ToList -> ~[MACRO_ListName]~.add(~[EXPR_~[TYPE@1]~@1]~);",
+            "MACRO_Add_Fixed_CONST_ToList -> ~[MACRO_ListName]~.add(~[CONST_~[TYPE@1]~@1]~);",
+            "MACRO_Add_Fixed_VAR_ToList -> ~[MACRO_ListName]~.add(~[VAR_~[TYPE@1]~@1]~);",
+            "MACRO_Create_Stream -> Stream<~[TYPE@1]~> ~[MACRO_StreamName]~ = ~[MACRO_ListName]~.stream();",
+            "MACRO_StreamName -> stream787231",
+            "MACRO_StreamName -> stream787231",
+            "MACRO_ListName -> list787231",
+            "MACRO_ListName -> list787231",
+            "MACRO_ListName -> list787231",
+            "MACRO_ListName -> list787231",
+            "MACRO_StreamName -> stream787231",
+            "MACRO_ListName -> list787231"
+        ],
+        "region": null
+    },
+    "tool_results": []
+}

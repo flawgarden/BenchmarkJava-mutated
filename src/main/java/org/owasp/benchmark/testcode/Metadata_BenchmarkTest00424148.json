@@ -1,0 +1,24 @@
+{
+    "original_file_metadata": {
+        "file_name": "src/main/java/org/owasp/benchmark/testcode/BenchmarkTest00424.java",
+        "CWEs": [
+            501
+        ],
+        "kind": "fail",
+        "region": null
+    },
+    "mutated_file_metadata": {
+        "used_templates": [
+            {
+                "template_file": "templates-db/languages/java/sensitivity/varargs/varargs.tmt",
+                "template_name": "varargs_combine_strings_negative"
+            }
+        ],
+        "used_extensions": [
+            " MACRO_VarName -> sealed12321",
+            "EXPR_String -> ~[EXPR_String]~.toString()"
+        ],
+        "region": null
+    },
+    "tool_results": []
+}

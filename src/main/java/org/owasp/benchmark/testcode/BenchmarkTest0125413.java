@@ -1,9 +1,3 @@
-// Original file name: src/main/java/org/owasp/benchmark/testcode/BenchmarkTest01254.java
-// Original file CWE's: [79]
-// Original file kind: fail
-// Mutation info: Insert template from templates-db/languages/java/sensitivity/concurrency/concurrency.tmt with name thread_set_negative
-// Used extensions: MACRO_VarName -> genericClass09823
-// Program:
 /**
  * OWASP Benchmark Project v1.2
  *

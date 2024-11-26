@@ -1,0 +1,23 @@
+{
+    "original_file_metadata": {
+        "file_name": "src/main/java/org/owasp/benchmark/testcode/BenchmarkTest01547.java",
+        "CWEs": [
+            501
+        ],
+        "kind": "fail",
+        "region": null
+    },
+    "mutated_file_metadata": {
+        "used_templates": [
+            {
+                "template_file": "templates-db/languages/java/sensitivity/conditional/recursion.tmt",
+                "template_name": "recursion_simple_negative"
+            }
+        ],
+        "used_extensions": [
+            " MACRO_VarName -> obj09823"
+        ],
+        "region": null
+    },
+    "tool_results": []
+}

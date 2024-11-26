@@ -1,9 +1,3 @@
-// Original file name: src/main/java/org/owasp/benchmark/testcode/BenchmarkTest00021.java
-// Original file CWE's: [90]
-// Original file kind: fail
-// Mutation info: Insert template from templates-db/languages/java/sensitivity/collections/map.tmt with name map_simple_get_1_positive
-// Used extensions: MACRO_VarName -> genericClass21341 | MACRO_VarName -> obj21341 | MACRO_Create_Map -> Map<~[TYPE@1]~, ~[TYPE@2]~> ~[MACRO_MapName]~ = new TreeMap<>(); | MACRO_MapName -> map787234 | MACRO_MapName -> map787234 | MACRO_MapName -> map787234
-// Program:
 /**
  * OWASP Benchmark v1.2
  *

@@ -1,9 +1,3 @@
-// Original file name: src/main/java/org/owasp/benchmark/testcode/BenchmarkTest02516.java
-// Original file CWE's: [78]
-// Original file kind: fail
-// Mutation info: Insert template from templates-db/languages/java/sensitivity/lambdas/mutation.tmt with name nested_unary_lambda_mutation_negative
-// Used extensions: MACRO_Create_Queue -> Queue<~[TYPE@1]~> ~[MACRO_QueueName@1]~ = new PriorityQueue<>(); | MACRO_Add_Element_ToQueue -> ~[MACRO_QueueName@1]~.add(~[VAR_~[TYPE@1]~]~); | MACRO_QueueName@1 -> queue787231
-// Program:
 /**
  * OWASP Benchmark Project v1.2
  *

@@ -1,9 +1,3 @@
-// Original file name: src/main/java/org/owasp/benchmark/testcode/BenchmarkTest01261.java
-// Original file CWE's: [79]
-// Original file kind: fail
-// Mutation info: Insert template from templates-db/languages/java/sensitivity/virtuality/default.tmt with name binary_op_interface_default1_positive
-// Used extensions: MACRO_VarName -> sealed09823
-// Program:
 /**
  * OWASP Benchmark Project v1.2
  *

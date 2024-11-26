@@ -1,0 +1,23 @@
+{
+    "original_file_metadata": {
+        "file_name": "src/main/java/org/owasp/benchmark/testcode/BenchmarkTest00031.java",
+        "CWEs": [
+            501
+        ],
+        "kind": "fail",
+        "region": null
+    },
+    "mutated_file_metadata": {
+        "used_templates": [
+            {
+                "template_file": "templates-db/languages/java/sensitivity/virtuality/default.tmt",
+                "template_name": "binary_op_interface_default1_negative"
+            }
+        ],
+        "used_extensions": [
+            " MACRO_VarName -> sealed12321"
+        ],
+        "region": null
+    },
+    "tool_results": []
+}

@@ -1,9 +1,3 @@
-// Original file name: src/main/java/org/owasp/benchmark/testcode/BenchmarkTest01634.java
-// Original file CWE's: [327]
-// Original file kind: fail
-// Mutation info: Insert template from templates-db/languages/java/sensitivity/concurrency/concurrency.tmt with name atomic_integer_restore_positive
-// Used extensions: MACRO_VarName -> sealed39745 | MACRO_VarName -> genericClass21341 | EXPR_String -> ~[EXPR_String]~.replace('/', '.')
-// Program:
 /**
  * OWASP Benchmark Project v1.2
  *

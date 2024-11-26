@@ -1,0 +1,23 @@
+{
+    "original_file_metadata": {
+        "file_name": "src/main/java/org/owasp/benchmark/testcode/BenchmarkTest01316.java",
+        "CWEs": [
+            643
+        ],
+        "kind": "fail",
+        "region": null
+    },
+    "mutated_file_metadata": {
+        "used_templates": [
+            {
+                "template_file": "templates-db/languages/java/sensitivity/reflection/reflection.tmt",
+                "template_name": "simple_reflection_positive"
+            }
+        ],
+        "used_extensions": [
+            " MACRO_VarName -> obj21341"
+        ],
+        "region": null
+    },
+    "tool_results": []
+}

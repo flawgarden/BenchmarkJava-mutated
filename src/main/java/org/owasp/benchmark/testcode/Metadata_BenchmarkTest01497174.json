@@ -1,0 +1,26 @@
+{
+    "original_file_metadata": {
+        "file_name": "src/main/java/org/owasp/benchmark/testcode/BenchmarkTest01497.java",
+        "CWEs": [
+            22
+        ],
+        "kind": "fail",
+        "region": null
+    },
+    "mutated_file_metadata": {
+        "used_templates": [
+            {
+                "template_file": "templates-db/languages/java/sensitivity/conditional/recursion.tmt",
+                "template_name": "recursion_mutual_positive"
+            }
+        ],
+        "used_extensions": [
+            " MACRO_Regex -> \"[a-d[m-p]]\"",
+            "EXPR_String -> ~[EXPR_SimpleRecord]~.t()",
+            "EXPR_SimpleRecord -> ~[EXPR_NestedRecord]~.b()",
+            "EXPR_NestedRecord -> (new NestedRecord(new SimpleRecord(~[EXPR_String]~), new SimpleRecord(~[EXPR_String]~)))"
+        ],
+        "region": null
+    },
+    "tool_results": []
+}

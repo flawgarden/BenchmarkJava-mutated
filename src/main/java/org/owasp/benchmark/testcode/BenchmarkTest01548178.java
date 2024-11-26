@@ -1,9 +1,3 @@
-// Original file name: src/main/java/org/owasp/benchmark/testcode/BenchmarkTest01548.java
-// Original file CWE's: [501]
-// Original file kind: fail
-// Mutation info: Insert template from templates-db/languages/java/sensitivity/varargs/varargs.tmt with name varargs_with_generics_negative
-// Used extensions: EXPR_String -> ~[EXPR_String]~.toLowerCase()
-// Program:
 /**
  * OWASP Benchmark Project v1.2
  *

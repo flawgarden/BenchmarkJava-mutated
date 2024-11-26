@@ -1,9 +1,3 @@
-// Original file name: src/main/java/org/owasp/benchmark/testcode/BenchmarkTest00560.java
-// Original file CWE's: [330]
-// Original file kind: fail
-// Mutation info: Insert template from templates-db/languages/java/sensitivity/virtuality/interface.tmt with name impl_binary_op_interface_class1_negative
-// Used extensions: EXPR_String -> ~[EXPR_String]~.replace('/', '.') | EXPR_String -> ~[EXPR_String]~.substring(~[EXPR_int]~, ~[EXPR_int]~) | EXPR_String -> ~[EXPR_String]~.toString() | MACRO_VarName -> obj39745
-// Program:
 /**
  * OWASP Benchmark Project v1.2
  *

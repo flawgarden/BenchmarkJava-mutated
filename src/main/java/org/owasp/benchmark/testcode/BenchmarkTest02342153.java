@@ -1,9 +1,3 @@
-// Original file name: src/main/java/org/owasp/benchmark/testcode/BenchmarkTest02342.java
-// Original file CWE's: [78]
-// Original file kind: fail
-// Mutation info: Insert template from templates-db/languages/java/sensitivity/lambdas/mutation.tmt with name unary_lambda_mutation_negative
-// Used extensions: MACRO_Create_Map -> Map<~[TYPE@1]~, ~[TYPE@2]~> ~[MACRO_MapName@1]~ = new TreeMap<>(); | MACRO_Add_Element_ToMap -> ~[MACRO_MapName@1]~.put(~[EXPR_~[TYPE@1]~]~, ~[EXPR_~[TYPE@2]~]~); | MACRO_MapName@1 -> map787232
-// Program:
 /**
  * OWASP Benchmark Project v1.2
  *

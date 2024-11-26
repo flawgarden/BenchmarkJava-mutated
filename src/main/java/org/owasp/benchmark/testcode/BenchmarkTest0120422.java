@@ -1,9 +1,3 @@
-// Original file name: src/main/java/org/owasp/benchmark/testcode/BenchmarkTest01204.java
-// Original file CWE's: [501]
-// Original file kind: fail
-// Mutation info: Insert template from templates-db/languages/java/sensitivity/virtuality/class.tmt with name derived_binary_op2_positive
-// Used extensions: MACRO_VarName -> sealed09823 | MACRO_Create_List -> List<~[TYPE@1]~> ~[MACRO_ListName@1]~ = new ArrayList<>(); | MACRO_Add_Element_ToList -> ~[MACRO_ListName@1]~.add(~[EXPR_~[TYPE@1]~]~); | MACRO_ListName@1 -> list787232
-// Program:
 /**
  * OWASP Benchmark Project v1.2
  *

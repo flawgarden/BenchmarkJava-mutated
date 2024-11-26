@@ -1,0 +1,24 @@
+{
+    "original_file_metadata": {
+        "file_name": "src/main/java/org/owasp/benchmark/testcode/BenchmarkTest00681.java",
+        "CWEs": [
+            89
+        ],
+        "kind": "fail",
+        "region": null
+    },
+    "mutated_file_metadata": {
+        "used_templates": [
+            {
+                "template_file": "templates-db/languages/java/sensitivity/field/constructors.tmt",
+                "template_name": "class_with_string_initialization_negative"
+            }
+        ],
+        "used_extensions": [
+            " MACRO_VarName -> sealed12321",
+            "MACRO_Regex -> \"[a-z&&[^bc]]\""
+        ],
+        "region": null
+    },
+    "tool_results": []
+}

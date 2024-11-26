@@ -1,0 +1,23 @@
+{
+    "original_file_metadata": {
+        "file_name": "src/main/java/org/owasp/benchmark/testcode/BenchmarkTest02531.java",
+        "CWEs": [
+            89
+        ],
+        "kind": "fail",
+        "region": null
+    },
+    "mutated_file_metadata": {
+        "used_templates": [
+            {
+                "template_file": "templates-db/languages/java/sensitivity/injection/injection.tmt",
+                "template_name": "anno_dependency_injection_positive"
+            }
+        ],
+        "used_extensions": [
+            " MACRO_VarName -> sealed39745"
+        ],
+        "region": null
+    },
+    "tool_results": []
+}

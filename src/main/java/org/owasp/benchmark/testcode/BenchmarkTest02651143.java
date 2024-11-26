@@ -1,9 +1,3 @@
-// Original file name: src/main/java/org/owasp/benchmark/testcode/BenchmarkTest02651.java
-// Original file CWE's: [89]
-// Original file kind: fail
-// Mutation info: Insert template from templates-db/languages/java/sensitivity/record.tmt with name nested_record_positive
-// Used extensions: MACRO_Create_Queue -> Queue<~[TYPE@1]~> ~[MACRO_QueueName@1]~ = new ArrayDeque<>(); | MACRO_Add_Element_ToQueue -> ~[MACRO_QueueName@1]~.add(~[VAR_~[TYPE@1]~]~); | MACRO_Add_Fixed_Element_ToQueue -> ~[MACRO_QueueName@1]~.offer(~[EXPR_~[TYPE@1]~@1]~); | MACRO_QueueName@1 -> queue787231
-// Program:
 /**
  * OWASP Benchmark Project v1.2
  *

@@ -1,9 +1,3 @@
-// Original file name: src/main/java/org/owasp/benchmark/testcode/BenchmarkTest00573.java
-// Original file CWE's: [78]
-// Original file kind: fail
-// Mutation info: Insert template from templates-db/languages/java/sensitivity/collections/queue.tmt with name simple_poll_negative
-// Used extensions: MACRO_VarName -> sealed09823 | MACRO_VarName -> sealed21341 | MACRO_Create_Queue -> Queue<~[TYPE@1]~> ~[MACRO_QueueName]~ = new PriorityQueue<>(); | MACRO_Add_EXPR_ToQueue -> ~[MACRO_QueueName]~.offer(~[EXPR_~[TYPE@1]~]~); | MACRO_QueueName -> queue787231 | MACRO_QueueName -> queue787231 | MACRO_QueueName -> queue787231 | EXPR_String -> ~[EXPR_String]~.replaceAll(~[MACRO_Regex]~, ~[EXPR_String]~) | MACRO_Regex -> "\\"
-// Program:
 /**
  * OWASP Benchmark Project v1.2
  *

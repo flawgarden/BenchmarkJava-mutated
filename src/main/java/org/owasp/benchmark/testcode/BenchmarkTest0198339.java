@@ -1,9 +1,3 @@
-// Original file name: src/main/java/org/owasp/benchmark/testcode/BenchmarkTest01983.java
-// Original file CWE's: [22]
-// Original file kind: fail
-// Mutation info: Insert template from templates-db/languages/java/sensitivity/conditional/for.tmt with name for_operator_change_index_negative
-// Used extensions: MACRO_VarName -> obj09823
-// Program:
 /**
  * OWASP Benchmark Project v1.2
  *

@@ -1,9 +1,3 @@
-// Original file name: src/main/java/org/owasp/benchmark/testcode/BenchmarkTest02302.java
-// Original file CWE's: [22]
-// Original file kind: fail
-// Mutation info: Insert template from templates-db/languages/java/sensitivity/field/regularField.tmt with name class_with_string_field_positive
-// Used extensions: MACRO_Regex -> (~[MACRO_Regex]~ + "*") | MACRO_Regex -> "\n"
-// Program:
 /**
  * OWASP Benchmark Project v1.2
  *

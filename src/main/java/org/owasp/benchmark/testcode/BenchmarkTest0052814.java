@@ -1,9 +1,3 @@
-// Original file name: src/main/java/org/owasp/benchmark/testcode/BenchmarkTest00528.java
-// Original file CWE's: [22]
-// Original file kind: fail
-// Mutation info: Insert template from templates-db/languages/java/sensitivity/concurrency/concurrency.tmt with name null_and_restore_condvar_positive
-// Used extensions: MACRO_VarName -> obj09823 | MACRO_VarName -> genericClass39745 | EXPR_Boolean -> ~[EXPR_Object]~ instanceof ImplementingSubClass | EXPR_Object -> new ImplementingSubClass()
-// Program:
 /**
  * OWASP Benchmark Project v1.2
  *

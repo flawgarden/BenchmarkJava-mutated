@@ -1,0 +1,28 @@
+{
+    "original_file_metadata": {
+        "file_name": "src/main/java/org/owasp/benchmark/testcode/BenchmarkTest00004.java",
+        "CWEs": [
+            501
+        ],
+        "kind": "fail",
+        "region": null
+    },
+    "mutated_file_metadata": {
+        "used_templates": [
+            {
+                "template_file": "templates-db/languages/java/sensitivity/virtuality/interface.tmt",
+                "template_name": "base_binary_op_interface_positive"
+            }
+        ],
+        "used_extensions": [
+            " MACRO_VarName -> obj12321",
+            "MACRO_Create_Queue -> Queue<~[TYPE@1]~> ~[MACRO_QueueName@1]~ = new ArrayDeque<>();",
+            "MACRO_Add_Element_ToQueue -> ~[MACRO_QueueName@1]~.add(~[VAR_~[TYPE@1]~]~);",
+            "MACRO_Add_Element_ToQueue -> ~[MACRO_QueueName@1]~.offer(~[EXPR_~[TYPE@1]~]~);",
+            "MACRO_Add_Fixed_Element_ToQueue -> ~[MACRO_QueueName@1]~.add(~[VAR_~[TYPE@1]~@1]~);",
+            "MACRO_QueueName@1 -> queue787231"
+        ],
+        "region": null
+    },
+    "tool_results": []
+}

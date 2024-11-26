@@ -1,0 +1,23 @@
+{
+    "original_file_metadata": {
+        "file_name": "src/main/java/org/owasp/benchmark/testcode/BenchmarkTest02561.java",
+        "CWEs": [
+            22
+        ],
+        "kind": "fail",
+        "region": null
+    },
+    "mutated_file_metadata": {
+        "used_templates": [
+            {
+                "template_file": "templates-db/languages/java/sensitivity/field/staticField.tmt",
+                "template_name": "class_with_static_string_field_negative"
+            }
+        ],
+        "used_extensions": [
+            " MACRO_VarName -> sealed09823"
+        ],
+        "region": null
+    },
+    "tool_results": []
+}

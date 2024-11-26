@@ -1,9 +1,3 @@
-// Original file name: src/main/java/org/owasp/benchmark/testcode/BenchmarkTest02525.java
-// Original file CWE's: [501]
-// Original file kind: fail
-// Mutation info: Insert template from templates-db/languages/java/sensitivity/collections/map.tmt with name map_put_if_absent_negative
-// Used extensions: MACRO_VarName -> sealed12321 | MACRO_Regex -> (~[MACRO_Regex]~ + "+") | MACRO_Regex -> "[abc]" | MACRO_Create_Map -> Map<~[TYPE@1]~, ~[TYPE@2]~> ~[MACRO_MapName]~ = new TreeMap<>(); | MACRO_MapName -> map787234 | MACRO_MapName -> map787234 | MACRO_MapName -> map787234 | MACRO_MapName -> map787234
-// Program:
 /**
  * OWASP Benchmark Project v1.2
  *

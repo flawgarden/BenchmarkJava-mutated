@@ -1,0 +1,27 @@
+{
+    "original_file_metadata": {
+        "file_name": "src/main/java/org/owasp/benchmark/testcode/BenchmarkTest01287.java",
+        "CWEs": [
+            78
+        ],
+        "kind": "fail",
+        "region": null
+    },
+    "mutated_file_metadata": {
+        "used_templates": [
+            {
+                "template_file": "templates-db/languages/java/sensitivity/field/nested.tmt",
+                "template_name": "nested_field_simple_positive"
+            }
+        ],
+        "used_extensions": [
+            " MACRO_Regex -> (~[MACRO_Regex]~ + \"*\")",
+            "EXPR_String -> ~[EXPR_String]~.substring(~[EXPR_int]~)",
+            "MACRO_Regex -> \"\\r\"",
+            "EXPR_int -> 42",
+            "MACRO_VarName -> sealed21341"
+        ],
+        "region": null
+    },
+    "tool_results": []
+}

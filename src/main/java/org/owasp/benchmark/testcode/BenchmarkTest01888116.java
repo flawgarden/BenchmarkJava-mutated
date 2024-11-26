@@ -1,9 +1,3 @@
-// Original file name: src/main/java/org/owasp/benchmark/testcode/BenchmarkTest01888.java
-// Original file CWE's: [89]
-// Original file kind: fail
-// Mutation info: Insert template from templates-db/languages/java/sensitivity/collections/queue.tmt with name queue_remove_if_positive
-// Used extensions: MACRO_Regex -> "\0n" | MACRO_VarName -> obj12321 | MACRO_Create_Queue -> Queue<~[TYPE@1]~> ~[MACRO_QueueName]~ = new LinkedList<>(); | MACRO_Add_Fixed_CONST_ToQueue -> ~[MACRO_QueueName]~.offer(~[CONST_~[TYPE@1]~@1]~); | MACRO_Add_Fixed_VAR_ToQueue -> ~[MACRO_QueueName]~.offer(~[VAR_~[TYPE@1]~@1]~); | MACRO_QueueName -> queue787231 | MACRO_QueueName -> queue787231 | MACRO_QueueName -> queue787231 | MACRO_QueueName -> queue787231 | MACRO_QueueName -> queue787231
-// Program:
 /**
  * OWASP Benchmark Project v1.2
  *

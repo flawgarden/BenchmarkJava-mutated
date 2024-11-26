@@ -1,9 +1,3 @@
-// Original file name: src/main/java/org/owasp/benchmark/testcode/BenchmarkTest01736.java
-// Original file CWE's: [643]
-// Original file kind: fail
-// Mutation info: Insert template from templates-db/languages/java/sensitivity/varargs/varargs.tmt with name varargs_combine_strings_positive
-// Used extensions: MACRO_Create_Set -> Set<~[TYPE@1]~> ~[MACRO_SetName@1]~ = new HashSet<>(); | MACRO_Add_Element_ToSet -> ~[MACRO_SetName@1]~.add(~[VAR_~[TYPE@1]~]~); | MACRO_Add_Fixed_Element_ToSet -> ~[MACRO_SetName@1]~.add(~[EXPR_~[TYPE@1]~@1]~); | MACRO_SetName@1 -> set787232
-// Program:
 /**
  * OWASP Benchmark Project v1.2
  *
