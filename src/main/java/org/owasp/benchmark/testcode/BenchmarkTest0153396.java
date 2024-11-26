@@ -1,11 +1,3 @@
-// Original file name: src/main/java/org/owasp/benchmark/testcode/BenchmarkTest01533.java
-// Original file CWE's: [78]
-// Original file kind: fail
-// Mutation info: Insert template from templates-db/languages/java/sensitivity/assignment.tmt with
-// name simple_assignment_positive
-// Used extensions: MACRO_VarName -> sealed12321 | MACRO_VarName -> obj12321 | MACRO_VarName ->
-// genericClass39745
-// Program:
 /**
  * OWASP Benchmark Project v1.2
  *

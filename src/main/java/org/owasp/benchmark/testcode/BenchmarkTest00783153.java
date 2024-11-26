@@ -1,11 +1,3 @@
-// Original file name: src/main/java/org/owasp/benchmark/testcode/BenchmarkTest00783.java
-// Original file CWE's: [22]
-// Original file kind: fail
-// Mutation info: Insert template from
-// templates-db/languages/java/sensitivity/injection/injection.tmt with name
-// interface_dependency_injection_negative
-// Used extensions: MACRO_VarName -> sealed12321
-// Program:
 /**
  * OWASP Benchmark Project v1.2
  *

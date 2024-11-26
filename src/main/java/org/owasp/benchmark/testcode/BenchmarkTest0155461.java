@@ -1,11 +1,3 @@
-// Original file name: src/main/java/org/owasp/benchmark/testcode/BenchmarkTest01554.java
-// Original file CWE's: [89]
-// Original file kind: fail
-// Mutation info: Insert template from
-// templates-db/languages/java/sensitivity/injection/injection.tmt with name
-// const_dependency_injection_positive
-// Used extensions: EXPR_String -> ""
-// Program:
 /**
  * OWASP Benchmark Project v1.2
  *

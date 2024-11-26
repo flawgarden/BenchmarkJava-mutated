@@ -1,0 +1,27 @@
+{
+    "original_file_metadata": {
+        "file_name": "src/main/java/org/owasp/benchmark/testcode/BenchmarkTest01955.java",
+        "CWEs": [
+            501
+        ],
+        "kind": "fail",
+        "region": null
+    },
+    "mutated_file_metadata": {
+        "used_templates": [
+            {
+                "template_file": "sensitivity/exceptions/tryCatchFinally",
+                "template_name": "try_multi_cath_positive"
+            }
+        ],
+        "used_extensions": [
+            " MACRO_VarName -> obj39745",
+            "MACRO_Regex -> (~[MACRO_Regex]~ + \"??\")",
+            "MACRO_Regex -> (~[MACRO_Regex]~ + \"*\")",
+            "MACRO_Regex -> \"\\0nn\"",
+            "MACRO_VarName -> sealed21341"
+        ],
+        "region": null
+    },
+    "tool_results": []
+}

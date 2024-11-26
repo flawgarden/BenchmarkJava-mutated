@@ -1,0 +1,25 @@
+{
+    "original_file_metadata": {
+        "file_name": "src/main/java/org/owasp/benchmark/testcode/BenchmarkTest01517.java",
+        "CWEs": [
+            78
+        ],
+        "kind": "fail",
+        "region": null
+    },
+    "mutated_file_metadata": {
+        "used_templates": [
+            {
+                "template_file": "sensitivity/injection/injection",
+                "template_name": "const_dependency_injection_negative"
+            }
+        ],
+        "used_extensions": [
+            " MACRO_VarName -> obj12321",
+            "MACRO_VarName -> sealed21341",
+            "EXPR_String -> ~[EXPR_String]~.concat(~[EXPR_String]~)"
+        ],
+        "region": null
+    },
+    "tool_results": []
+}

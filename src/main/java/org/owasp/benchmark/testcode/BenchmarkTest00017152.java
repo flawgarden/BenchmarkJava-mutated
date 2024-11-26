@@ -1,14 +1,3 @@
-// Original file name: src/main/java/org/owasp/benchmark/testcode/BenchmarkTest00017.java
-// Original file CWE's: [78]
-// Original file kind: fail
-// Mutation info: Insert template from
-// templates-db/languages/java/sensitivity/injection/injection.tmt with name
-// const_dependency_injection_positive
-// Used extensions: MACRO_Create_Set -> Set<~[TYPE@1]~> ~[MACRO_SetName@1]~ = new LinkedHashSet<>();
-// | MACRO_Add_Element_ToSet -> ~[MACRO_SetName@1]~.add(~[VAR_~[TYPE@1]~]~); |
-// MACRO_Add_Fixed_Element_ToSet -> ~[MACRO_SetName@1]~.add(~[VAR_~[TYPE@1]~@1]~); | MACRO_SetName@1
-// -> set787231 | MACRO_VarName -> genericClass39745 | EXPR_String -> ""
-// Program:
 /**
  * OWASP Benchmark v1.2
  *

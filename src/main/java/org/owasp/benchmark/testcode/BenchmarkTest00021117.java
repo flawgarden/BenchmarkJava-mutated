@@ -1,11 +1,3 @@
-// Original file name: src/main/java/org/owasp/benchmark/testcode/BenchmarkTest00021.java
-// Original file CWE's: [90]
-// Original file kind: fail
-// Mutation info: Insert template from templates-db/languages/java/sensitivity/varargs/varargs.tmt
-// with name varargs_get_first_string_negative
-// Used extensions: MACRO_VarName -> obj21341 | EXPR_String ->
-// ~[EXPR_String]~.substring(~[EXPR_int]~, ~[EXPR_int]~) | EXPR_String -> ""
-// Program:
 /**
  * OWASP Benchmark v1.2
  *

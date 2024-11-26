@@ -1,0 +1,23 @@
+{
+    "original_file_metadata": {
+        "file_name": "src/main/java/org/owasp/benchmark/testcode/BenchmarkTest00145.java",
+        "CWEs": [
+            79
+        ],
+        "kind": "fail",
+        "region": null
+    },
+    "mutated_file_metadata": {
+        "used_templates": [
+            {
+                "template_file": "sensitivity/field/constructorChains",
+                "template_name": "constructor_chains_neutral"
+            }
+        ],
+        "used_extensions": [
+            " MACRO_VarName -> obj09823"
+        ],
+        "region": null
+    },
+    "tool_results": []
+}

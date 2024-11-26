@@ -1,10 +1,3 @@
-// Original file name: src/main/java/org/owasp/benchmark/testcode/BenchmarkTest02511.java
-// Original file CWE's: [78]
-// Original file kind: fail
-// Mutation info: Insert template from templates-db/languages/java/sensitivity/varargs/varargs.tmt
-// with name varargs_combine_strings_negative
-// Used extensions: EXPR_String -> ~[EXPR_String]~.replace('/', '.')
-// Program:
 /**
  * OWASP Benchmark Project v1.2
  *

@@ -1,0 +1,26 @@
+{
+    "original_file_metadata": {
+        "file_name": "src/main/java/org/owasp/benchmark/testcode/BenchmarkTest01221.java",
+        "CWEs": [
+            89
+        ],
+        "kind": "fail",
+        "region": null
+    },
+    "mutated_file_metadata": {
+        "used_templates": [
+            {
+                "template_file": "sensitivity/record/record",
+                "template_name": "simple_record_negative"
+            }
+        ],
+        "used_extensions": [
+            " EXPR_String -> ~[EXPR_String]~.replaceAll(~[MACRO_Regex]~, ~[EXPR_String]~)",
+            "MACRO_Regex -> \"[a-zA-Z]\"",
+            "MACRO_VarName -> genericClass21341",
+            "EXPR_String -> \"\""
+        ],
+        "region": null
+    },
+    "tool_results": []
+}

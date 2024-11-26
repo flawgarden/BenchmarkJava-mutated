@@ -1,0 +1,25 @@
+{
+    "original_file_metadata": {
+        "file_name": "src/main/java/org/owasp/benchmark/testcode/BenchmarkTest02516.java",
+        "CWEs": [
+            78
+        ],
+        "kind": "fail",
+        "region": null
+    },
+    "mutated_file_metadata": {
+        "used_templates": [
+            {
+                "template_file": "sensitivity/lambdas/mutation",
+                "template_name": "nested_unary_lambda_mutation_negative"
+            }
+        ],
+        "used_extensions": [
+            " MACRO_Create_Queue -> Queue<~[TYPE@1]~> ~[MACRO_QueueName@1]~ = new PriorityQueue<>();",
+            "MACRO_Add_Element_ToQueue -> ~[MACRO_QueueName@1]~.add(~[VAR_~[TYPE@1]~]~);",
+            "MACRO_QueueName@1 -> queue787231"
+        ],
+        "region": null
+    },
+    "tool_results": []
+}

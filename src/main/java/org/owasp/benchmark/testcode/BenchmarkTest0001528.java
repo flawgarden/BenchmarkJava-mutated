@@ -1,14 +1,3 @@
-// Original file name: src/main/java/org/owasp/benchmark/testcode/BenchmarkTest00015.java
-// Original file CWE's: [78]
-// Original file kind: fail
-// Mutation info: Insert template from
-// templates-db/languages/java/sensitivity/field/constructors.tmt with name
-// class_with_instance_initializer_positive
-// Used extensions: MACRO_Regex -> (~[MACRO_Regex]~ + "{5}") | EXPR_String -> "" | MACRO_Regex ->
-// (~[MACRO_Regex]~ + "??") | MACRO_Regex -> (~[MACRO_Regex]~ + "*") | MACRO_Regex ->
-// "[a-z&&[^m-p]]" | EXPR_String -> "" | MACRO_Create_Map -> Map<~[TYPE@1]~, ~[TYPE@2]~>
-// ~[MACRO_MapName@1]~ = new HashMap<>(); | MACRO_MapName@1 -> map787232
-// Program:
 /**
  * OWASP Benchmark v1.2
  *

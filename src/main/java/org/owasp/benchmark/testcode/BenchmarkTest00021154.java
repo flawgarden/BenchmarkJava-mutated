@@ -1,13 +1,3 @@
-// Original file name: src/main/java/org/owasp/benchmark/testcode/BenchmarkTest00021.java
-// Original file CWE's: [90]
-// Original file kind: fail
-// Mutation info: Insert template from
-// templates-db/languages/java/sensitivity/reflection/reflection.tmt with name
-// simple_reflection_negative
-// Used extensions: MACRO_Create_Set -> Set<~[TYPE@1]~> ~[MACRO_SetName@1]~ = new LinkedHashSet<>();
-// | MACRO_Add_Fixed_Element_ToSet -> ~[MACRO_SetName@1]~.add(~[VAR_~[TYPE@1]~@1]~); |
-// MACRO_SetName@1 -> set787233
-// Program:
 /**
  * OWASP Benchmark v1.2
  *

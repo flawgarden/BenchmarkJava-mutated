@@ -1,11 +1,3 @@
-// Original file name: src/main/java/org/owasp/benchmark/testcode/BenchmarkTest02532.java
-// Original file CWE's: [89]
-// Original file kind: fail
-// Mutation info: Insert template from
-// templates-db/languages/java/sensitivity/conditional/dowhile.tmt
-// with name do_while_operator_positive
-// Used extensions:
-// Program:
 /**
  * OWASP Benchmark Project v1.2
  *

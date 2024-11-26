@@ -1,14 +1,3 @@
-// Original file name: src/main/java/org/owasp/benchmark/testcode/BenchmarkTest01616.java
-// Original file CWE's: [501]
-// Original file kind: fail
-// Mutation info: Insert template from
-// templates-db/languages/java/sensitivity/field/constructors.tmt with name
-// class_with_nested_string_initialization_negative
-// Used extensions: MACRO_VarName -> obj21341 | MACRO_Create_Map -> Map<~[TYPE@1]~, ~[TYPE@2]~>
-// ~[MACRO_MapName@1]~ = new TreeMap<>(); | MACRO_Add_Element_ToMap ->
-// ~[MACRO_MapName@1]~.put(~[VAR_~[TYPE@1]~]~, ~[VAR_~[TYPE@2]~]~); | MACRO_MapName@1 -> map787234 |
-// MACRO_VarName -> sealed09823
-// Program:
 /**
  * OWASP Benchmark Project v1.2
  *

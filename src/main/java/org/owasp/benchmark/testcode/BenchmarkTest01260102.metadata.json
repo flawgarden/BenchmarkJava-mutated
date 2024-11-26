@@ -1,0 +1,26 @@
+{
+    "original_file_metadata": {
+        "file_name": "src/main/java/org/owasp/benchmark/testcode/BenchmarkTest01260.java",
+        "CWEs": [
+            79
+        ],
+        "kind": "fail",
+        "region": null
+    },
+    "mutated_file_metadata": {
+        "used_templates": [
+            {
+                "template_file": "sensitivity/virtuality/default",
+                "template_name": "binary_op_interface_default_negative"
+            }
+        ],
+        "used_extensions": [
+            " MACRO_VarName -> obj09823",
+            "EXPR_String -> ~[EXPR_SimpleRecord]~.t()",
+            "EXPR_SimpleRecord -> ~[EXPR_NestedRecord]~.b()",
+            "EXPR_NestedRecord -> (new NestedRecord(new SimpleRecord(~[EXPR_String]~), new SimpleRecord(~[EXPR_String]~)))"
+        ],
+        "region": null
+    },
+    "tool_results": []
+}

@@ -1,10 +1,3 @@
-// Original file name: src/main/java/org/owasp/benchmark/testcode/BenchmarkTest00727.java
-// Original file CWE's: [79]
-// Original file kind: fail
-// Mutation info: Insert template from templates-db/languages/java/sensitivity/field/staticField.tmt
-// with name class_with_static_string_field_negative
-// Used extensions:
-// Program:
 /**
  * OWASP Benchmark Project v1.2
  *

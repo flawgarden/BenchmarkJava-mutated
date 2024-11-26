@@ -1,14 +1,3 @@
-// Original file name: src/main/java/org/owasp/benchmark/testcode/BenchmarkTest02531.java
-// Original file CWE's: [89]
-// Original file kind: fail
-// Mutation info: Insert template from templates-db/languages/java/sensitivity/collections/set.tmt
-// with name set_remove_simple_positive
-// Used extensions: MACRO_VarName -> sealed09823 | MACRO_Create_Set -> Set<~[TYPE@1]~>
-// ~[MACRO_SetName]~ = new LinkedHashSet<>(); | MACRO_Add_Fixed_EXPR_ToSet ->
-// ~[MACRO_SetName]~.add(~[EXPR_~[TYPE@1]~@1]~); | MACRO_Add_Fixed_VAR_ToSet ->
-// ~[MACRO_SetName]~.add(~[VAR_~[TYPE@1]~@1]~); | MACRO_SetName -> set787231 | MACRO_SetName ->
-// set787231 | MACRO_SetName -> set787231 | MACRO_SetName -> set787231 | MACRO_SetName -> set787231
-// Program:
 /**
  * OWASP Benchmark Project v1.2
  *

@@ -1,0 +1,23 @@
+{
+    "original_file_metadata": {
+        "file_name": "src/main/java/org/owasp/benchmark/testcode/BenchmarkTest01090.java",
+        "CWEs": [
+            89
+        ],
+        "kind": "fail",
+        "region": null
+    },
+    "mutated_file_metadata": {
+        "used_templates": [
+            {
+                "template_file": "sensitivity/record/record",
+                "template_name": "simple_record_positive"
+            }
+        ],
+        "used_extensions": [
+            " MACRO_VarName -> obj12321"
+        ],
+        "region": null
+    },
+    "tool_results": []
+}

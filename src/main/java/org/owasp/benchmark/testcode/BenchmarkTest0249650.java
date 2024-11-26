@@ -1,11 +1,3 @@
-// Original file name: src/main/java/org/owasp/benchmark/testcode/BenchmarkTest02496.java
-// Original file CWE's: [78]
-// Original file kind: fail
-// Mutation info: Insert template from
-// templates-db/languages/java/sensitivity/concurrency/concurrency.tmt with name
-// two_set_threads_in_sequence_positive
-// Used extensions: MACRO_VarName -> obj12321 | MACRO_VarName -> obj39745
-// Program:
 /**
  * OWASP Benchmark Project v1.2
  *

@@ -1,10 +1,3 @@
-// Original file name: src/main/java/org/owasp/benchmark/testcode/BenchmarkTest01933.java
-// Original file CWE's: [330]
-// Original file kind: fail
-// Mutation info: Insert template from templates-db/languages/java/sensitivity/virtuality/class.tmt
-// with name derived_binary_op1_negative
-// Used extensions: MACRO_VarName -> obj09823 | MACRO_VarName -> obj39745
-// Program:
 /**
  * OWASP Benchmark Project v1.2
  *

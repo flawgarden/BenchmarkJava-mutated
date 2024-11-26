@@ -1,11 +1,3 @@
-// Original file name: src/main/java/org/owasp/benchmark/testcode/BenchmarkTest00500.java
-// Original file CWE's: [78]
-// Original file kind: fail
-// Mutation info: Insert template from
-// templates-db/languages/java/sensitivity/concurrency/concurrency.tmt with name
-// atomic_integer_negative
-// Used extensions: MACRO_VarName -> obj21341
-// Program:
 /**
  * OWASP Benchmark Project v1.2
  *

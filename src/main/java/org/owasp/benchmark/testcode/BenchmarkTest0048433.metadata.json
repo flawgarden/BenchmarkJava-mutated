@@ -1,0 +1,25 @@
+{
+    "original_file_metadata": {
+        "file_name": "src/main/java/org/owasp/benchmark/testcode/BenchmarkTest00484.java",
+        "CWEs": [
+            330
+        ],
+        "kind": "fail",
+        "region": null
+    },
+    "mutated_file_metadata": {
+        "used_templates": [
+            {
+                "template_file": "sensitivity/virtuality/default",
+                "template_name": "binary_op_interface_default1_negative"
+            }
+        ],
+        "used_extensions": [
+            " MACRO_Create_Set -> Set<~[TYPE@1]~> ~[MACRO_SetName@1]~ = new HashSet<>();",
+            "EXPR_Boolean -> ~[EXPR_String@1]~ != null && ~[EXPR_String@1]~.charAt(~[CONST_int]~) == ~[CONST_char]~",
+            "MACRO_SetName@1 -> set787234"
+        ],
+        "region": null
+    },
+    "tool_results": []
+}

@@ -1,14 +1,3 @@
-// Original file name: src/main/java/org/owasp/benchmark/testcode/BenchmarkTest00961.java
-// Original file CWE's: [328]
-// Original file kind: fail
-// Mutation info: Insert template from templates-db/languages/java/sensitivity/conditional/for.tmt
-// with name for_operator_change_index_negative
-// Used extensions: MACRO_Create_Queue -> Queue<~[TYPE@1]~> ~[MACRO_QueueName@1]~ = new
-// PriorityQueue<>(); | MACRO_Add_Element_ToQueue ->
-// ~[MACRO_QueueName@1]~.offer(~[VAR_~[TYPE@1]~]~); | MACRO_QueueName@1 -> queue787231 | EXPR_int ->
-// ~[EXPR_String]~.compareToIgnoreCase(~[EXPR_String]~) | EXPR_String ->
-// ~[EXPR_String]~.replace('/', '.')
-// Program:
 /**
  * OWASP Benchmark Project v1.2
  *

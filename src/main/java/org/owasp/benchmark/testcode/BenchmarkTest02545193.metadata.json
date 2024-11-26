@@ -1,0 +1,29 @@
+{
+    "original_file_metadata": {
+        "file_name": "src/main/java/org/owasp/benchmark/testcode/BenchmarkTest02545.java",
+        "CWEs": [
+            89
+        ],
+        "kind": "fail",
+        "region": null
+    },
+    "mutated_file_metadata": {
+        "used_templates": [
+            {
+                "template_file": "sensitivity/collections/queue",
+                "template_name": "queue_is_empty_1_positive"
+            }
+        ],
+        "used_extensions": [
+            " MACRO_VarName -> obj39745",
+            "MACRO_Create_Queue -> Queue<~[TYPE@1]~> ~[MACRO_QueueName]~ = new ArrayDeque<>();",
+            "MACRO_Add_Fixed_VAR_ToQueue -> ~[MACRO_QueueName]~.offer(~[VAR_~[TYPE@1]~@1]~);",
+            "MACRO_QueueName -> queue787231",
+            "MACRO_QueueName -> queue787231",
+            "MACRO_QueueName -> queue787231",
+            "MACRO_QueueName -> queue787231"
+        ],
+        "region": null
+    },
+    "tool_results": []
+}

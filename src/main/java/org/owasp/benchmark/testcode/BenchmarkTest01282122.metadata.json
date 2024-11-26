@@ -1,0 +1,23 @@
+{
+    "original_file_metadata": {
+        "file_name": "src/main/java/org/owasp/benchmark/testcode/BenchmarkTest01282.java",
+        "CWEs": [
+            614
+        ],
+        "kind": "fail",
+        "region": null
+    },
+    "mutated_file_metadata": {
+        "used_templates": [
+            {
+                "template_file": "sensitivity/concurrency/atomic",
+                "template_name": "atomic_integer_restore_positive"
+            }
+        ],
+        "used_extensions": [
+            " MACRO_VarName -> sealed09823"
+        ],
+        "region": null
+    },
+    "tool_results": []
+}

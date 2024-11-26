@@ -1,0 +1,23 @@
+{
+    "original_file_metadata": {
+        "file_name": "src/main/java/org/owasp/benchmark/testcode/BenchmarkTest02511.java",
+        "CWEs": [
+            78
+        ],
+        "kind": "fail",
+        "region": null
+    },
+    "mutated_file_metadata": {
+        "used_templates": [
+            {
+                "template_file": "sensitivity/conditional/if",
+                "template_name": "if_operator_negative"
+            }
+        ],
+        "used_extensions": [
+            " MACRO_VarName -> obj12321"
+        ],
+        "region": null
+    },
+    "tool_results": []
+}

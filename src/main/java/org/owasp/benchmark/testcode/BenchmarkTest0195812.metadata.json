@@ -1,0 +1,28 @@
+{
+    "original_file_metadata": {
+        "file_name": "src/main/java/org/owasp/benchmark/testcode/BenchmarkTest01958.java",
+        "CWEs": [
+            501
+        ],
+        "kind": "fail",
+        "region": null
+    },
+    "mutated_file_metadata": {
+        "used_templates": [
+            {
+                "template_file": "sensitivity/collections/list",
+                "template_name": "list_set_negative"
+            }
+        ],
+        "used_extensions": [
+            " MACRO_VarName -> sealed09823",
+            "MACRO_Create_List -> List<~[TYPE@1]~> ~[MACRO_ListName]~ = new LinkedList<>();",
+            "MACRO_Add_CONST_ToList -> ~[MACRO_ListName]~.add(~[CONST_~[TYPE@1]~@1]~);",
+            "MACRO_ListName -> list787231",
+            "MACRO_ListName -> list787231",
+            "MACRO_ListName -> list787231"
+        ],
+        "region": null
+    },
+    "tool_results": []
+}

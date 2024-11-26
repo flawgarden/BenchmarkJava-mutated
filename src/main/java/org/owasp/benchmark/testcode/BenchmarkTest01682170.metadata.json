@@ -1,0 +1,28 @@
+{
+    "original_file_metadata": {
+        "file_name": "src/main/java/org/owasp/benchmark/testcode/BenchmarkTest01682.java",
+        "CWEs": [
+            614
+        ],
+        "kind": "fail",
+        "region": null
+    },
+    "mutated_file_metadata": {
+        "used_templates": [
+            {
+                "template_file": "sensitivity/varargs/varargs",
+                "template_name": "varargs_get_string_with_index_negative"
+            }
+        ],
+        "used_extensions": [
+            " MACRO_Create_List -> List<~[TYPE@1]~> ~[MACRO_ListName@1]~ = new ArrayList<>();",
+            "MACRO_Add_Element_ToList -> ~[MACRO_ListName@1]~.add(~[EXPR_~[TYPE@1]~]~);",
+            "MACRO_ListName@1 -> list787232",
+            "MACRO_VarName -> sealed21341",
+            "EXPR_String -> ~[EXPR_String]~.toUpperCase()",
+            "EXPR_String -> \"\""
+        ],
+        "region": null
+    },
+    "tool_results": []
+}

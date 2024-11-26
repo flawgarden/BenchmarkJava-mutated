@@ -1,0 +1,23 @@
+{
+    "original_file_metadata": {
+        "file_name": "src/main/java/org/owasp/benchmark/testcode/BenchmarkTest01009.java",
+        "CWEs": [
+            89
+        ],
+        "kind": "fail",
+        "region": null
+    },
+    "mutated_file_metadata": {
+        "used_templates": [
+            {
+                "template_file": "sensitivity/concurrency/concurrency",
+                "template_name": "thread_set_positive"
+            }
+        ],
+        "used_extensions": [
+            " MACRO_VarName -> obj21341"
+        ],
+        "region": null
+    },
+    "tool_results": []
+}

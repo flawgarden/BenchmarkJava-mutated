@@ -1,10 +1,3 @@
-// Original file name: src/main/java/org/owasp/benchmark/testcode/BenchmarkTest01974.java
-// Original file CWE's: [643]
-// Original file kind: fail
-// Mutation info: Insert template from templates-db/languages/java/sensitivity/lambdas/mutation.tmt
-// with name unary_lambda_mutation_positive
-// Used extensions: MACRO_VarName -> obj21341
-// Program:
 /**
  * OWASP Benchmark Project v1.2
  *

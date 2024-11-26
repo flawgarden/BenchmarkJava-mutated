@@ -1,15 +1,3 @@
-// Original file name: src/main/java/org/owasp/benchmark/testcode/BenchmarkTest01347.java
-// Original file CWE's: [79]
-// Original file kind: fail
-// Mutation info: Insert template from templates-db/languages/java/sensitivity/conditional/if.tmt
-// with name if_operator_negative
-// Used extensions: MACRO_Create_List -> List<~[TYPE@1]~> ~[MACRO_ListName@1]~ = new ArrayList<>();
-// | MACRO_Add_Element_ToList -> ~[MACRO_ListName@1]~.add(~[VAR_~[TYPE@1]~]~); |
-// MACRO_Add_Element_ToList -> ~[MACRO_ListName@1]~.add(~[VAR_~[TYPE@1]~]~); |
-// MACRO_Add_Element_ToList -> ~[MACRO_ListName@1]~.add(~[VAR_~[TYPE@1]~]~); | MACRO_Create_Stream
-// -> Stream<~[TYPE@1]~> ~[MACRO_StreamName@1]~ = ~[MACRO_ListName@1]~.stream(); |
-// MACRO_StreamName@1 -> stream787231 | MACRO_ListName@1 -> list787231
-// Program:
 /**
  * OWASP Benchmark Project v1.2
  *

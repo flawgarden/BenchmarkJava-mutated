@@ -1,0 +1,25 @@
+{
+    "original_file_metadata": {
+        "file_name": "src/main/java/org/owasp/benchmark/testcode/BenchmarkTest01616.java",
+        "CWEs": [
+            501
+        ],
+        "kind": "fail",
+        "region": null
+    },
+    "mutated_file_metadata": {
+        "used_templates": [
+            {
+                "template_file": "sensitivity/concurrency/concurrency",
+                "template_name": "null_and_restore_condvar_positive"
+            }
+        ],
+        "used_extensions": [
+            " MACRO_VarName -> sealed39745",
+            "MACRO_VarName -> obj39745",
+            "MACRO_VarName -> sealed09823"
+        ],
+        "region": null
+    },
+    "tool_results": []
+}
