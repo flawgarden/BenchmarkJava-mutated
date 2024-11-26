@@ -1,4 +1,3 @@
-
 /**
  * OWASP Benchmark v1.2
  *
