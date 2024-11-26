@@ -1,10 +1,8 @@
 // Original file name: src/main/java/org/owasp/benchmark/testcode/BenchmarkTest01850.java
 // Original file CWE's: [78]
 // Original file kind: fail
-// Mutation info: Insert template from templates-db/languages/java/sensitivity/conditional/for.tmt
-// with name for_operator_string_array_negative
-// Used extensions: MACRO_String_Array -> {~[EXPR_String]~, ~[EXPR_String]~, ~[EXPR_String]~} |
-// EXPR_String -> ~[EXPR_String]~.toLowerCase() | EXPR_String -> ""
+// Mutation info: Insert template from templates-db/languages/java/sensitivity/conditional/for.tmt with name for_operator_string_array_negative
+// Used extensions: MACRO_String_Array -> {~[EXPR_String]~, ~[EXPR_String]~, ~[EXPR_String]~} | EXPR_String -> ~[EXPR_String]~.toLowerCase() | EXPR_String -> ""
 // Program:
 /**
  * OWASP Benchmark Project v1.2

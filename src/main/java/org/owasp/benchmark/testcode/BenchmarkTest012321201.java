@@ -1,8 +1,7 @@
 // Original file name: src/main/java/org/owasp/benchmark/testcode/BenchmarkTest01232.java
 // Original file CWE's: [22]
 // Original file kind: fail
-// Mutation info: Insert template from templates-db/languages/java/sensitivity/field/nested.tmt with
-// name nested_field_depth_2_positive
+// Mutation info: Insert template from templates-db/languages/java/sensitivity/field/nested.tmt with name nested_field_depth_2_positive
 // Used extensions: MACRO_VarName -> sealed12321 | MACRO_VarName -> obj21341
 // Program:
 /**

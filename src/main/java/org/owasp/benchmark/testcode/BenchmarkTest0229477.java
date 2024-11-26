@@ -1,11 +1,8 @@
 // Original file name: src/main/java/org/owasp/benchmark/testcode/BenchmarkTest02294.java
 // Original file CWE's: [327]
 // Original file kind: fail
-// Mutation info: Insert template from templates-db/languages/java/sensitivity/conditional/if.tmt
-// with name if_operator_positive
-// Used extensions: MACRO_VarName -> obj39745 | MACRO_Create_Set -> Set<~[TYPE@1]~>
-// ~[MACRO_SetName@1]~ = new TreeSet<>(); | MACRO_Add_Element_ToSet ->
-// ~[MACRO_SetName@1]~.add(~[VAR_~[TYPE@1]~]~); | MACRO_SetName@1 -> set787232
+// Mutation info: Insert template from templates-db/languages/java/sensitivity/conditional/if.tmt with name if_operator_positive
+// Used extensions: MACRO_VarName -> obj39745 | MACRO_Create_Set -> Set<~[TYPE@1]~> ~[MACRO_SetName@1]~ = new TreeSet<>(); | MACRO_Add_Element_ToSet -> ~[MACRO_SetName@1]~.add(~[VAR_~[TYPE@1]~]~); | MACRO_SetName@1 -> set787232
 // Program:
 /**
  * OWASP Benchmark Project v1.2

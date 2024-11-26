@@ -1,9 +1,7 @@
 // Original file name: src/main/java/org/owasp/benchmark/testcode/BenchmarkTest00145.java
 // Original file CWE's: [79]
 // Original file kind: fail
-// Mutation info: Insert template from
-// templates-db/languages/java/sensitivity/field/constructors.tmt with name
-// constructor_chains_negative
+// Mutation info: Insert template from templates-db/languages/java/sensitivity/field/constructors.tmt with name constructor_chains_negative
 // Used extensions: MACRO_VarName -> obj09823
 // Program:
 /**

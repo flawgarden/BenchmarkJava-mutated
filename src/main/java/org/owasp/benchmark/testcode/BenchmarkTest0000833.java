@@ -1,8 +1,7 @@
 // Original file name: src/main/java/org/owasp/benchmark/testcode/BenchmarkTest00008.java
 // Original file CWE's: [89]
 // Original file kind: fail
-// Mutation info: Insert template from templates-db/languages/java/sensitivity/conditional/if.tmt
-// with name if_operator_with_var_in_condition_positive
+// Mutation info: Insert template from templates-db/languages/java/sensitivity/conditional/if.tmt with name if_operator_with_var_in_condition_positive
 /**
  * OWASP Benchmark v1.2
  *

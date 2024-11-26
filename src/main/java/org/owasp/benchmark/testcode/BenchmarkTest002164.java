@@ -1,16 +1,8 @@
 // Original file name: src/main/java/org/owasp/benchmark/testcode/BenchmarkTest00216.java
 // Original file CWE's: [22]
 // Original file kind: fail
-// Mutation info: Insert template from templates-db/languages/java/sensitivity/collections/queue.tmt
-// with name queue_poll_all_positive
-// Used extensions: MACRO_VarName -> obj09823 | MACRO_VarName -> obj21341 | MACRO_Create_Queue ->
-// Queue<~[TYPE@1]~> ~[MACRO_QueueName]~ = new LinkedList<>(); | MACRO_Add_EXPR_ToQueue ->
-// ~[MACRO_QueueName]~.add(~[EXPR_~[TYPE@1]~]~); | MACRO_Add_EXPR_ToQueue ->
-// ~[MACRO_QueueName]~.offer(~[EXPR_~[TYPE@1]~]~); | MACRO_Add_Fixed_VAR_ToQueue ->
-// ~[MACRO_QueueName]~.add(~[VAR_~[TYPE@1]~@1]~); | MACRO_QueueName -> queue787231 | MACRO_QueueName
-// -> queue787231 | MACRO_QueueName -> queue787231 | MACRO_QueueName -> queue787231 |
-// MACRO_QueueName -> queue787231 | EXPR_String -> ~[EXPR_String]~.toString() | MACRO_QueueName ->
-// queue787231
+// Mutation info: Insert template from templates-db/languages/java/sensitivity/collections/queue.tmt with name queue_poll_all_positive
+// Used extensions: MACRO_VarName -> obj09823 | MACRO_VarName -> obj21341 | MACRO_Create_Queue -> Queue<~[TYPE@1]~> ~[MACRO_QueueName]~ = new LinkedList<>(); | MACRO_Add_EXPR_ToQueue -> ~[MACRO_QueueName]~.add(~[EXPR_~[TYPE@1]~]~); | MACRO_Add_EXPR_ToQueue -> ~[MACRO_QueueName]~.offer(~[EXPR_~[TYPE@1]~]~); | MACRO_Add_Fixed_VAR_ToQueue -> ~[MACRO_QueueName]~.add(~[VAR_~[TYPE@1]~@1]~); | MACRO_QueueName -> queue787231 | MACRO_QueueName -> queue787231 | MACRO_QueueName -> queue787231 | MACRO_QueueName -> queue787231 | MACRO_QueueName -> queue787231 | EXPR_String -> ~[EXPR_String]~.toString() | MACRO_QueueName -> queue787231
 // Program:
 /**
  * OWASP Benchmark Project v1.2

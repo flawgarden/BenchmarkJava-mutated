@@ -1,14 +1,8 @@
 // Original file name: src/main/java/org/owasp/benchmark/testcode/BenchmarkTest00004.java
 // Original file CWE's: [501]
 // Original file kind: fail
-// Mutation info: Insert template from
-// templates-db/languages/java/sensitivity/virtuality/interface.tmt with name
-// base_binary_op_interface_negative
-// Used extensions: MACRO_VarName -> obj12321 | MACRO_Create_Queue -> Queue<~[TYPE@1]~>
-// ~[MACRO_QueueName@1]~ = new ArrayDeque<>(); | MACRO_Add_Element_ToQueue ->
-// ~[MACRO_QueueName@1]~.add(~[VAR_~[TYPE@1]~]~); | MACRO_Add_Element_ToQueue ->
-// ~[MACRO_QueueName@1]~.offer(~[EXPR_~[TYPE@1]~]~); | MACRO_Add_Fixed_Element_ToQueue ->
-// ~[MACRO_QueueName@1]~.add(~[VAR_~[TYPE@1]~@1]~); | MACRO_QueueName@1 -> queue787231
+// Mutation info: Insert template from templates-db/languages/java/sensitivity/virtuality/interface.tmt with name base_binary_op_interface_negative
+// Used extensions: MACRO_VarName -> obj12321 | MACRO_Create_Queue -> Queue<~[TYPE@1]~> ~[MACRO_QueueName@1]~ = new ArrayDeque<>(); | MACRO_Add_Element_ToQueue -> ~[MACRO_QueueName@1]~.add(~[VAR_~[TYPE@1]~]~); | MACRO_Add_Element_ToQueue -> ~[MACRO_QueueName@1]~.offer(~[EXPR_~[TYPE@1]~]~); | MACRO_Add_Fixed_Element_ToQueue -> ~[MACRO_QueueName@1]~.add(~[VAR_~[TYPE@1]~@1]~); | MACRO_QueueName@1 -> queue787231
 // Program:
 /**
  * OWASP Benchmark v1.2

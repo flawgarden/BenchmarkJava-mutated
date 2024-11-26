@@ -1,8 +1,7 @@
 // Original file name: src/main/java/org/owasp/benchmark/testcode/BenchmarkTest00694.java
 // Original file CWE's: [90]
 // Original file kind: fail
-// Mutation info: Insert template from templates-db/languages/java/sensitivity/record.tmt with name
-// nested_record_negative
+// Mutation info: Insert template from templates-db/languages/java/sensitivity/record.tmt with name nested_record_negative
 // Used extensions:
 // Program:
 /**

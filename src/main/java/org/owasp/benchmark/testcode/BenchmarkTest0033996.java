@@ -1,9 +1,7 @@
 // Original file name: src/main/java/org/owasp/benchmark/testcode/BenchmarkTest00339.java
 // Original file CWE's: [89]
 // Original file kind: fail
-// Mutation info: Insert template from
-// templates-db/languages/java/sensitivity/exceptions/causeThrows.tmt with name
-// array_store_exception_positive
+// Mutation info: Insert template from templates-db/languages/java/sensitivity/exceptions/causeThrows.tmt with name array_store_exception_positive
 // Used extensions:
 // Program:
 /**

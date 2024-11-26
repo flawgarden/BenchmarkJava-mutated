@@ -1,9 +1,7 @@
 // Original file name: src/main/java/org/owasp/benchmark/testcode/BenchmarkTest01718.java
 // Original file CWE's: [89]
 // Original file kind: fail
-// Mutation info: Insert template from
-// templates-db/languages/java/sensitivity/concurrency/concurrency.tmt with name
-// atomic_integer_negative
+// Mutation info: Insert template from templates-db/languages/java/sensitivity/concurrency/concurrency.tmt with name atomic_integer_negative
 // Used extensions: MACRO_VarName -> sealed21341 | MACRO_VarName -> obj39745
 // Program:
 /**

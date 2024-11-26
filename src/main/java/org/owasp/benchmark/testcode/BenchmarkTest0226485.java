@@ -1,11 +1,8 @@
 // Original file name: src/main/java/org/owasp/benchmark/testcode/BenchmarkTest02264.java
 // Original file CWE's: [89]
 // Original file kind: fail
-// Mutation info: Insert template from
-// templates-db/languages/java/sensitivity/exceptions/tryCatchFinally.tmt with name
-// try_multi_cath_positive
-// Used extensions: MACRO_VarName -> sealed39745 | MACRO_Create_Map -> Map<~[TYPE@1]~, ~[TYPE@2]~>
-// ~[MACRO_MapName@1]~ = new HashMap<>(); | MACRO_MapName@1 -> map787234
+// Mutation info: Insert template from templates-db/languages/java/sensitivity/exceptions/tryCatchFinally.tmt with name try_multi_cath_positive
+// Used extensions: MACRO_VarName -> sealed39745 | MACRO_Create_Map -> Map<~[TYPE@1]~, ~[TYPE@2]~> ~[MACRO_MapName@1]~ = new HashMap<>(); | MACRO_MapName@1 -> map787234
 // Program:
 /**
  * OWASP Benchmark Project v1.2

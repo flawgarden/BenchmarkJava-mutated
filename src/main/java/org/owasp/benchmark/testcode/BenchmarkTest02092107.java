@@ -1,8 +1,7 @@
 // Original file name: src/main/java/org/owasp/benchmark/testcode/BenchmarkTest02092.java
 // Original file CWE's: [89]
 // Original file kind: fail
-// Mutation info: Insert template from templates-db/languages/java/sensitivity/lambdas/mutation.tmt
-// with name nested_unary_lambda_mutation_positive
+// Mutation info: Insert template from templates-db/languages/java/sensitivity/lambdas/mutation.tmt with name nested_unary_lambda_mutation_positive
 // Used extensions: MACRO_Regex -> "[^abc]" | MACRO_Regex -> "[a-d[m-p]]"
 // Program:
 /**

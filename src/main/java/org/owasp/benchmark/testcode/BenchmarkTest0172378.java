@@ -1,9 +1,7 @@
 // Original file name: src/main/java/org/owasp/benchmark/testcode/BenchmarkTest01723.java
 // Original file CWE's: [89]
 // Original file kind: fail
-// Mutation info: Insert template from
-// templates-db/languages/java/sensitivity/conditional/switch.tmt with name
-// switch_operator_any_negative
+// Mutation info: Insert template from templates-db/languages/java/sensitivity/conditional/switch.tmt with name switch_operator_any_negative
 // Used extensions: MACRO_Any_String -> ~[CONST_String]~
 // Program:
 /**

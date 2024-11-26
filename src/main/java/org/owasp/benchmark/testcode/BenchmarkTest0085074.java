@@ -1,8 +1,7 @@
 // Original file name: src/main/java/org/owasp/benchmark/testcode/BenchmarkTest00850.java
 // Original file CWE's: [89]
 // Original file kind: fail
-// Mutation info: Insert template from templates-db/languages/java/sensitivity/pm.tmt with name
-// pattern_matching_simple_2_negative
+// Mutation info: Insert template from templates-db/languages/java/sensitivity/pm.tmt with name pattern_matching_simple_2_negative
 // Used extensions: MACRO_VarName -> obj09823
 // Program:
 /**

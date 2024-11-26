@@ -1,11 +1,8 @@
 // Original file name: src/main/java/org/owasp/benchmark/testcode/BenchmarkTest01502.java
 // Original file CWE's: [330]
 // Original file kind: fail
-// Mutation info: Insert template from
-// templates-db/languages/java/sensitivity/conditional/dowhile.tmt
-// with name do_while_operator_negative
-// Used extensions: MACRO_VarName -> obj09823 | EXPR_Boolean -> ~[EXPR_Object]~ instanceof
-// SubInterface | EXPR_Object -> new ImplementingSubClass()
+// Mutation info: Insert template from templates-db/languages/java/sensitivity/conditional/dowhile.tmt with name do_while_operator_negative
+// Used extensions: MACRO_VarName -> obj09823 | EXPR_Boolean -> ~[EXPR_Object]~ instanceof SubInterface | EXPR_Object -> new ImplementingSubClass()
 // Program:
 /**
  * OWASP Benchmark Project v1.2

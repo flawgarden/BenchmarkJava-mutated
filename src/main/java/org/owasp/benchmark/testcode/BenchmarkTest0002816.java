@@ -1,10 +1,8 @@
 // Original file name: src/main/java/org/owasp/benchmark/testcode/BenchmarkTest00028.java
 // Original file CWE's: [22]
 // Original file kind: fail
-// Mutation info: Insert template from templates-db/languages/java/sensitivity/pm.tmt with name
-// pattern_matching_simple_1_positive
-// Used extensions: MACRO_VarName -> sealed09823 | MACRO_VarName -> obj21341 | MACRO_VarName ->
-// obj39745
+// Mutation info: Insert template from templates-db/languages/java/sensitivity/pm.tmt with name pattern_matching_simple_1_positive
+// Used extensions: MACRO_VarName -> sealed09823 | MACRO_VarName -> obj21341 | MACRO_VarName -> obj39745
 // Program:
 /**
  * OWASP Benchmark v1.2

@@ -1,8 +1,7 @@
 // Original file name: src/main/java/org/owasp/benchmark/testcode/BenchmarkTest01920.java
 // Original file CWE's: [79]
 // Original file kind: fail
-// Mutation info: Insert template from templates-db/languages/java/sensitivity/conditional/if.tmt
-// with name if_else_operator_neutral
+// Mutation info: Insert template from templates-db/languages/java/sensitivity/conditional/if.tmt with name if_else_operator_neutral
 // Used extensions: MACRO_VarName -> sealed21341 | MACRO_VarName -> obj39745
 // Program:
 /**

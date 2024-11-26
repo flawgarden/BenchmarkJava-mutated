@@ -1,11 +1,8 @@
 // Original file name: src/main/java/org/owasp/benchmark/testcode/BenchmarkTest00106.java
 // Original file CWE's: [89]
 // Original file kind: fail
-// Mutation info: Insert template from templates-db/languages/java/sensitivity/assignment.tmt with
-// name lazy_eval_positive
-// Used extensions: MACRO_VarName -> obj39745 | MACRO_Create_Set -> Set<~[TYPE@1]~>
-// ~[MACRO_SetName@1]~ = new HashSet<>(); | MACRO_Add_Fixed_Element_ToSet ->
-// ~[MACRO_SetName@1]~.add(~[VAR_~[TYPE@1]~@1]~); | MACRO_SetName@1 -> set787232
+// Mutation info: Insert template from templates-db/languages/java/sensitivity/assignment.tmt with name lazy_eval_positive
+// Used extensions: MACRO_VarName -> obj39745 | MACRO_Create_Set -> Set<~[TYPE@1]~> ~[MACRO_SetName@1]~ = new HashSet<>(); | MACRO_Add_Fixed_Element_ToSet -> ~[MACRO_SetName@1]~.add(~[VAR_~[TYPE@1]~@1]~); | MACRO_SetName@1 -> set787232
 // Program:
 /**
  * OWASP Benchmark Project v1.2

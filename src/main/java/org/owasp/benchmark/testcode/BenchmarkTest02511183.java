@@ -1,13 +1,8 @@
 // Original file name: src/main/java/org/owasp/benchmark/testcode/BenchmarkTest02511.java
 // Original file CWE's: [78]
 // Original file kind: fail
-// Mutation info: Insert template from
-// templates-db/languages/java/sensitivity/field/regularField.tmt with name
-// class_with_string_field_negative
-// Used extensions: MACRO_Create_Queue -> Queue<~[TYPE@1]~> ~[MACRO_QueueName@1]~ = new
-// PriorityQueue<>(); | MACRO_Add_Element_ToQueue ->
-// ~[MACRO_QueueName@1]~.offer(~[EXPR_~[TYPE@1]~]~); | MACRO_QueueName@1 -> queue787231 |
-// EXPR_String -> "" | MACRO_VarName -> obj09823 | MACRO_VarName -> obj12321
+// Mutation info: Insert template from templates-db/languages/java/sensitivity/field/regularField.tmt with name class_with_string_field_negative
+// Used extensions: MACRO_Create_Queue -> Queue<~[TYPE@1]~> ~[MACRO_QueueName@1]~ = new PriorityQueue<>(); | MACRO_Add_Element_ToQueue -> ~[MACRO_QueueName@1]~.offer(~[EXPR_~[TYPE@1]~]~); | MACRO_QueueName@1 -> queue787231 | EXPR_String -> "" | MACRO_VarName -> obj09823 | MACRO_VarName -> obj12321
 // Program:
 /**
  * OWASP Benchmark Project v1.2

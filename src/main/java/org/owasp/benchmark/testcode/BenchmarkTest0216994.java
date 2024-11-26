@@ -1,8 +1,7 @@
 // Original file name: src/main/java/org/owasp/benchmark/testcode/BenchmarkTest02169.java
 // Original file CWE's: [89]
 // Original file kind: fail
-// Mutation info: Insert template from templates-db/languages/java/sensitivity/conditional/for.tmt
-// with name for_operator_strcpy_positive
+// Mutation info: Insert template from templates-db/languages/java/sensitivity/conditional/for.tmt with name for_operator_strcpy_positive
 // Used extensions: MACRO_VarName -> obj39745 | MACRO_VarName -> obj09823
 // Program:
 /**

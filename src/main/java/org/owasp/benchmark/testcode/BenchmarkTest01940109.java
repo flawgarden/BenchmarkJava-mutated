@@ -1,8 +1,7 @@
 // Original file name: src/main/java/org/owasp/benchmark/testcode/BenchmarkTest01940.java
 // Original file CWE's: [78]
 // Original file kind: fail
-// Mutation info: Insert template from templates-db/languages/java/sensitivity/assignment.tmt with
-// name lazy_eval_negative
+// Mutation info: Insert template from templates-db/languages/java/sensitivity/assignment.tmt with name lazy_eval_negative
 // Used extensions:
 // Program:
 /**

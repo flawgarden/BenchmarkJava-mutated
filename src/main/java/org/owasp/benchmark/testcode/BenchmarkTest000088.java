@@ -1,8 +1,7 @@
 // Original file name: src/main/java/org/owasp/benchmark/testcode/BenchmarkTest00008.java
 // Original file CWE's: [89]
 // Original file kind: fail
-// Mutation info: Insert template from
-// templates-db/languages/java/sensitivity/collections/stream.tmt with name stream_filter_positive
+// Mutation info: Insert template from templates-db/languages/java/sensitivity/collections/stream.tmt with name stream_filter_positive
 /**
  * OWASP Benchmark v1.2
  *

@@ -1,13 +1,8 @@
 // Original file name: src/main/java/org/owasp/benchmark/testcode/BenchmarkTest02051.java
 // Original file CWE's: [79]
 // Original file kind: fail
-// Mutation info: Insert template from templates-db/languages/java/sensitivity/collections/queue.tmt
-// with name queue_is_empty_1_negative
-// Used extensions: MACRO_VarName -> genericClass12321 | MACRO_Regex -> "[a-d[m-p]]" |
-// MACRO_Create_Queue -> Queue<~[TYPE@1]~> ~[MACRO_QueueName]~ = new PriorityQueue<>(); |
-// MACRO_Add_Fixed_VAR_ToQueue -> ~[MACRO_QueueName]~.offer(~[VAR_~[TYPE@1]~@1]~); | MACRO_QueueName
-// -> queue787231 | MACRO_QueueName -> queue787231 | MACRO_QueueName -> queue787231 |
-// MACRO_QueueName -> queue787231
+// Mutation info: Insert template from templates-db/languages/java/sensitivity/collections/queue.tmt with name queue_is_empty_1_negative
+// Used extensions: MACRO_VarName -> genericClass12321 | MACRO_Regex -> "[a-d[m-p]]" | MACRO_Create_Queue -> Queue<~[TYPE@1]~> ~[MACRO_QueueName]~ = new PriorityQueue<>(); | MACRO_Add_Fixed_VAR_ToQueue -> ~[MACRO_QueueName]~.offer(~[VAR_~[TYPE@1]~@1]~); | MACRO_QueueName -> queue787231 | MACRO_QueueName -> queue787231 | MACRO_QueueName -> queue787231 | MACRO_QueueName -> queue787231
 // Program:
 /**
  * OWASP Benchmark Project v1.2

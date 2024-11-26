@@ -1,9 +1,7 @@
 // Original file name: src/main/java/org/owasp/benchmark/testcode/BenchmarkTest01285.java
 // Original file CWE's: [78]
 // Original file kind: fail
-// Mutation info: Insert template from
-// templates-db/languages/java/sensitivity/injection/injection.tmt with name
-// anno_dependency_injection_positive
+// Mutation info: Insert template from templates-db/languages/java/sensitivity/injection/injection.tmt with name anno_dependency_injection_positive
 // Used extensions:
 // Program:
 /**

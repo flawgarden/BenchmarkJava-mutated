@@ -1,8 +1,7 @@
 // Original file name: src/main/java/org/owasp/benchmark/testcode/BenchmarkTest00176.java
 // Original file CWE's: [78]
 // Original file kind: fail
-// Mutation info: Insert template from templates-db/languages/java/sensitivity/assignment.tmt with
-// name assignment_negative
+// Mutation info: Insert template from templates-db/languages/java/sensitivity/assignment.tmt with name assignment_negative
 // Used extensions:
 // Program:
 /**

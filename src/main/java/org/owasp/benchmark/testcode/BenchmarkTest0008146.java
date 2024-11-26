@@ -1,11 +1,8 @@
 // Original file name: src/main/java/org/owasp/benchmark/testcode/BenchmarkTest00081.java
 // Original file CWE's: [330]
 // Original file kind: fail
-// Mutation info: Insert template from
-// templates-db/languages/java/sensitivity/concurrency/concurrency.tmt with name
-// atomic_integer_restore_positive
-// Used extensions: MACRO_Regex -> (~[MACRO_Regex]~ + "*?") | EXPR_String -> ~[EXPR_String]~.trim()
-// | MACRO_Regex -> "\f"
+// Mutation info: Insert template from templates-db/languages/java/sensitivity/concurrency/concurrency.tmt with name atomic_integer_restore_positive
+// Used extensions: MACRO_Regex -> (~[MACRO_Regex]~ + "*?") | EXPR_String -> ~[EXPR_String]~.trim() | MACRO_Regex -> "\f"
 // Program:
 /**
  * OWASP Benchmark Project v1.2

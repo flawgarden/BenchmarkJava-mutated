@@ -1,8 +1,7 @@
 // Original file name: src/main/java/org/owasp/benchmark/testcode/BenchmarkTest01375.java
 // Original file CWE's: [501]
 // Original file kind: fail
-// Mutation info: Insert template from templates-db/languages/java/sensitivity/conditional/while.tmt
-// with name while_operator_negative
+// Mutation info: Insert template from templates-db/languages/java/sensitivity/conditional/while.tmt with name while_operator_negative
 // Used extensions: MACRO_VarName -> sealed21341
 // Program:
 /**

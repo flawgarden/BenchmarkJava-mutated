@@ -1,10 +1,8 @@
 // Original file name: src/main/java/org/owasp/benchmark/testcode/BenchmarkTest00767.java
 // Original file CWE's: [89]
 // Original file kind: fail
-// Mutation info: Insert template from templates-db/languages/java/sensitivity/field/nested.tmt with
-// name nested_field_depth_3_negative
-// Used extensions: MACRO_Regex -> "\0mnn" | EXPR_String -> ~[EXPR_String]~.toLowerCase() |
-// EXPR_String -> ~[EXPR_String]~.replace('/', '.')
+// Mutation info: Insert template from templates-db/languages/java/sensitivity/field/nested.tmt with name nested_field_depth_3_negative
+// Used extensions: MACRO_Regex -> "\0mnn" | EXPR_String -> ~[EXPR_String]~.toLowerCase() | EXPR_String -> ~[EXPR_String]~.replace('/', '.')
 // Program:
 /**
  * OWASP Benchmark Project v1.2

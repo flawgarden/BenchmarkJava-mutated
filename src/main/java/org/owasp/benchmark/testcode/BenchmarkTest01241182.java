@@ -1,14 +1,8 @@
 // Original file name: src/main/java/org/owasp/benchmark/testcode/BenchmarkTest01241.java
 // Original file CWE's: [90]
 // Original file kind: fail
-// Mutation info: Insert template from
-// templates-db/languages/java/sensitivity/injection/injection.tmt with name
-// simple_dependency_injection_positive
-// Used extensions: MACRO_Create_List -> List<~[TYPE@1]~> ~[MACRO_ListName@1]~ = new ArrayList<>();
-// | MACRO_Add_Element_ToList -> ~[MACRO_ListName@1]~.add(~[EXPR_~[TYPE@1]~]~); |
-// MACRO_Create_Stream -> Stream<~[TYPE@1]~> ~[MACRO_StreamName@1]~ = ~[MACRO_ListName@1]~.stream();
-// | MACRO_StreamName@1 -> stream787231 | MACRO_ListName@1 -> list787232 | MACRO_VarName ->
-// genericClass12321
+// Mutation info: Insert template from templates-db/languages/java/sensitivity/injection/injection.tmt with name simple_dependency_injection_positive
+// Used extensions: MACRO_Create_List -> List<~[TYPE@1]~> ~[MACRO_ListName@1]~ = new ArrayList<>(); | MACRO_Add_Element_ToList -> ~[MACRO_ListName@1]~.add(~[EXPR_~[TYPE@1]~]~); | MACRO_Create_Stream -> Stream<~[TYPE@1]~> ~[MACRO_StreamName@1]~ = ~[MACRO_ListName@1]~.stream(); | MACRO_StreamName@1 -> stream787231 | MACRO_ListName@1 -> list787232 | MACRO_VarName -> genericClass12321
 // Program:
 /**
  * OWASP Benchmark Project v1.2

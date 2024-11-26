@@ -1,8 +1,7 @@
 // Original file name: src/main/java/org/owasp/benchmark/testcode/BenchmarkTest00174.java
 // Original file CWE's: [78]
 // Original file kind: fail
-// Mutation info: Insert template from templates-db/languages/java/sensitivity/lambdas/mutation.tmt
-// with name nested_unary_lambda_mutation_negative
+// Mutation info: Insert template from templates-db/languages/java/sensitivity/lambdas/mutation.tmt with name nested_unary_lambda_mutation_negative
 // Used extensions: EXPR_String -> ~[EXPR_String]~.substring(~[EXPR_int]~)
 // Program:
 /**

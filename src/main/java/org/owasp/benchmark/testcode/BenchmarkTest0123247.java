@@ -1,12 +1,8 @@
 // Original file name: src/main/java/org/owasp/benchmark/testcode/BenchmarkTest01232.java
 // Original file CWE's: [22]
 // Original file kind: fail
-// Mutation info: Insert template from templates-db/languages/java/sensitivity/collections/list.tmt
-// with name list_clear_start_negative
-// Used extensions: MACRO_VarName -> obj09823 | MACRO_VarName -> obj12321 | MACRO_Create_List ->
-// List<~[TYPE@1]~> ~[MACRO_ListName]~ = new LinkedList<>(); | MACRO_Add_VAR_ToList ->
-// ~[MACRO_ListName]~.add(~[VAR_~[TYPE@1]~@1]~); | MACRO_ListName -> list787231 | MACRO_ListName ->
-// list787231 | MACRO_ListName -> list787231 | MACRO_ListName -> list787231
+// Mutation info: Insert template from templates-db/languages/java/sensitivity/collections/list.tmt with name list_clear_start_negative
+// Used extensions: MACRO_VarName -> obj09823 | MACRO_VarName -> obj12321 | MACRO_Create_List -> List<~[TYPE@1]~> ~[MACRO_ListName]~ = new LinkedList<>(); | MACRO_Add_VAR_ToList -> ~[MACRO_ListName]~.add(~[VAR_~[TYPE@1]~@1]~); | MACRO_ListName -> list787231 | MACRO_ListName -> list787231 | MACRO_ListName -> list787231 | MACRO_ListName -> list787231
 // Program:
 /**
  * OWASP Benchmark Project v1.2

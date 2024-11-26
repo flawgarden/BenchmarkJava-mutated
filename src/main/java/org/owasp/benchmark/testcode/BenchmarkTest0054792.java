@@ -1,10 +1,8 @@
 // Original file name: src/main/java/org/owasp/benchmark/testcode/BenchmarkTest00547.java
 // Original file CWE's: [79]
 // Original file kind: fail
-// Mutation info: Insert template from templates-db/languages/java/sensitivity/collections/queue.tmt
-// with name two_queues_positive
-// Used extensions: MACRO_VarName -> obj12321 | EXPR_String -> "" | EXPR_String ->
-// ~[EXPR_String]~.toString()
+// Mutation info: Insert template from templates-db/languages/java/sensitivity/collections/queue.tmt with name two_queues_positive
+// Used extensions: MACRO_VarName -> obj12321 | EXPR_String -> "" | EXPR_String -> ~[EXPR_String]~.toString()
 // Program:
 /**
  * OWASP Benchmark Project v1.2

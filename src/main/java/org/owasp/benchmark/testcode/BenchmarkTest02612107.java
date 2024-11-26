@@ -1,9 +1,7 @@
 // Original file name: src/main/java/org/owasp/benchmark/testcode/BenchmarkTest02612.java
 // Original file CWE's: [78]
 // Original file kind: fail
-// Mutation info: Insert template from
-// templates-db/languages/java/sensitivity/exceptions/tryCatchFinally.tmt with name
-// try_cath_finally_negative
+// Mutation info: Insert template from templates-db/languages/java/sensitivity/exceptions/tryCatchFinally.tmt with name try_cath_finally_negative
 // Used extensions: MACRO_VarName -> sealed39745
 // Program:
 /**

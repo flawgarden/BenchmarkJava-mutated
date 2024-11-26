@@ -1,9 +1,7 @@
 // Original file name: src/main/java/org/owasp/benchmark/testcode/BenchmarkTest00031.java
 // Original file CWE's: [501]
 // Original file kind: fail
-// Mutation info: Insert template from
-// templates-db/languages/java/sensitivity/virtuality/default.tmt with name
-// binary_op_interface_default1_negative
+// Mutation info: Insert template from templates-db/languages/java/sensitivity/virtuality/default.tmt with name binary_op_interface_default1_negative
 // Used extensions: MACRO_VarName -> sealed12321
 // Program:
 /**

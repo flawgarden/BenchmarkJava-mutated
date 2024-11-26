@@ -1,10 +1,8 @@
 // Original file name: src/main/java/org/owasp/benchmark/testcode/BenchmarkTest02624.java
 // Original file CWE's: [501]
 // Original file kind: fail
-// Mutation info: Insert template from templates-db/languages/java/sensitivity/collections/map.tmt
-// with name map_merge_1_positive
-// Used extensions: MACRO_VarName -> obj21341 | MACRO_VarName -> sealed21341 | MACRO_VarName ->
-// obj12321
+// Mutation info: Insert template from templates-db/languages/java/sensitivity/collections/map.tmt with name map_merge_1_positive
+// Used extensions: MACRO_VarName -> obj21341 | MACRO_VarName -> sealed21341 | MACRO_VarName -> obj12321
 // Program:
 /**
  * OWASP Benchmark Project v1.2

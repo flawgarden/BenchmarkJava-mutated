@@ -1,9 +1,7 @@
 // Original file name: src/main/java/org/owasp/benchmark/testcode/BenchmarkTest02227.java
 // Original file CWE's: [79]
 // Original file kind: fail
-// Mutation info: Insert template from
-// templates-db/languages/java/sensitivity/injection/injection.tmt with name
-// const_dependency_injection_negative
+// Mutation info: Insert template from templates-db/languages/java/sensitivity/injection/injection.tmt with name const_dependency_injection_negative
 // Used extensions: MACRO_VarName -> obj39745 | MACRO_VarName -> obj21341
 // Program:
 /**

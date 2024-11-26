@@ -1,9 +1,7 @@
 // Original file name: src/main/java/org/owasp/benchmark/testcode/BenchmarkTest01438.java
 // Original file CWE's: [79]
 // Original file kind: fail
-// Mutation info: Insert template from
-// templates-db/languages/java/sensitivity/conditional/recursion.tmt with name
-// recursion_simple_negative
+// Mutation info: Insert template from templates-db/languages/java/sensitivity/conditional/recursion.tmt with name recursion_simple_negative
 // Used extensions: MACRO_VarName -> obj12321
 // Program:
 /**

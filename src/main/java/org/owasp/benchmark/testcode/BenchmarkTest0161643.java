@@ -1,9 +1,7 @@
 // Original file name: src/main/java/org/owasp/benchmark/testcode/BenchmarkTest01616.java
 // Original file CWE's: [501]
 // Original file kind: fail
-// Mutation info: Insert template from
-// templates-db/languages/java/sensitivity/concurrency/concurrency.tmt with name
-// two_switching_tasks_concurrent_positive
+// Mutation info: Insert template from templates-db/languages/java/sensitivity/concurrency/concurrency.tmt with name two_switching_tasks_concurrent_positive
 // Used extensions: MACRO_VarName -> sealed39745 | MACRO_VarName -> obj09823
 // Program:
 /**

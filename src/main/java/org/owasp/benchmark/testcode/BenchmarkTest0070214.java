@@ -1,12 +1,8 @@
 // Original file name: src/main/java/org/owasp/benchmark/testcode/BenchmarkTest00702.java
 // Original file CWE's: [330]
 // Original file kind: fail
-// Mutation info: Insert template from templates-db/languages/java/sensitivity/collections/queue.tmt
-// with name simple_poll_negative
-// Used extensions: MACRO_VarName -> sealed12321 | MACRO_Create_Queue -> Queue<~[TYPE@1]~>
-// ~[MACRO_QueueName]~ = new LinkedList<>(); | MACRO_Add_EXPR_ToQueue ->
-// ~[MACRO_QueueName]~.offer(~[EXPR_~[TYPE@1]~]~); | MACRO_QueueName -> queue787231 |
-// MACRO_QueueName -> queue787231 | MACRO_QueueName -> queue787231
+// Mutation info: Insert template from templates-db/languages/java/sensitivity/collections/queue.tmt with name simple_poll_negative
+// Used extensions: MACRO_VarName -> sealed12321 | MACRO_Create_Queue -> Queue<~[TYPE@1]~> ~[MACRO_QueueName]~ = new LinkedList<>(); | MACRO_Add_EXPR_ToQueue -> ~[MACRO_QueueName]~.offer(~[EXPR_~[TYPE@1]~]~); | MACRO_QueueName -> queue787231 | MACRO_QueueName -> queue787231 | MACRO_QueueName -> queue787231
 // Program:
 /**
  * OWASP Benchmark Project v1.2

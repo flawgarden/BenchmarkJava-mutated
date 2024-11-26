@@ -1,8 +1,7 @@
 // Original file name: src/main/java/org/owasp/benchmark/testcode/BenchmarkTest01165.java
 // Original file CWE's: [328]
 // Original file kind: fail
-// Mutation info: Insert template from templates-db/languages/java/sensitivity/virtuality/class.tmt
-// with name derived_binary_op2_positive
+// Mutation info: Insert template from templates-db/languages/java/sensitivity/virtuality/class.tmt with name derived_binary_op2_positive
 // Used extensions:
 // Program:
 /**

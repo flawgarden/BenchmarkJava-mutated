@@ -1,8 +1,7 @@
 // Original file name: src/main/java/org/owasp/benchmark/testcode/BenchmarkTest00624.java
 // Original file CWE's: [22]
 // Original file kind: fail
-// Mutation info: Insert template from templates-db/languages/java/sensitivity/varargs/varargs.tmt
-// with name varargs_get_first_string_from_array_negative
+// Mutation info: Insert template from templates-db/languages/java/sensitivity/varargs/varargs.tmt with name varargs_get_first_string_from_array_negative
 // Used extensions: MACRO_VarName -> sealed21341
 // Program:
 /**
