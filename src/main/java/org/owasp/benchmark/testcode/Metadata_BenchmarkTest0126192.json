@@ -10,7 +10,7 @@
     "mutated_file_metadata": {
         "used_templates": [
             {
-                "template_file": "templates-db/languages/java/sensitivity/concurrency/concurrency.tmt",
+                "template_file": "sensitivity/concurrency/concurrency",
                 "template_name": "two_set_threads_in_sequence_negative"
             }
         ],

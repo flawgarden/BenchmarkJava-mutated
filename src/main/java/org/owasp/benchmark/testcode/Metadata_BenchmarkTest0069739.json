@@ -10,7 +10,7 @@
     "mutated_file_metadata": {
         "used_templates": [
             {
-                "template_file": "templates-db/languages/java/sensitivity/collections/list.tmt",
+                "template_file": "sensitivity/collections/list",
                 "template_name": "list_add_and_remove_positive"
             }
         ],

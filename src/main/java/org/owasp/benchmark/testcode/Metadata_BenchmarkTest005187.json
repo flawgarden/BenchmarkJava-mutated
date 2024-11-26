@@ -10,7 +10,7 @@
     "mutated_file_metadata": {
         "used_templates": [
             {
-                "template_file": "templates-db/languages/java/sensitivity/virtuality/default.tmt",
+                "template_file": "sensitivity/virtuality/default",
                 "template_name": "binary_op_interface_default2_negative"
             }
         ],

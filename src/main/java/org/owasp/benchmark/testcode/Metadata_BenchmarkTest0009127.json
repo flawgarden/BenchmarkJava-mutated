@@ -10,7 +10,7 @@
     "mutated_file_metadata": {
         "used_templates": [
             {
-                "template_file": "templates-db/languages/java/sensitivity/reflection/reflection.tmt",
+                "template_file": "sensitivity/reflection/reflection",
                 "template_name": "simple_reflection_positive"
             }
         ],

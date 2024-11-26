@@ -10,7 +10,7 @@
     "mutated_file_metadata": {
         "used_templates": [
             {
-                "template_file": "templates-db/languages/java/sensitivity/conditional/for.tmt",
+                "template_file": "sensitivity/conditional/for",
                 "template_name": "for_operator_continue_positive"
             }
         ],

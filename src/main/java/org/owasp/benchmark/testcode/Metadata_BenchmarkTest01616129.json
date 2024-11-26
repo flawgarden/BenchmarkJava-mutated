@@ -10,7 +10,7 @@
     "mutated_file_metadata": {
         "used_templates": [
             {
-                "template_file": "templates-db/languages/java/sensitivity/virtuality/class.tmt",
+                "template_file": "sensitivity/virtuality/class",
                 "template_name": "derived_binary_op1_positive"
             }
         ],

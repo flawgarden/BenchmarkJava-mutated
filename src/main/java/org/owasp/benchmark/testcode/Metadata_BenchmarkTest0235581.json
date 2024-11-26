@@ -10,7 +10,7 @@
     "mutated_file_metadata": {
         "used_templates": [
             {
-                "template_file": "templates-db/languages/java/sensitivity/lambdas/mutation.tmt",
+                "template_file": "sensitivity/lambdas/mutation",
                 "template_name": "nested_unary_lambda_mutation_negative"
             }
         ],

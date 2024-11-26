@@ -10,7 +10,7 @@
     "mutated_file_metadata": {
         "used_templates": [
             {
-                "template_file": "templates-db/languages/java/sensitivity/collections/map.tmt",
+                "template_file": "sensitivity/collections/map",
                 "template_name": "map_put_if_absent_negative"
             }
         ],

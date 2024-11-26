@@ -10,7 +10,7 @@
     "mutated_file_metadata": {
         "used_templates": [
             {
-                "template_file": "templates-db/languages/java/sensitivity/record_patterns.tmt",
+                "template_file": "sensitivity/record_patterns",
                 "template_name": "simple_record_patterns_positive"
             }
         ],

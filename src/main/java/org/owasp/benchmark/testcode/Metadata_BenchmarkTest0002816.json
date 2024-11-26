@@ -10,7 +10,7 @@
     "mutated_file_metadata": {
         "used_templates": [
             {
-                "template_file": "templates-db/languages/java/sensitivity/pm.tmt",
+                "template_file": "sensitivity/pm",
                 "template_name": "pattern_matching_simple_1_positive"
             }
         ],

@@ -10,7 +10,7 @@
     "mutated_file_metadata": {
         "used_templates": [
             {
-                "template_file": "templates-db/languages/java/sensitivity/exceptions/causeThrows.tmt",
+                "template_file": "sensitivity/exceptions/causeThrows",
                 "template_name": "arithmetic_exception_positive"
             }
         ],

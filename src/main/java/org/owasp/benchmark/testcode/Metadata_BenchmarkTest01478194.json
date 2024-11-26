@@ -10,7 +10,7 @@
     "mutated_file_metadata": {
         "used_templates": [
             {
-                "template_file": "templates-db/languages/java/sensitivity/varargs/varargs.tmt",
+                "template_file": "sensitivity/varargs/varargs",
                 "template_name": "varargs_get_first_string_from_array_negative"
             }
         ],

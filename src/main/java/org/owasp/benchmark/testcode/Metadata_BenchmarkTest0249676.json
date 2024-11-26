@@ -10,7 +10,7 @@
     "mutated_file_metadata": {
         "used_templates": [
             {
-                "template_file": "templates-db/languages/java/sensitivity/virtuality/interface.tmt",
+                "template_file": "sensitivity/virtuality/interface",
                 "template_name": "impl_binary_op_interface_class1_positive"
             }
         ],

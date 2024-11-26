@@ -10,7 +10,7 @@
     "mutated_file_metadata": {
         "used_templates": [
             {
-                "template_file": "templates-db/languages/java/sensitivity/conditional/switch.tmt",
+                "template_file": "sensitivity/conditional/switch",
                 "template_name": "switch_operator_any_negative"
             }
         ],

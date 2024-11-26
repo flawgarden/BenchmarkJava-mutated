@@ -10,7 +10,7 @@
     "mutated_file_metadata": {
         "used_templates": [
             {
-                "template_file": "templates-db/languages/java/sensitivity/conditional/recursion.tmt",
+                "template_file": "sensitivity/conditional/recursion",
                 "template_name": "recursion_simple_positive"
             }
         ],

@@ -10,7 +10,7 @@
     "mutated_file_metadata": {
         "used_templates": [
             {
-                "template_file": "templates-db/languages/java/sensitivity/vthreads/vthreads.tmt",
+                "template_file": "sensitivity/vthreads/vthreads",
                 "template_name": "virtual_thread_simple_negative"
             }
         ],
