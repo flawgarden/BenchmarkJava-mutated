@@ -10,7 +10,7 @@
     "mutated_file_metadata": {
         "used_templates": [
             {
-                "template_file": "sensitivity/pm",
+                "template_file": "sensitivity/pattern-matching/instance_matching",
                 "template_name": "pattern_matching_simple_4_positive"
             }
         ],
