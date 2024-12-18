@@ -10,7 +10,7 @@
     "mutated_file_metadata": {
         "used_templates": [
             {
-                "template_file": "sensitivity/record_patterns",
+                "template_file": "sensitivity/pattern-matching/record_patterns",
                 "template_name": "simple_record_patterns_negative"
             }
         ],
