@@ -1,4 +1,4 @@
-Total coverage: 73.17%
+Total coverage: 75.81%
 sensitivity/time: 0.00%
 	simple_time_neutral uncovered
 sensitivity/regex: 0.00%
@@ -28,14 +28,9 @@ sensitivity/string_interpolation: 0.00%
 	format_method_interpolation_negative uncovered
 	string_interpolation_with_string_operations_positive uncovered
 	string_interpolation_escaping_negative uncovered
-	percent_operator_interpolation_positive uncovered
-	format_method_with_indexes_positive uncovered
-	string_interpolation_multiline_positive uncovered
 sensitivity/async: 0.00%
 	simple_async_negative uncovered
 	simple_async_positive uncovered
-	simple_async_call_negative uncovered
-	simple_async_call_positive uncovered
 sensitivity/assignment: 85.71%
 	simple_assignment_positive covered
 	simple_assignment_negative covered
@@ -72,8 +67,16 @@ sensitivity/generics/constrainedClasses: 0.00%
 	interface_constrained_generic_class_negative uncovered
 	inheritance_constrained_generic_class_positive uncovered
 	inheritance_constrained_generic_class_negative uncovered
-	new_constrained_generic_class_positive uncovered
-	new_constrained_generic_class_negative uncovered
+	get_value_from_generic_class_positive uncovered
+	get_value_from_generic_class_negative uncovered
+	get_object_value_from_generic_class_positive uncovered
+	get_object_value_from_generic_class_negative uncovered
+	template_extends_variance_positive uncovered
+	template_extends_variance_negative uncovered
+	template_super_variance_positive uncovered
+	template_super_variance_negative uncovered
+	template_wildcard_variance_positive uncovered
+	template_wildcard_variance_negative uncovered
 sensitivity/lambdas/mutation: 100.00%
 	unary_lambda_mutation_positive covered
 	unary_lambda_mutation_negative covered
@@ -140,7 +143,7 @@ sensitivity/exceptions/tryCatchFinally: 100.00%
 	try_cath_finally_negative covered
 	try_multi_cath_positive covered
 	try_multi_cath_negative covered
-sensitivity/collections/set: 52.38%
+sensitivity/collections/set: 100.00%
 	set_add_simple_positive covered
 	set_add_simple_negative covered
 	set_remove_simple_positive covered
@@ -152,16 +155,6 @@ sensitivity/collections/set: 52.38%
 	set_union_negative covered
 	set_remove_positive covered
 	set_disjoint_positive covered
-	set_except_with_positive uncovered
-	set_except_with_negative uncovered
-	set_intersect_with_positive uncovered
-	set_intersect_with_negative uncovered
-	set_xor_positive uncovered
-	set_xor_negative uncovered
-	set_super_positive uncovered
-	set_super_negative uncovered
-	set_subset_positive uncovered
-	set_subset_negative uncovered
 sensitivity/collections/queue: 100.00%
 	simple_poll_positive covered
 	simple_poll_negative covered
@@ -181,7 +174,7 @@ sensitivity/collections/streams: 100.00%
 	stream_map_negative covered
 	stream_filter_positive covered
 	stream_reduce_positive covered
-sensitivity/collections/list: 88.89%
+sensitivity/collections/list: 100.00%
 	list_set_positive covered
 	list_set_negative covered
 	list_add_get_at_zero_index_empty_negative covered
@@ -190,8 +183,7 @@ sensitivity/collections/list: 88.89%
 	list_to_array_and_get_negative covered
 	list_union_positive covered
 	list_clear_start_negative covered
-	list_index_positive uncovered
-sensitivity/collections/map: 80.00%
+sensitivity/collections/map: 100.00%
 	map_simple_get_1_positive covered
 	map_simple_get_1_negative covered
 	map_remove_1_negative covered
@@ -200,8 +192,6 @@ sensitivity/collections/map: 80.00%
 	map_clear_negative covered
 	map_put_if_absent_negative covered
 	map_merge_2_negative covered
-	map_values_positive uncovered
-	map_values_negative uncovered
 sensitivity/vthreads/vthreads: 90.91%
 	virtual_thread_simple_positive covered
 	virtual_thread_simple_negative covered
