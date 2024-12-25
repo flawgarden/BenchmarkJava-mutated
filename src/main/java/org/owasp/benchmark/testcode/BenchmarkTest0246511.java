@@ -18,8 +18,8 @@
 package org.owasp.benchmark.testcode;
 
 import java.io.IOException;
-import java.util.*;
-import java.util.concurrent.*;
+import java.util.LinkedList;
+import java.util.Queue;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 import javax.servlet.ServletException;

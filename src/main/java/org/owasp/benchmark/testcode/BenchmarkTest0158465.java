@@ -17,10 +17,9 @@
  */
 package org.owasp.benchmark.testcode;
 
-import java.io.*;
+import java.io.File;
 import java.io.IOException;
-import java.util.*;
-import java.util.concurrent.atomic.*;
+import java.util.concurrent.atomic.AtomicInteger;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;

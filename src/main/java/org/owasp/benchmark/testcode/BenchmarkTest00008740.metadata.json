@@ -1,0 +1,21 @@
+{
+  "original_file_metadata": {
+    "file_name": "src/main/java/org/owasp/benchmark/testcode/BenchmarkTest00008740.java",
+    "CWEs": [
+      89
+    ],
+    "kind": "fail",
+    "region": null
+  },
+  "mutated_file_metadata": {
+    "used_templates": [
+      {
+        "template_file": "sensitivity/virtuality/multiInterface",
+        "template_name": "multi_interface_positive_2"
+      }
+    ],
+    "used_extensions": [],
+    "region": null
+  },
+  "tool_results": []
+}

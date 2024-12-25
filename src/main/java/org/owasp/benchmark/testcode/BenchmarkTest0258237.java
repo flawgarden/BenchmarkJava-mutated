@@ -17,9 +17,7 @@
  */
 package org.owasp.benchmark.testcode;
 
-import java.io.*;
 import java.io.IOException;
-import java.util.*;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 import javax.servlet.ServletException;

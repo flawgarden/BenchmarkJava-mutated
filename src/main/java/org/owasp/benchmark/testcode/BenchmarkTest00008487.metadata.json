@@ -1,0 +1,21 @@
+{
+  "original_file_metadata": {
+    "file_name": "src/main/java/org/owasp/benchmark/testcode/BenchmarkTest00008487.java",
+    "CWEs": [
+      89
+    ],
+    "kind": "fail",
+    "region": null
+  },
+  "mutated_file_metadata": {
+    "used_templates": [
+      {
+        "template_file": "sensitivity/time",
+        "template_name": "simple_time_neutral"
+      }
+    ],
+    "used_extensions": [],
+    "region": null
+  },
+  "tool_results": []
+}

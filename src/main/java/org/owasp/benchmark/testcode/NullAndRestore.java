@@ -1,6 +1,7 @@
 package org.owasp.benchmark.testcode;
 
-import java.util.concurrent.locks.*;
+import java.util.concurrent.locks.Condition;
+import java.util.concurrent.locks.ReentrantLock;
 
 public class NullAndRestore {
     private String s;

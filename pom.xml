@@ -979,6 +979,9 @@
                     <meminitial>1000m</meminitial>
                     <maxmem>2000m</maxmem>
                     <release>${java.target}</release>
+                    <compilerArgs>
+                        <arg>--enable-preview</arg>
+                    </compilerArgs>
                 </configuration>
             </plugin>
 
