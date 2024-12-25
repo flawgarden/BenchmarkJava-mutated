@@ -17,15 +17,16 @@
  */
 package org.owasp.benchmark.testcode.java22;
 
-import java.io.IOException;
-import java.util.concurrent.Executors;
+import org.owasp.benchmark.testcode.SwitchingTask;
+import org.owasp.benchmark.testcode.Wrapper;
+
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
-import org.owasp.benchmark.testcode.SwitchingTask;
-import org.owasp.benchmark.testcode.Wrapper;
+import java.io.IOException;
+import java.util.concurrent.Executors;
 
 @WebServlet(value = "/sqli-00/BenchmarkTest00008")
 public class BenchmarkTest0000840 extends HttpServlet {

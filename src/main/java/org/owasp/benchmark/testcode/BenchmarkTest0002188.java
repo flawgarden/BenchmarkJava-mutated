@@ -17,9 +17,9 @@
  */
 package org.owasp.benchmark.testcode;
 
-import java.io.*;
 import java.io.IOException;
-import java.util.*;
+import java.util.HashSet;
+import java.util.Set;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;

@@ -51,7 +51,6 @@ public class BenchmarkTest00008512 extends HttpServlet {
         // URL Decode the header value since req.getHeader() doesn't. Unlike req.getParameter().
         param = java.net.URLDecoder.decode(param, "UTF-8");
 
-
         String tmp42 = param;
         int[] tmpArray42 = {0, 1, 2, 3, 4};
         int index = -1;
@@ -65,7 +64,6 @@ public class BenchmarkTest00008512 extends HttpServlet {
         } catch (ArrayIndexOutOfBoundsException e) {
             param = tmp42;
         }
-
 
         String sql = "{call " + param + "}";
 

@@ -51,9 +51,7 @@ public class BenchmarkTest00008581 extends HttpServlet {
         // URL Decode the header value since req.getHeader() doesn't. Unlike req.getParameter().
         param = java.net.URLDecoder.decode(param, "UTF-8");
 
-
         param = interfaceConstrainedMethod(ImplBinaryOpInterfaceClass1.class, "vrthq", param);
-
 
         String sql = "{call " + param + "}";
 
@@ -72,7 +70,8 @@ public class BenchmarkTest00008581 extends HttpServlet {
         }
     }
 
-    private static String interfaceConstrainedMethod(Class<? extends BinaryOpInterface> clazz, String l, String r) {
+    private static String interfaceConstrainedMethod(
+            Class<? extends BinaryOpInterface> clazz, String l, String r) {
         try {
             BinaryOpInterface tmpWorker = clazz.getDeclaredConstructor().newInstance();
             return tmpWorker.InterfaceCall(l, r);
@@ -81,7 +80,8 @@ public class BenchmarkTest00008581 extends HttpServlet {
         }
     }
 
-    private static <T581 extends V, V extends BaseBinaryOpClass> String inheritanceConstrainedMethod(Class<T581> clazz, String l, String r) {
+    private static <T581 extends V, V extends BaseBinaryOpClass>
+            String inheritanceConstrainedMethod(Class<T581> clazz, String l, String r) {
         try {
             T581 tmpWorker = clazz.getDeclaredConstructor().newInstance();
             return tmpWorker.VirtualCall(l, r);
@@ -89,5 +89,4 @@ public class BenchmarkTest00008581 extends HttpServlet {
             throw new RuntimeException(e);
         }
     }
-
 }

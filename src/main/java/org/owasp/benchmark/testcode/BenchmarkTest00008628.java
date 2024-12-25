@@ -51,10 +51,10 @@ public class BenchmarkTest00008628 extends HttpServlet {
         // URL Decode the header value since req.getHeader() doesn't. Unlike req.getParameter().
         param = java.net.URLDecoder.decode(param, "UTF-8");
 
-
-        InheritanceConstrainedClass constrained09143 = new InheritanceConstrainedClass<DerivedBinaryOpClass1, BaseBinaryOpClass>(new DerivedBinaryOpClass1());
+        InheritanceConstrainedClass constrained09143 =
+                new InheritanceConstrainedClass<DerivedBinaryOpClass1, BaseBinaryOpClass>(
+                        new DerivedBinaryOpClass1());
         param = constrained09143.chooseNone(param, "xxqzb");
-
 
         String sql = "{call " + param + "}";
 

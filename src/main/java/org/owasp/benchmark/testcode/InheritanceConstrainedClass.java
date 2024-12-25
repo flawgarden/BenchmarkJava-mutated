@@ -1,6 +1,5 @@
 package org.owasp.benchmark.testcode;
 
-
 public class InheritanceConstrainedClass<T extends V, V extends BaseBinaryOpClass> {
     private T chooser;
 

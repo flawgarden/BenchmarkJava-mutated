@@ -17,14 +17,15 @@
  */
 package org.owasp.benchmark.testcode.java22;
 
-import java.io.IOException;
+import org.owasp.benchmark.testcode.NestedRecord;
+import org.owasp.benchmark.testcode.SimpleRecord;
+
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
-import org.owasp.benchmark.testcode.NestedRecord;
-import org.owasp.benchmark.testcode.SimpleRecord;
+import java.io.IOException;
 
 @WebServlet(value = "/sqli-00/BenchmarkTest00008")
 public class BenchmarkTest0000849 extends HttpServlet {

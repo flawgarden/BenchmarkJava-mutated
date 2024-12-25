@@ -18,7 +18,9 @@
 package org.owasp.benchmark.testcode;
 
 import java.io.IOException;
-import java.util.*;
+import java.util.Arrays;
+import java.util.Map;
+import java.util.TreeMap;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;

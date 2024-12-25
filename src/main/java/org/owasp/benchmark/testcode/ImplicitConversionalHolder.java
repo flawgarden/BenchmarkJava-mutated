@@ -25,4 +25,3 @@ public class ImplicitConversionalHolder {
         return new ImplicitConversionalHolder(givenIndex == 42 ? s : "");
     }
 }
-

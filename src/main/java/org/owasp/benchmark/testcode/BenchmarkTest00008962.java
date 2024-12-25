@@ -18,13 +18,13 @@
 package org.owasp.benchmark.testcode;
 
 import java.io.IOException;
+import java.util.concurrent.CompletableFuture;
+import java.util.concurrent.atomic.AtomicReference;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
-import java.util.concurrent.CompletableFuture;
-import java.util.concurrent.atomic.AtomicReference;
 
 @WebServlet(value = "/sqli-00/BenchmarkTest00008")
 public class BenchmarkTest00008962 extends HttpServlet {
@@ -53,14 +53,13 @@ public class BenchmarkTest00008962 extends HttpServlet {
         // URL Decode the header value since req.getHeader() doesn't. Unlike req.getParameter().
         param = java.net.URLDecoder.decode(param, "UTF-8");
 
-
         final String tmpStr = param;
         AtomicReference<String> ar42 = new AtomicReference<>(param);
-        CompletableFuture.runAsync(() -> {
-            ar42.set(tmpStr);
-        });
+        CompletableFuture.runAsync(
+                () -> {
+                    ar42.set(tmpStr);
+                });
         param = ar42.get();
-
 
         String sql = "{call " + param + "}";
 

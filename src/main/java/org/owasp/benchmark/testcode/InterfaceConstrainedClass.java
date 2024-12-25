@@ -1,6 +1,5 @@
 package org.owasp.benchmark.testcode;
 
-
 public class InterfaceConstrainedClass<T extends BinaryOpInterface> {
     private T chooser;
 

@@ -51,14 +51,12 @@ public class BenchmarkTest00008713 extends HttpServlet {
         // URL Decode the header value since req.getHeader() doesn't. Unlike req.getParameter().
         param = java.net.URLDecoder.decode(param, "UTF-8");
 
-
         String regex42 = "(/|-)";
         String input = "y-" + param + "/x";
         String[] splitResult = input.split(regex42);
         if (splitResult.length > 2) {
             param = splitResult[1];
         }
-
 
         String sql = "{call " + param + "}";
 

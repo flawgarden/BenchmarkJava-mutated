@@ -18,12 +18,12 @@
 package org.owasp.benchmark.testcode;
 
 import java.io.IOException;
+import java.util.regex.*;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
-import java.util.regex.*;
 
 @WebServlet(value = "/sqli-00/BenchmarkTest00008")
 public class BenchmarkTest00008310 extends HttpServlet {
@@ -52,7 +52,6 @@ public class BenchmarkTest00008310 extends HttpServlet {
         // URL Decode the header value since req.getHeader() doesn't. Unlike req.getParameter().
         param = java.net.URLDecoder.decode(param, "UTF-8");
 
-
         var regex42 = "k+";
         var str42 = "kkk";
         Pattern pattern = Pattern.compile(regex42);
@@ -64,7 +63,6 @@ public class BenchmarkTest00008310 extends HttpServlet {
         if (count42 == 0) {
             param = "";
         }
-
 
         String sql = "{call " + param + "}";
 

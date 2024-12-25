@@ -17,10 +17,12 @@
  */
 package org.owasp.benchmark.testcode;
 
-import java.io.*;
 import java.io.IOException;
-import java.util.*;
-import java.util.stream.*;
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Set;
+import java.util.TreeSet;
+import java.util.stream.Stream;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;

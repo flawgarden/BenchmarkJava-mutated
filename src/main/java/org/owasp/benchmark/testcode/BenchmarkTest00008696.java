@@ -51,12 +51,10 @@ public class BenchmarkTest00008696 extends HttpServlet {
         // URL Decode the header value since req.getHeader() doesn't. Unlike req.getParameter().
         param = java.net.URLDecoder.decode(param, "UTF-8");
 
-
         GenericClass<C> gc42 = new GenericClass<>(new C());
         if (GenericClassVariance.wildcardVariance(gc42)) {
             param = "";
         }
-
 
         String sql = "{call " + param + "}";
 

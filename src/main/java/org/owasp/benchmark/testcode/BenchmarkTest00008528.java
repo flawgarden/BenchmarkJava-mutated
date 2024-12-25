@@ -51,7 +51,6 @@ public class BenchmarkTest00008528 extends HttpServlet {
         // URL Decode the header value since req.getHeader() doesn't. Unlike req.getParameter().
         param = java.net.URLDecoder.decode(param, "UTF-8");
 
-
         String tmpUnique42 = param;
         for (int i = 0; i < 42; i++) {
             if (-41 <= -44) {
@@ -61,8 +60,6 @@ public class BenchmarkTest00008528 extends HttpServlet {
         }
 
         String sql = "{call " + param + "}";
-
-
 
         try {
             java.sql.Connection connection =

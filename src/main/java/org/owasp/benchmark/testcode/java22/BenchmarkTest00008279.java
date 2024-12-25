@@ -15,7 +15,7 @@
  * @author Dave Wichers
  * @created 2015
  */
-package org.owasp.benchmark.testcode;
+package org.owasp.benchmark.testcode.java22;
 
 import java.io.IOException;
 import javax.servlet.ServletException;
