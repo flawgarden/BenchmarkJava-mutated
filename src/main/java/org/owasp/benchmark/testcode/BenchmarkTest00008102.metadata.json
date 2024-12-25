@@ -1,0 +1,21 @@
+{
+  "original_file_metadata": {
+    "file_name": "src/main/java/org/owasp/benchmark/testcode/BenchmarkTest00008102.java",
+    "CWEs": [
+      89
+    ],
+    "kind": "fail",
+    "region": null
+  },
+  "mutated_file_metadata": {
+    "used_templates": [
+      {
+        "template_file": "sensitivity/regex",
+        "template_name": "regex_backreference_positive"
+      }
+    ],
+    "used_extensions": [],
+    "region": null
+  },
+  "tool_results": []
+}
