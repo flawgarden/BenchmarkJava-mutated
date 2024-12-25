@@ -17,12 +17,12 @@
  */
 package org.owasp.benchmark.testcode.java22;
 
+import java.io.IOException;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
-import java.io.IOException;
 
 @WebServlet(value = "/sqli-00/BenchmarkTest00008")
 public class BenchmarkTest00008274 extends HttpServlet {
@@ -51,12 +51,10 @@ public class BenchmarkTest00008274 extends HttpServlet {
         // URL Decode the header value since req.getHeader() doesn't. Unlike req.getParameter().
         param = java.net.URLDecoder.decode(param, "UTF-8");
 
-
         var tmpString = STR."PREFIX + \{param}!";
         if (tmpString.contains("PREFIX")) {
             param = tmpString;
         }
-
 
         String sql = "{call " + param + "}";
 

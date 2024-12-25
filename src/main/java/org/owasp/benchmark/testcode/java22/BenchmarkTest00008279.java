@@ -18,15 +18,15 @@
 package org.owasp.benchmark.testcode.java22;
 
 import java.io.IOException;
+import java.util.Arrays;
+import java.util.concurrent.Callable;
+import java.util.concurrent.Executors;
+import java.util.concurrent.atomic.*;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
-import java.util.concurrent.Callable;
-import java.util.concurrent.Executors;
-import java.util.Arrays;
-import java.util.concurrent.atomic.*;
 
 @WebServlet(value = "/sqli-00/BenchmarkTest00008")
 public class BenchmarkTest00008279 extends HttpServlet {
@@ -55,7 +55,6 @@ public class BenchmarkTest00008279 extends HttpServlet {
         // URL Decode the header value since req.getHeader() doesn't. Unlike req.getParameter().
         param = java.net.URLDecoder.decode(param, "UTF-8");
 
-
         AtomicInteger atomicInteger = new AtomicInteger(0);
         String stringCopy = param;
 
@@ -63,14 +62,16 @@ public class BenchmarkTest00008279 extends HttpServlet {
             param = "123";
         }
 
-        Callable<Object> task1 = () -> {
-            atomicInteger.incrementAndGet();
-            return null;
-        };
-        Callable<Object> task2 = () -> {
-            atomicInteger.incrementAndGet();
-            return null;
-        };
+        Callable<Object> task1 =
+                () -> {
+                    atomicInteger.incrementAndGet();
+                    return null;
+                };
+        Callable<Object> task2 =
+                () -> {
+                    atomicInteger.incrementAndGet();
+                    return null;
+                };
 
         if (atomicInteger.get() == 2) {
             param = stringCopy;
@@ -78,16 +79,16 @@ public class BenchmarkTest00008279 extends HttpServlet {
 
         try (var executor = Executors.newVirtualThreadPerTaskExecutor()) {
             var futures = executor.invokeAll(Arrays.asList(task1, task2));
-            futures.forEach((f) -> {
-                try {
-                    f.get();
-                } catch (Exception e) {
-                }
-            });
+            futures.forEach(
+                    (f) -> {
+                        try {
+                            f.get();
+                        } catch (Exception e) {
+                        }
+                    });
         } catch (Exception e) {
             e.printStackTrace();
         }
-
 
         String sql = "{call " + param + "}";
 
