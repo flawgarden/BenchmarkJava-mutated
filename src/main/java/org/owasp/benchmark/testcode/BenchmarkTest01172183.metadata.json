@@ -28,7 +28,8 @@
             "MACRO_SetName@1 -> set787233",
             "MACRO_VarName -> genericClass09823"
         ],
-        "region": null
+        "region": null,
+        "kind": "pass"
     },
     "tool_results": []
 }

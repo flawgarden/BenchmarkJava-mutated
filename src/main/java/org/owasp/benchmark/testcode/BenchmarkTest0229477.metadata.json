@@ -20,7 +20,8 @@
             "MACRO_Add_Element_ToSet -> ~[MACRO_SetName@1]~.add(~[VAR_~[TYPE@1]~]~);",
             "MACRO_SetName@1 -> set787232"
         ],
-        "region": null
+        "region": null,
+        "kind": "fail"
     },
     "tool_results": []
 }

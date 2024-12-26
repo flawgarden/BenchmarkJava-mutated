@@ -1,21 +1,22 @@
 {
-  "original_file_metadata": {
-    "file_name": "src/main/java/org/owasp/benchmark/testcode/BenchmarkTest00008380.java",
-    "CWEs": [
-      89
-    ],
-    "kind": "fail",
-    "region": null
-  },
-  "mutated_file_metadata": {
-    "used_templates": [
-      {
-        "template_file": "sensitivity/operators/conversions",
-        "template_name": "implicit_conversion_to_holder_positive"
-      }
-    ],
-    "used_extensions": [],
-    "region": null
-  },
-  "tool_results": []
+    "original_file_metadata": {
+        "file_name": "src/main/java/org/owasp/benchmark/testcode/BenchmarkTest00008380.java",
+        "CWEs": [
+            89
+        ],
+        "kind": "fail",
+        "region": null
+    },
+    "mutated_file_metadata": {
+        "used_templates": [
+            {
+                "template_file": "sensitivity/operators/conversions",
+                "template_name": "implicit_conversion_to_holder_positive"
+            }
+        ],
+        "used_extensions": [],
+        "region": null,
+        "kind": "fail"
+    },
+    "tool_results": []
 }

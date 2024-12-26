@@ -19,7 +19,8 @@
             "EXPR_String -> ~[EXPR_String]~.toLowerCase()",
             "EXPR_String -> \"\""
         ],
-        "region": null
+        "region": null,
+        "kind": "pass"
     },
     "tool_results": []
 }

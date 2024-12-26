@@ -22,7 +22,8 @@
             "MACRO_Regex -> \"[a-zA-Z]\"",
             "MACRO_Regex -> \"\\0nn\""
         ],
-        "region": null
+        "region": null,
+        "kind": "fail"
     },
     "tool_results": []
 }

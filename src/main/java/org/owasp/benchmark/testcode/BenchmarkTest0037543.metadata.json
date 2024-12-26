@@ -19,7 +19,8 @@
             "MACRO_VarName -> obj21341",
             "EXPR_int -> ~[EXPR_String]~.codePointAt(~[EXPR_int]~)"
         ],
-        "region": null
+        "region": null,
+        "kind": "fail"
     },
     "tool_results": []
 }

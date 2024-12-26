@@ -19,7 +19,8 @@
             "EXPR_Boolean -> ~[EXPR_String@1]~ != null && ~[EXPR_String@1]~.charAt(~[CONST_int]~) == ~[CONST_char]~",
             "MACRO_SetName@1 -> set787234"
         ],
-        "region": null
+        "region": null,
+        "kind": "fail"
     },
     "tool_results": []
 }

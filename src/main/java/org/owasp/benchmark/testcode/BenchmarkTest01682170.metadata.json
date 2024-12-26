@@ -22,7 +22,8 @@
             "EXPR_String -> ~[EXPR_String]~.toUpperCase()",
             "EXPR_String -> \"\""
         ],
-        "region": null
+        "region": null,
+        "kind": "fail"
     },
     "tool_results": []
 }

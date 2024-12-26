@@ -19,7 +19,8 @@
             "MACRO_VarName -> obj39745",
             "EXPR_int -> ~[EXPR_String]~.length()"
         ],
-        "region": null
+        "region": null,
+        "kind": "fail"
     },
     "tool_results": []
 }

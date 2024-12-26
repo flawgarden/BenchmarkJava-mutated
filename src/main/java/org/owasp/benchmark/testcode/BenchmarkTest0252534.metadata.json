@@ -22,7 +22,8 @@
             "MACRO_VarName -> obj21341",
             "MACRO_Empty_String_Array -> {\"\", \"\"}"
         ],
-        "region": null
+        "region": null,
+        "kind": "fail"
     },
     "tool_results": []
 }

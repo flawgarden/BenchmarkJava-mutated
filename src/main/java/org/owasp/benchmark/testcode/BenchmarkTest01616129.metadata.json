@@ -25,7 +25,8 @@
             "EXPR_String -> ~[EXPR_String]~.replace('/', '.')",
             "MACRO_VarName -> sealed12321"
         ],
-        "region": null
+        "region": null,
+        "kind": "fail"
     },
     "tool_results": []
 }

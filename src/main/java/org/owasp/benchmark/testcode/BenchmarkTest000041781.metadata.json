@@ -22,7 +22,8 @@
             "MACRO_Add_Fixed_Element_ToQueue -> ~[MACRO_QueueName@1]~.add(~[VAR_~[TYPE@1]~@1]~);",
             "MACRO_QueueName@1 -> queue787231"
         ],
-        "region": null
+        "region": null,
+        "kind": "fail"
     },
     "tool_results": []
 }

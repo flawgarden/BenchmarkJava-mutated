@@ -19,7 +19,8 @@
             "MACRO_VarName -> obj39745",
             "MACRO_Regex -> \"[a-zA-Z]\""
         ],
-        "region": null
+        "region": null,
+        "kind": "fail"
     },
     "tool_results": []
 }

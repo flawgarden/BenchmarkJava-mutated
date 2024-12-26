@@ -29,7 +29,8 @@
             "EXPR_String -> ~[EXPR_String]~.toString()",
             "MACRO_QueueName -> queue787231"
         ],
-        "region": null
+        "region": null,
+        "kind": "fail"
     },
     "tool_results": []
 }

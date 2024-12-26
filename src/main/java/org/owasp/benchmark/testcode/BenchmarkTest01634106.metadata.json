@@ -19,7 +19,8 @@
             "MACRO_VarName -> genericClass21341",
             "EXPR_String -> ~[EXPR_String]~.replace('/', '.')"
         ],
-        "region": null
+        "region": null,
+        "kind": "fail"
     },
     "tool_results": []
 }

@@ -19,7 +19,8 @@
             "MACRO_VarName -> obj39745",
             "MACRO_VarName -> sealed09823"
         ],
-        "region": null
+        "region": null,
+        "kind": "fail"
     },
     "tool_results": []
 }

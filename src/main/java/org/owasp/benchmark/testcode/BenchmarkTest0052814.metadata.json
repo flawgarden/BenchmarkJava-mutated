@@ -20,7 +20,8 @@
             "EXPR_Boolean -> ~[EXPR_Object]~ instanceof ImplementingSubClass",
             "EXPR_Object -> new ImplementingSubClass()"
         ],
-        "region": null
+        "region": null,
+        "kind": "fail"
     },
     "tool_results": []
 }

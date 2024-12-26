@@ -19,7 +19,8 @@
             "MACRO_VarName -> sealed21341",
             "EXPR_String -> ~[EXPR_String]~.concat(~[EXPR_String]~)"
         ],
-        "region": null
+        "region": null,
+        "kind": "fail"
     },
     "tool_results": []
 }

@@ -22,7 +22,8 @@
             "EXPR_char -> ~[EXPR_String]~.charAt(~[EXPR_int]~)",
             "EXPR_String -> ~[EXPR_String]~.trim()"
         ],
-        "region": null
+        "region": null,
+        "kind": "fail"
     },
     "tool_results": []
 }

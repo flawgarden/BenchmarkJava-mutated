@@ -20,7 +20,8 @@
             "EXPR_String -> ~[EXPR_String]~.toString()",
             "MACRO_VarName -> obj39745"
         ],
-        "region": null
+        "region": null,
+        "kind": "fail"
     },
     "tool_results": []
 }

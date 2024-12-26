@@ -17,7 +17,8 @@
         "used_extensions": [
             " MACRO_VarName -> obj21341"
         ],
-        "region": null
+        "region": null,
+        "kind": "pass"
     },
     "tool_results": []
 }

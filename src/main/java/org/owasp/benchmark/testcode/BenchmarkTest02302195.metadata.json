@@ -18,7 +18,8 @@
             " MACRO_Regex -> (~[MACRO_Regex]~ + \"*\")",
             "MACRO_Regex -> \"\\n\""
         ],
-        "region": null
+        "region": null,
+        "kind": "pass"
     },
     "tool_results": []
 }

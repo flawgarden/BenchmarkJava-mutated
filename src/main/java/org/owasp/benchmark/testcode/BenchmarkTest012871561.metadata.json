@@ -21,7 +21,8 @@
             "EXPR_int -> 42",
             "MACRO_VarName -> sealed21341"
         ],
-        "region": null
+        "region": null,
+        "kind": "fail"
     },
     "tool_results": []
 }
