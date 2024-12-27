@@ -22,7 +22,8 @@
             "MACRO_MapName -> map787234",
             "MACRO_MapName -> map787234"
         ],
-        "region": null
+        "region": null,
+        "kind": "pass"
     },
     "tool_results": []
 }

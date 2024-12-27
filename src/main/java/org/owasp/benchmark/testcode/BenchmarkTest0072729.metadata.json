@@ -15,7 +15,8 @@
             }
         ],
         "used_extensions": [],
-        "region": null
+        "region": null,
+        "kind": "pass"
     },
     "tool_results": []
 }

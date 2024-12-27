@@ -18,7 +18,8 @@
             " MACRO_VarName -> genericClass12321",
             "MACRO_Empty_String_Array -> {\"\", \"\"}"
         ],
-        "region": null
+        "region": null,
+        "kind": "pass"
     },
     "tool_results": []
 }

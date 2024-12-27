@@ -23,7 +23,8 @@
             "MACRO_VarName -> genericClass09823",
             "EXPR_String -> ~[EXPR_String]~.trim()"
         ],
-        "region": null
+        "region": null,
+        "kind": "fail"
     },
     "tool_results": []
 }

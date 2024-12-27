@@ -24,7 +24,8 @@
             "MACRO_ListName@1 -> list787231",
             "MACRO_VarName -> obj09823"
         ],
-        "region": null
+        "region": null,
+        "kind": "pass"
     },
     "tool_results": []
 }

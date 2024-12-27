@@ -18,7 +18,8 @@
             " MACRO_VarName -> sealed12321",
             "EXPR_String -> ~[EXPR_String]~.toString()"
         ],
-        "region": null
+        "region": null,
+        "kind": "fail"
     },
     "tool_results": []
 }

@@ -17,7 +17,8 @@
         "used_extensions": [
             " EXPR_String -> ~[EXPR_String]~.replace('/', '.')"
         ],
-        "region": null
+        "region": null,
+        "kind": "fail"
     },
     "tool_results": []
 }

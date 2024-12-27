@@ -19,7 +19,8 @@
             "EXPR_String -> ~[EXPR_String]~.substring(~[EXPR_int]~, ~[EXPR_int]~)",
             "EXPR_String -> \"\""
         ],
-        "region": null
+        "region": null,
+        "kind": "pass"
     },
     "tool_results": []
 }

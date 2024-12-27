@@ -19,7 +19,8 @@
             "EXPR_Boolean -> ~[EXPR_Object]~ instanceof SubInterface",
             "EXPR_Object -> new ImplementingSubClass()"
         ],
-        "region": null
+        "region": null,
+        "kind": "pass"
     },
     "tool_results": []
 }

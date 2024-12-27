@@ -19,7 +19,8 @@
             "MACRO_VarName -> obj09823",
             "MACRO_VarName -> obj12321"
         ],
-        "region": null
+        "region": null,
+        "kind": "pass"
     },
     "tool_results": []
 }

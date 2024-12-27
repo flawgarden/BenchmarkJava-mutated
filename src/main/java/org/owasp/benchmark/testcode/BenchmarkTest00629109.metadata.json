@@ -27,7 +27,8 @@
             "MACRO_ListName@1 -> list787232",
             "EXPR_String -> ~[EXPR_String]~.toLowerCase()"
         ],
-        "region": null
+        "region": null,
+        "kind": "fail"
     },
     "tool_results": []
 }

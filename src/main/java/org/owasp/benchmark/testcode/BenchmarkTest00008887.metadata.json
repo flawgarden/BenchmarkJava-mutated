@@ -4,7 +4,7 @@
         "CWEs": [
             89
         ],
-        "kind": "pass",
+        "kind": "fail",
         "region": null
     },
     "mutated_file_metadata": {
@@ -15,7 +15,8 @@
             }
         ],
         "used_extensions": [],
-        "region": null
+        "region": null,
+        "kind": "pass"
     },
     "tool_results": []
 }

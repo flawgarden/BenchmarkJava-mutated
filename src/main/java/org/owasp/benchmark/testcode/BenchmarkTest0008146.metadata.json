@@ -19,7 +19,8 @@
             "EXPR_String -> ~[EXPR_String]~.trim()",
             "MACRO_Regex -> \"\\f\""
         ],
-        "region": null
+        "region": null,
+        "kind": "fail"
     },
     "tool_results": []
 }

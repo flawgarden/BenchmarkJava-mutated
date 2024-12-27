@@ -24,7 +24,8 @@
             "MACRO_Add_Fixed_Element_ToSet -> ~[MACRO_SetName@1]~.add(~[EXPR_~[TYPE@1]~@1]~);",
             "MACRO_SetName@1 -> set787234"
         ],
-        "region": null
+        "region": null,
+        "kind": "pass"
     },
     "tool_results": []
 }

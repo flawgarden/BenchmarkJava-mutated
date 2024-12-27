@@ -20,7 +20,8 @@
             "MACRO_MapName@1 -> map787232",
             "EXPR_String -> \"\""
         ],
-        "region": null
+        "region": null,
+        "kind": "pass"
     },
     "tool_results": []
 }

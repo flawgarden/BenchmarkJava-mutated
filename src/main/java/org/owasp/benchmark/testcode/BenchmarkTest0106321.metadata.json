@@ -25,7 +25,8 @@
             "EXPR_String -> \"\"",
             "MACRO_ListName@1 -> list787232"
         ],
-        "region": null
+        "region": null,
+        "kind": "fail"
     },
     "tool_results": []
 }

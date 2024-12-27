@@ -1,21 +1,22 @@
 {
-  "original_file_metadata": {
-    "file_name": "src/main/java/org/owasp/benchmark/testcode/BenchmarkTest00008584.java",
-    "CWEs": [
-      89
-    ],
-    "kind": "fail",
-    "region": null
-  },
-  "mutated_file_metadata": {
-    "used_templates": [
-      {
-        "template_file": "sensitivity/string_interpolation",
-        "template_name": "string_interpolation_with_string_operations_positive"
-      }
-    ],
-    "used_extensions": [],
-    "region": null
-  },
-  "tool_results": []
+    "original_file_metadata": {
+        "file_name": "src/main/java/org/owasp/benchmark/testcode/BenchmarkTest00008584.java",
+        "CWEs": [
+            89
+        ],
+        "kind": "fail",
+        "region": null
+    },
+    "mutated_file_metadata": {
+        "used_templates": [
+            {
+                "template_file": "sensitivity/string_interpolation",
+                "template_name": "string_interpolation_with_string_operations_positive"
+            }
+        ],
+        "used_extensions": [],
+        "region": null,
+        "kind": "fail"
+    },
+    "tool_results": []
 }

@@ -20,7 +20,8 @@
             "EXPR_SimpleRecord -> ~[EXPR_NestedRecord]~.b()",
             "EXPR_NestedRecord -> (new NestedRecord(new SimpleRecord(~[EXPR_String]~), new SimpleRecord(~[EXPR_String]~)))"
         ],
-        "region": null
+        "region": null,
+        "kind": "fail"
     },
     "tool_results": []
 }

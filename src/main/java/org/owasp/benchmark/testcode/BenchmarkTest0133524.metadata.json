@@ -19,7 +19,8 @@
             "MACRO_VarName -> obj39745",
             "EXPR_String -> \"\""
         ],
-        "region": null
+        "region": null,
+        "kind": "pass"
     },
     "tool_results": []
 }

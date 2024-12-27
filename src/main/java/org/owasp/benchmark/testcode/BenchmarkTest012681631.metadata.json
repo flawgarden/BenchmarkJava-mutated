@@ -25,7 +25,8 @@
             "EXPR_String -> ~[EXPR_String]~.toUpperCase()",
             "MACRO_SetName -> set787231"
         ],
-        "region": null
+        "region": null,
+        "kind": "fail"
     },
     "tool_results": []
 }

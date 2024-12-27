@@ -19,7 +19,8 @@
             "EXPR_String -> ~[EXPR_String]~.replaceAll(~[MACRO_Regex]~, ~[EXPR_String]~)",
             "MACRO_Regex -> \"[abc]\""
         ],
-        "region": null
+        "region": null,
+        "kind": "fail"
     },
     "tool_results": []
 }

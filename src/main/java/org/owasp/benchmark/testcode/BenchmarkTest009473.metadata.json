@@ -20,7 +20,8 @@
             "MACRO_Add_Element_ToMap -> ~[MACRO_MapName@1]~.put(~[EXPR_~[TYPE@1]~]~, ~[EXPR_~[TYPE@2]~]~);",
             "MACRO_MapName@1 -> map787232"
         ],
-        "region": null
+        "region": null,
+        "kind": "fail"
     },
     "tool_results": []
 }

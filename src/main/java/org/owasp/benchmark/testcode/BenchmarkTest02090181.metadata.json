@@ -21,7 +21,8 @@
             "MACRO_Regex -> \"[a-d[m-p]]\"",
             "MACRO_VarName -> obj21341"
         ],
-        "region": null
+        "region": null,
+        "kind": "pass"
     },
     "tool_results": []
 }

@@ -18,7 +18,8 @@
             " MACRO_Regex -> \"\\0nn\"",
             "MACRO_VarName -> sealed09823"
         ],
-        "region": null
+        "region": null,
+        "kind": "fail"
     },
     "tool_results": []
 }
