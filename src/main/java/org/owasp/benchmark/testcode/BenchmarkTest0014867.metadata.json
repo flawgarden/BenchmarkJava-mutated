@@ -23,7 +23,7 @@
             "EXPR_String -> ~[EXPR_String]~.trim()"
         ],
         "region": null,
-        "kind": "fail"
+        "kind": "pass"
     },
     "tool_results": []
 }

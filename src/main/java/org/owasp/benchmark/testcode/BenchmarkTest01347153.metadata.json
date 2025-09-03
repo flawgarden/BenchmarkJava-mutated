@@ -20,7 +20,7 @@
             "MACRO_Regex -> \"[abc]\""
         ],
         "region": null,
-        "kind": "fail"
+        "kind": "pass"
     },
     "tool_results": []
 }

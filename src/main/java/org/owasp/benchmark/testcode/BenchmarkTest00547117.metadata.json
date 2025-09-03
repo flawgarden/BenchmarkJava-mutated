@@ -21,7 +21,7 @@
             "MACRO_MapName@1 -> map787232"
         ],
         "region": null,
-        "kind": "fail"
+        "kind": "pass"
     },
     "tool_results": []
 }
