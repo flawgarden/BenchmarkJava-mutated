@@ -26,7 +26,7 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-@WebServlet(value = "/sqli-03/BenchmarkTest01624")
+@WebServlet(value = "/sqli-03/BenchmarkTest0162458")
 public class BenchmarkTest0162458 extends HttpServlet {
 
     SuperClass obj39745 = new SubSubClass();

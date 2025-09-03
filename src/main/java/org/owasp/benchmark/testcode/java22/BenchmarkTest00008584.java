@@ -24,7 +24,7 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-@WebServlet(value = "/sqli-00/BenchmarkTest00008")
+@WebServlet(value = "/java22/sqli-00/BenchmarkTest00008584")
 public class BenchmarkTest00008584 extends HttpServlet {
 
     private static final long serialVersionUID = 1L;
