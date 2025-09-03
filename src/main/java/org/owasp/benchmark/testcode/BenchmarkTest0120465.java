@@ -25,7 +25,7 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-@WebServlet(value = "/trustbound-00/BenchmarkTest01204")
+@WebServlet(value = "/trustbound-00/BenchmarkTest0120465")
 public class BenchmarkTest0120465 extends HttpServlet {
 
     Object obj09823 = new ImplementingSubClass();

@@ -25,7 +25,7 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-@WebServlet(value = "/trustbound-00/BenchmarkTest00098")
+@WebServlet(value = "/trustbound-00/BenchmarkTest000981222")
 public class BenchmarkTest000981222 extends HttpServlet {
 
     Object sealed21341 = new PermittedSub2();

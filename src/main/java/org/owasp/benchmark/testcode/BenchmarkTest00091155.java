@@ -27,7 +27,7 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-@WebServlet(value = "/cmdi-00/BenchmarkTest00091")
+@WebServlet(value = "/cmdi-00/BenchmarkTest00091155")
 public class BenchmarkTest00091155 extends HttpServlet {
 
     private static final long serialVersionUID = 1L;

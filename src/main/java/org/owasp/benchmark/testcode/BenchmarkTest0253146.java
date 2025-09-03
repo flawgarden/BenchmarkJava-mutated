@@ -24,7 +24,7 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-@WebServlet(value = "/sqli-05/BenchmarkTest02531")
+@WebServlet(value = "/sqli-05/BenchmarkTest0253146")
 public class BenchmarkTest0253146 extends HttpServlet {
 
     Object sealed39745 = new PermittedSub2();

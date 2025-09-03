@@ -25,7 +25,7 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-@WebServlet(value = "/xss-00/BenchmarkTest00473")
+@WebServlet(value = "/xss-00/BenchmarkTest0047359")
 public class BenchmarkTest0047359 extends HttpServlet {
 
     SuperClass obj39745 = new SiblingClass();
