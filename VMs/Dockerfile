@@ -1,12 +1,10 @@
 # This dockerfile builds a container that pulls down and runs the latest version of BenchmarkJava
-FROM ubuntu:latest
-MAINTAINER "Dave Wichers dave.wichers@owasp.org"
+FROM sapmachine:22.0.1-jdk-ubuntu-24.04
 
 RUN apt-get update
 RUN DEBIAN_FRONTEND="noninteractive" apt-get -y install tzdata
+
 RUN apt-get install -q -y \
-     openjdk-11-jre-headless \
-     openjdk-11-jdk \
      git \
      maven \
      wget \
@@ -23,22 +21,22 @@ RUN mvn install
 
 # Download, build BenchmarkJava
 WORKDIR /owasp
-RUN git clone https://github.com/OWASP-Benchmark/BenchmarkJava
+RUN git clone https://github.com/flawgarden/BenchmarkJava-mutated.git
 
 # Workaround for security fix for CVE-2022-24765
-RUN git config --global --add safe.directory /owasp/BenchmarkJava
+RUN git config --global --add safe.directory /owasp/BenchmarkJava-mutated
 
-WORKDIR /owasp/BenchmarkJava
+WORKDIR /owasp/BenchmarkJava-mutated
 RUN mvn clean package cargo:install
 
 RUN useradd -d /home/bench -m -s /bin/bash bench 
 RUN echo bench:bench | chpasswd
 
 RUN chown -R bench /owasp/
-ENV PATH /owasp/BenchmarkJava:$PATH
+ENV PATH=/owasp/BenchmarkJava-mutated:$PATH
 
 # start up Benchmark once, for 60 seconds, then kill it, so the additional dependencies required to run it are downloaded/cached in the image as well.
 # exit 0 is required to return a 'success' code, otherwise the timeout returns a failure code, causing the Docker build to fail.
-WORKDIR /owasp/BenchmarkJava
+WORKDIR /owasp/BenchmarkJava-mutated
 RUN timeout 60 ./runBenchmark.sh; exit 0
 
