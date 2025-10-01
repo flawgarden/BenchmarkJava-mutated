@@ -3,6 +3,6 @@
     <benchmark-version>1.2</benchmark-version>
     <category>xss</category>
     <test-number>01347153</test-number>
-    <vulnerability>false</vulnerability>
+    <vulnerability>true</vulnerability>
     <cwe>79</cwe>
 </test-metadata>
