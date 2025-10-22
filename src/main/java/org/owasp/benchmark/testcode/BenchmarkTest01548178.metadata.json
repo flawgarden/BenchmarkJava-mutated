@@ -18,7 +18,7 @@
             " EXPR_String -> ~[EXPR_String]~.toLowerCase()"
         ],
         "region": null,
-        "kind": "pass"
+        "kind": "fail"
     },
     "tool_results": []
 }

@@ -31,7 +31,7 @@
             "MACRO_ListName -> list787231"
         ],
         "region": null,
-        "kind": "fail"
+        "kind": "pass"
     },
     "tool_results": []
 }
