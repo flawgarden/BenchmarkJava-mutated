@@ -58,7 +58,7 @@ public class BenchmarkTest0132635 extends HttpServlet {
         list787231.add("wcgbs");
         list787231.add(bar);
         Stream<String> stream787231 = list787231.stream();
-        stream787231.map(entry111 -> entry111 + "mcbgw");
+        stream787231 = stream787231.map(entry111 -> entry111 + "mcbgw");
         bar = stream787231.findFirst().get();
 
         org.owasp.benchmark.helpers.LDAPManager ads = new org.owasp.benchmark.helpers.LDAPManager();

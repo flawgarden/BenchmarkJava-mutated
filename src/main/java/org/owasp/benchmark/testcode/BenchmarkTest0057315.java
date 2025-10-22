@@ -59,7 +59,7 @@ public class BenchmarkTest0057315 extends HttpServlet {
 
                         Queue<String> queue787231 = new PriorityQueue<>();
                         queue787231.offer(
-                                param.concat(value).replaceAll("\\", param.toLowerCase()));
+                                param.concat(value).replaceAll("\\.", param.toLowerCase()));
                         param = queue787231.poll();
 
                         flag = false;

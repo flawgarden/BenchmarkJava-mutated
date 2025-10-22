@@ -78,8 +78,10 @@ public class BenchmarkTest003281 extends HttpServlet {
                             ("[^abc]"
                                     + (("[a-z]+" + "+")
                                             + "|"
-                                            + ((("[^abc]" + "*?") + "??") + "|" + "\0mnn"))));
-            Matcher matcher = pattern.matcher(request.changeSessionId());
+                                            + ((("[^abc]" + "*?")) + "|" + "\0mnn"))));
+            if (request.getSession() != null) {
+                Matcher matcher = pattern.matcher(request.changeSessionId());
+            }
 
             java.sql.CallableStatement statement = connection.prepareCall(sql);
             java.sql.ResultSet rs = statement.executeQuery();

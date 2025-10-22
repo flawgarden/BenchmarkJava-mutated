@@ -140,9 +140,9 @@ public class BenchmarkTest01497174 extends HttpServlet {
 
                 File f = new File(bar);
 
-                valuesList.remove(0); // remove the 1st safe value
-
                 bar = valuesList.get(0); // get the param value
+
+                valuesList.remove(0); // remove the 1st safe value
             }
 
             return bar;

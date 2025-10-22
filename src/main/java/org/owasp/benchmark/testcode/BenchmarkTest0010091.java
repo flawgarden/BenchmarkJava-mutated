@@ -75,7 +75,7 @@ public class BenchmarkTest0010091 extends HttpServlet {
 
         try {
 
-            ServiceI service111 = new ServiceSimple(request.getPathInfo());
+            ServiceI service111 = new ServiceSimple(sql);
             ConsumerInterface ci111 = new ConsumerInterface(service111);
             sql = ci111.getFieldValue();
 

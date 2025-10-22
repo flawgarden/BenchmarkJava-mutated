@@ -76,10 +76,10 @@ public class BenchmarkTest0252534 extends HttpServlet {
         ArrayHolder ah = new ArrayHolder(tmpArrayUnique42);
         String value78410 =
                 map787231.entrySet().stream()
-                        .filter(entry -> entry.equals("brxqm"))
+                        .filter(entry -> entry.getValue().equals("brxqm"))
                         .findFirst()
                         .get()
-                        .getValue();
+                        .getKey();
 
         param = ah.values[0];
         Object obj21341 = new ImplementingSubClass();

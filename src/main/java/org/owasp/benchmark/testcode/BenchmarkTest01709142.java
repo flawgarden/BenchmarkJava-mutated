@@ -124,10 +124,10 @@ public class BenchmarkTest01709142 extends HttpServlet {
 
             String value78410 =
                     map787233.entrySet().stream()
-                            .filter(entry -> entry.equals("pxltl"))
+                            .filter(entry -> entry.getValue().equals("pxltl"))
                             .findFirst()
                             .get()
-                            .getValue();
+                            .getKey();
 
             return bar;
         }

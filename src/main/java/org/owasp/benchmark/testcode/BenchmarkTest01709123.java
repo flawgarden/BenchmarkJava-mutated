@@ -107,7 +107,7 @@ public class BenchmarkTest01709123 extends HttpServlet {
             list787232.add(a15574);
             list787232.add(a15574);
             Stream<String> stream787231 = list787232.stream();
-            stream787231.map(entry111 -> entry111 + param.toString());
+            stream787231 = stream787231.map(entry111 -> entry111 + param.toString());
             String value7842 = stream787231.findFirst().get();
 
             java.util.HashMap<String, Object> map15574 = new java.util.HashMap<String, Object>();
