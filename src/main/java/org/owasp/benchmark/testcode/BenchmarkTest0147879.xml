@@ -3,6 +3,6 @@
     <benchmark-version>1.2</benchmark-version>
     <category>xpathi</category>
     <test-number>0147879</test-number>
-    <vulnerability>false</vulnerability>
+    <vulnerability>true</vulnerability>
     <cwe>643</cwe>
 </test-metadata>

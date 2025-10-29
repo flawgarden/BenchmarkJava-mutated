@@ -2,6 +2,6 @@
     <benchmark-version>1.2</benchmark-version>
     <category>cmdi</category>
     <test-number>012871561</test-number>
-    <vulnerability>true</vulnerability>
+    <vulnerability>false</vulnerability>
     <cwe>78</cwe>
 </test-metadata>

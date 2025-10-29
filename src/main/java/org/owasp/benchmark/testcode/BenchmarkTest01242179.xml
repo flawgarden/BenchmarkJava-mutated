@@ -2,6 +2,6 @@
     <benchmark-version>1.2</benchmark-version>
     <category>ldapi</category>
     <test-number>01242179</test-number>
-    <vulnerability>true</vulnerability>
+    <vulnerability>false</vulnerability>
     <cwe>90</cwe>
 </test-metadata>

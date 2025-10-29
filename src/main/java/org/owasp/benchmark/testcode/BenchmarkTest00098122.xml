@@ -3,6 +3,6 @@
     <benchmark-version>1.2</benchmark-version>
     <category>trustbound</category>
     <test-number>00098122</test-number>
-    <vulnerability>true</vulnerability>
+    <vulnerability>false</vulnerability>
     <cwe>501</cwe>
 </test-metadata>
