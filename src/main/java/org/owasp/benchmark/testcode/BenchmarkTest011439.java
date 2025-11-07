@@ -93,7 +93,7 @@ public class BenchmarkTest011439 extends HttpServlet {
     }
 
     public String combineStrings(String... strings) {
-        return String.join(", ", strings);
+        return String.join("_", strings);
     }
 
     private class Test9 {

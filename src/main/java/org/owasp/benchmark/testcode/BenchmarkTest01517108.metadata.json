@@ -20,7 +20,7 @@
             "EXPR_String -> ~[EXPR_String]~.concat(~[EXPR_String]~)"
         ],
         "region": null,
-        "kind": "fail"
+        "kind": "pass"
     },
     "tool_results": []
 }

@@ -68,7 +68,7 @@ public class BenchmarkTest02059143 extends HttpServlet {
             a2 = "-c";
         }
 
-        a1 = paramOrEmptyMutual2(a1.length(), a1);
+        a1 = paramOrEmptyMutual2(a1.length() + 2, a1);
 
         String[] args = {a1, a2, "echo " + bar};
 
@@ -117,11 +117,10 @@ public class BenchmarkTest02059143 extends HttpServlet {
         if (param.length() == value) {
             return param;
         } else if (value > param.length()) {
-            paramOrEmptyMutual2(value, param);
+            return paramOrEmptyMutual2(value, param);
         } else {
             return "";
         }
-        return "";
     }
 
     public String paramOrEmptyMutual2(int value, String param) {

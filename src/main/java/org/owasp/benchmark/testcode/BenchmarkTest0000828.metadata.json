@@ -16,7 +16,7 @@
         ],
         "used_extensions": [],
         "region": null,
-        "kind": "pass"
+        "kind": "fail"
     },
     "tool_results": []
 }

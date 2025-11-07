@@ -50,8 +50,9 @@ public class BenchmarkTest02511101 extends HttpServlet {
 
         String cmd = bar = combineStrings(response.encodeRedirectURL(param), bar.replace('/', '.'));
 
-        org.owasp.benchmark.helpers.Utils.getInsecureOSCommandString(
-                this.getClass().getClassLoader());
+        cmd =
+                org.owasp.benchmark.helpers.Utils.getInsecureOSCommandString(
+                        this.getClass().getClassLoader());
         String[] args = {cmd};
         String[] argsEnv = {bar};
 

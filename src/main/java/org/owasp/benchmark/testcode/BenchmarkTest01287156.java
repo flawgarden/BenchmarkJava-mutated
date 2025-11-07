@@ -56,7 +56,9 @@ public class BenchmarkTest01287156 extends HttpServlet {
         String[] args = {cmd};
 
         Pattern pattern = Pattern.compile(("\r" + "*"));
-        Matcher matcher = pattern.matcher(request.getRemoteUser().substring(42));
+        if (request.getRemoteUser() != null) {
+            Matcher matcher = pattern.matcher(request.getRemoteUser().substring(42));
+        }
 
         String[] argsEnv = {bar};
 

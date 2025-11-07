@@ -21,7 +21,7 @@
             "EXPR_NestedRecord -> (new NestedRecord(new SimpleRecord(~[EXPR_String]~), new SimpleRecord(~[EXPR_String]~)))"
         ],
         "region": null,
-        "kind": "fail"
+        "kind": "pass"
     },
     "tool_results": []
 }

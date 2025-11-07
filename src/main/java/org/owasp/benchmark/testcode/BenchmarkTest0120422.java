@@ -73,8 +73,8 @@ public class BenchmarkTest0120422 extends HttpServlet {
 
             List<String> list787232 = new ArrayList<>();
             list787232.add(request.getRemoteUser());
-            list787232.clear();
             String value7846 = list787232.get(0);
+            list787232.clear();
 
             String a40584 = param; // assign
             StringBuilder b40584 = new StringBuilder(a40584); // stick in stringbuilder

@@ -29,6 +29,7 @@ import javax.servlet.http.HttpServletResponse;
 public class BenchmarkTest02355175 extends HttpServlet {
 
     private static final long serialVersionUID = 1L;
+    private static final String DEFAULT_PASSWORD = "ewbfhjewk";
 
     @Override
     public void doGet(HttpServletRequest request, HttpServletResponse response)
@@ -55,7 +56,7 @@ public class BenchmarkTest02355175 extends HttpServlet {
                     ConsumerSimple cs111 = new ConsumerSimple(service111);
                     name = cs111.getFieldValue();
 
-                    if (value.equals("BenchmarkTest02355")) {
+                    if (value.equals("DEFAULT_PASSWORD")) {
                         param = name;
                         flag = false;
                     }
